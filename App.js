@@ -3,17 +3,19 @@ import { StyleSheet, Text, View } from 'react-native';
 import { createStackNavigator } from 'react-navigation-stack';
 import { createAppContainer } from 'react-navigation';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
-import RegistrationScreen from 'Screens/RegistrationScreen.js';
 
 
-import HomeScreen from 'Screens/HomeScreen.js';
-import MissionLocationScreen from 'Screens/MissionLocationScreen.js';
-import MissionEnvironmentScreen from 'Screens/MissionEnvironmentScreen.js';
-import MissionRestaurantScreen from 'Screens/MissionRestaurantScreen.js';
-import MissionTransportScreen from 'Screens/MissionTransportScreen.js';
-import MissionCompletedScreen from 'Screens/MissionCompletedScreen.js';
-import MissionScreen from 'Screens/MissionScreen.js';
-import LoginScreen from 'Screens/LoginScreen.js';
+import RegistrationScreen from './Screens/RegistrationScreen.js';
+import HomeScreen from './Screens/HomeScreen.js';
+import MissionLocationScreen from './Screens/MissionLocationScreen.js';
+import MissionEnvironmentScreen from './Screens/MissionEnvironmentScreen.js';
+import MissionRestaurantScreen from './Screens/MissionRestaurantScreen.js';
+import MissionTransportScreen from './Screens/MissionTransportScreen.js';
+import MissionCompletedScreen from './Screens/MissionCompletedScreen.js';
+import MissionScreen from './Screens/MissionScreen.js';
+import LoginScreen from './Screens/LoginScreen.js';
+import LeaderBoardScreen from './Screens/LeaderboardScreen';
+import ProfileScreen from './Screens/ProfileScreen';
 
 const routes = {
   Login: LoginScreen,
@@ -25,6 +27,7 @@ const routes = {
   MissionTransport: MissionTransportScreen,
   MissionCompleted: MissionCompletedScreen,
   Mission: MissionScreen,
+
 };
 
 const options = {
