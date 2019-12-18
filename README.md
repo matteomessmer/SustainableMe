@@ -23,3 +23,10 @@ Project 3 for the course Engineering of Mobile Systems
 - Initial screen
 - Mission
 - Mission Transport Screen
+
+
+#API ENDPOINTS
+
+http://sustainableme.fablabnetwork.tk/API/getRewards.php
+
+http://sustainableme.fablabnetwork.tk/API/getMissions.php
