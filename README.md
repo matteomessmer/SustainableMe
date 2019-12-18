@@ -1,23 +1,23 @@
-#SustainableMe
+# SustainableMe
 Project 3 for the course Engineering of Mobile Systems
 
-#TO DO :
+# TO DO :
 
-#Chiara
+# Chiara
 - Mission Environment Screen
 - Home Screen
 - Mission Completed Screen
 
-#Simonluca
+# Simonluca
 - Mission Restaurant Screen
 - Profile Screen
 - Next thing we forget to do
 
-#Matteo
+# Matteo
 - Login Screen
 - Mission Location Screen
 
-#Ulli
+# Ulli
 - Style
 - Leaderboard
 - Initial screen
