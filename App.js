@@ -1,19 +1,42 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { createStackNavigator } from 'react-navigation-stack';
+import { createAppContainer } from 'react-navigation';
+import { createBottomTabNavigator } from 'react-navigation-tabs';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-    </View>
-  );
+const routes = {
+  Login: LoginScreen,
+  Registration: RegistrationScreen,
+  Home: HomeScreen,
+  MissionLocation: MissionLocationScreen,
+  MissionEnvironment: MissionEnvironmentScreen,
+  MissionRestaurant: MissionRestaurantScreen,
+  MissionTransport: MissionTransportScreen,
+  MissionCompleted: MissionCompletedScreen,
+  Mission: MissionScreen,
+};
+
+const options = {
+  initialRouteName: 'Login'
+ };
+
+const AppNavigator = createStackNavigator(routes, options);
+
+const tabRoutes = {
+  Home: AppNavigator,
+  Mission: MissionScreen,
+  LeaderBoard: LeaderBoardScreen,
+  Profile: ProfileScreen,
+};
+
+const TabNavigator = createBottomTabNavigator(tabRoutes);
+
+const AppContainer = createAppContainer(TabNavigator);
+
+export default class App extends React.Component {
+  render() {
+    return (
+        <AppContainer />
+    );
+  }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
