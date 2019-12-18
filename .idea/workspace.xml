@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07dc5ad6-6e32-4ac7-ba0d-2aa44b12c1a6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/Components/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Components/Leaderboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/Components/Leaderboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Components/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/Components/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Components/Mission.js" beforeDir="false" afterPath="$PROJECT_DIR$/Components/Mission.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Components/MissionCompleted.js" beforeDir="false" afterPath="$PROJECT_DIR$/Components/MissionCompleted.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Components/MissionEnvironment.js" beforeDir="false" afterPath="$PROJECT_DIR$/Components/MissionEnvironment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Components/MissionLocation.js" beforeDir="false" afterPath="$PROJECT_DIR$/Components/MissionLocation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Components/MissionRestaurant.js" beforeDir="false" afterPath="$PROJECT_DIR$/Components/MissionRestaurant.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Components/MissionTransport.js" beforeDir="false" afterPath="$PROJECT_DIR$/Components/MissionTransport.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Components/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/Components/Profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Components/Registration.js" beforeDir="false" afterPath="$PROJECT_DIR$/Components/Registration.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,11 +15,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Components/Registration.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Components/User.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+            <state relative-caret-position="220">
+              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="20" column="6" lean-forward="true" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -57,6 +58,8 @@
         <option value="$PROJECT_DIR$/Components/MissionTransport.js" />
         <option value="$PROJECT_DIR$/Components/Profile.js" />
         <option value="$PROJECT_DIR$/Components/Registration.js" />
+        <option value="$PROJECT_DIR$/Components/User.js" />
+        <option value="$PROJECT_DIR$/App.js" />
       </list>
     </option>
   </component>
@@ -84,6 +87,11 @@
               <item name="SustainableMe" type="b2602c69:ProjectViewProjectNode" />
               <item name="SustainableMe" type="462c0819:PsiDirectoryNode" />
               <item name="Components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SustainableMe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SustainableMe" type="462c0819:PsiDirectoryNode" />
+              <item name="Screens" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -120,12 +128,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576674962443</updated>
-      <workItem from="1576674969593" duration="275000" />
+      <workItem from="1576674969593" duration="693000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="275000" />
+    <option name="totallyTimeSpent" value="693000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -259,6 +267,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Components/User.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="20" column="6" lean-forward="true" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
