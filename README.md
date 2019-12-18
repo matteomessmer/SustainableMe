@@ -26,5 +26,5 @@ Project 3 for the course Engineering of Mobile Systems
 
 
 # API ENDPOINTS
-Rewards: http://sustainableme.fablabnetwork.tk/API/getRewards.php
-Missions: http://sustainableme.fablabnetwork.tk/API/getMissions.php
+- Rewards: http://sustainableme.fablabnetwork.tk/API/getRewards.php
+- Missions: http://sustainableme.fablabnetwork.tk/API/getMissions.php
