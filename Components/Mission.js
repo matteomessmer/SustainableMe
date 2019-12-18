@@ -1,11 +1,15 @@
 import React from 'react';
-import {StyleSheet, Text, View,ScrollView, Button } from 'react-native';
+import { Text, View,ScrollView, Button } from 'react-native';
+import { styles} from '../styles.js';
 
 export default class Mission extends React.Component{
 
-    render(){
-        return
-    }
-
+  render(){
+      return (
+        <View>
+        <Text>Mission component</Text>
+        </View>
+      )
+  }
 
 }
