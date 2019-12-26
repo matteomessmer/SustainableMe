@@ -1,0 +1,4034 @@
+[
+  {
+    "name_short": "EURAC - EURAC",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "EURAC - EURAC",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "IIT - IIT",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "SALEWA - SALEWA",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "SEL Ecotherm - SEL Ecotherm",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Stazione Merano - Bhf Meran",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Weingartner - Weingartnerstr.",
+    "name_long": "Lagundo - Algund"
+  },
+  {
+    "name_short": "Autostazione - Busbahnhof",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "via Nobel - Nobel Str.",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "via San Francesco - St. Franziskus Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "via Pietralba 2 - Weissensteiner Str. 2",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "via Pietralba 1 - Weissensteiner Str. 1",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "via Fago 2 - Fagen Str. 2",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "via Fago 1 - Fagenstr. 1",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "via Galizia 1 - Galizienstr. 1",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "via dei Vanga - Wangergasse",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "via Talvera - Talfergasse",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "via Castel Roncolo 2 - Runkelsteinerstr. 2",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "via Vintler - Vintler Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "via Castel Roncolo 1 - Runkelsteinerstr. 1",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "via Beato Arrigo 1 - Selig Heinrich Str. 1",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "via dei Vanga - Wangergasse",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "via Weggenstein 1 - Weggenstein Str. 1 non esiste",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "via Hofer 2 - Hofer Str. 2",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "via Lancia 1 - Lancia Str. 1",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Cardano zona Art. 1 - Kardaun Handwerkerz. 1",
+    "name_long": "Cornedo all`Isarco - Karneid"
+  },
+  {
+    "name_short": "Postal Fun. Verano - Burgstall Seilb. Voeran",
+    "name_long": "Postal - Burgstall"
+  },
+  {
+    "name_short": "Lackner",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Stazione Terlano - Bhf Terlan",
+    "name_long": "Terlano - Terlan"
+  },
+  {
+    "name_short": "Ponte Palermo - Palermo Brücke",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "IVECO",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Cimitero Nord - Friedhof Nord",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Cimitero Nord - Friedhof Nord",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Loris Musy - Loris Musy Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Loris Musy - Loris Musy Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Max Valier - Max Valier Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Max Valier - Max Valier Str.",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Centro - Zentrum",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Centro - Zentrum",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Via Pascoli - Pascoli Str.",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Via Pascoli - Pascoli Str.",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Pineta - Steinmannwald",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Pineta - Steinmannwald",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Camping",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Camping",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Centro - Zentrum",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Centro - Zentrum",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Posta - Post",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Posta - Post",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Caserma - Kaserne",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Caserma - Kaserne",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "via A. Meucci - A. Meucci Str.",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "via A. Meucci - A. Meucci Str.",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "via Nobel - Nobel Str.",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Raif",
+    "name_long": "Bronzolo - Branzoll"
+  },
+  {
+    "name_short": "Raif",
+    "name_long": "Bronzolo - Branzoll"
+  },
+  {
+    "name_short": "Paese - Dorf",
+    "name_long": "Ora - Auer"
+  },
+  {
+    "name_short": "Lana zona Ind. 4 - Lana Industriezone 4",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Municipio - Rathaus",
+    "name_long": "Andriano - Andrian"
+  },
+  {
+    "name_short": "Municipio - Rathaus",
+    "name_long": "Andriano - Andrian"
+  },
+  {
+    "name_short": "Lido di Andriano - Andrian Schwimmbad",
+    "name_long": "Andriano - Andrian"
+  },
+  {
+    "name_short": "Lido di Andriano - Andrian Schwimmbad",
+    "name_long": "Andriano - Andrian"
+  },
+  {
+    "name_short": "Fontanefredde - Kaltenbrunn",
+    "name_long": "Nalles - Nals"
+  },
+  {
+    "name_short": "Fontanefredde - Kaltenbrunn",
+    "name_long": "Nalles - Nals"
+  },
+  {
+    "name_short": "Huben",
+    "name_long": "Nalles - Nals"
+  },
+  {
+    "name_short": "Huben",
+    "name_long": "Nalles - Nals"
+  },
+  {
+    "name_short": "Piazza Municipio - Rathausplatz",
+    "name_long": "Nalles - Nals"
+  },
+  {
+    "name_short": "Piazza Municipio - Rathausplatz",
+    "name_long": "Nalles - Nals"
+  },
+  {
+    "name_short": "Piazza Fontana - Brunnenplatz",
+    "name_long": "Nalles - Nals"
+  },
+  {
+    "name_short": "Piazza Fontana - Brunnenplatz",
+    "name_long": "Nalles - Nals"
+  },
+  {
+    "name_short": "Stazione Vilpiano Nalles - Bhf Vilipian Nals",
+    "name_long": "Terlano - Terlan"
+  },
+  {
+    "name_short": "Bivio Kuenserhof - Abzw. Kuenserhof",
+    "name_long": "Rifiano - Riffian"
+  },
+  {
+    "name_short": "Cimitero di Cardano - Friedhof Kardaun",
+    "name_long": "Cornedo all`Isarco - Karneid"
+  },
+  {
+    "name_short": "Cimitero di Cardano - Friedhof Kardaun",
+    "name_long": "Cornedo all`Isarco - Karneid"
+  },
+  {
+    "name_short": "Moar",
+    "name_long": "Cornedo all`Isarco - Karneid"
+  },
+  {
+    "name_short": "Moar",
+    "name_long": "Cornedo all`Isarco - Karneid"
+  },
+  {
+    "name_short": "Via Torricelli - Torricelli Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Torricelli - Torricelli Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Öbersthöfe",
+    "name_long": "Rifiano - Riffian"
+  },
+  {
+    "name_short": "Bivio Gaveis - Abzw. Gfeis",
+    "name_long": "Rifiano - Riffian"
+  },
+  {
+    "name_short": "Bivio Gaveis - Abzw. Gfeis",
+    "name_long": "Rifiano - Riffian"
+  },
+  {
+    "name_short": "Sonngarten",
+    "name_long": "Caines - Kuens"
+  },
+  {
+    "name_short": "via Caines (Sonngarten) - Kuenserstr. (Sonngarten)",
+    "name_long": "Caines - Kuens"
+  },
+  {
+    "name_short": "Castello di Cornedo - Schloss Karneid",
+    "name_long": "Cornedo all`Isarco - Karneid"
+  },
+  {
+    "name_short": "Camping",
+    "name_long": "Terlano - Terlan"
+  },
+  {
+    "name_short": "Camping",
+    "name_long": "Terlano - Terlan"
+  },
+  {
+    "name_short": "Zona produttiva Giessen - Gewerbezone Giessen",
+    "name_long": "Nalles - Nals"
+  },
+  {
+    "name_short": "Zona produttiva Giessen - Gewerbezone Giessen",
+    "name_long": "Nalles - Nals"
+  },
+  {
+    "name_short": "via Fago 4 - Fagenstr. 4 DA ELIMINARE",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Farmacia - Apotheke",
+    "name_long": "Cornedo all`Isarco - Karneid"
+  },
+  {
+    "name_short": "S. Caterina Paese - St. Kathrein Dorf",
+    "name_long": "Avelengo - Hafling"
+  },
+  {
+    "name_short": "Moar Wiese (Viktoria)",
+    "name_long": "Avelengo - Hafling"
+  },
+  {
+    "name_short": "Sonnenheim",
+    "name_long": "Avelengo - Hafling"
+  },
+  {
+    "name_short": "Avelengo Municipio - Hafling Rathaus",
+    "name_long": "Avelengo - Hafling"
+  },
+  {
+    "name_short": "Avelengo (Ganthaler) - Hafling (Ganthaler)",
+    "name_long": "Avelengo - Hafling"
+  },
+  {
+    "name_short": "Avelengo (Brunnerhof) - Hafling (Brunnerhof)",
+    "name_long": "Avelengo - Hafling"
+  },
+  {
+    "name_short": "Acquaviva - Ackpfeif",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Municipio - Rathaus",
+    "name_long": "Gargazzone - Gargazon"
+  },
+  {
+    "name_short": "Andrian Center",
+    "name_long": "Andriano - Andrian"
+  },
+  {
+    "name_short": "Cervo - Hirschen",
+    "name_long": "Lagundo - Algund"
+  },
+  {
+    "name_short": "Cervo - Hirschen",
+    "name_long": "Lagundo - Algund"
+  },
+  {
+    "name_short": "Casa di Riposo- Altersheim",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Casa di Riposo- Altersheim",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Siemens Ressel - Siemens Str. Ressel",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Stazione Tel - Bhf Toell",
+    "name_long": "Parcines - Partschins"
+  },
+  {
+    "name_short": "Via delle Corse - Rennweg",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Steurer - Steurerweg",
+    "name_long": "Terlano - Terlan"
+  },
+  {
+    "name_short": "Via Steurer - Steurerweg",
+    "name_long": "Terlano - Terlan"
+  },
+  {
+    "name_short": "Valzurg",
+    "name_long": "Cornedo all`Isarco - Karneid"
+  },
+  {
+    "name_short": "Monte S. Benedetto Seggiovia - Segenbühel Sessellift",
+    "name_long": "Tirolo - Tirol"
+  },
+  {
+    "name_short": "Chiesa S. Ruperto - St. Ruprechtskirche",
+    "name_long": "Tirolo - Tirol"
+  },
+  {
+    "name_short": "Astoria",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Laurin Alta - Obere Laurin Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Thalguter - Thalguter Str.",
+    "name_long": "Lagundo - Algund"
+  },
+  {
+    "name_short": "Via Foscolo - Foscolo Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Zona sportiva - Sportzone",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Zona sportiva - Sportzone",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Plankenstein",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Rotwand",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "via Cairoli - Cairoli Str.",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Via Nobel Capolinea - Nobel Str. Endhaltestelle",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Cantiere Provinciale - Landesbauhof",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Oberdorf",
+    "name_long": "Nalles - Nals"
+  },
+  {
+    "name_short": "Oberdorf",
+    "name_long": "Nalles - Nals"
+  },
+  {
+    "name_short": "via Marconi - Marconi Str.",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Stazione - Bahnhof",
+    "name_long": "Bronzolo - Branzoll"
+  },
+  {
+    "name_short": "via Macello rotatoria - Schlachtofstr. Kreisverkehr",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Stazione - Bahnofstr.",
+    "name_long": "Gargazzone - Gargazon"
+  },
+  {
+    "name_short": "Via Stazione - Bahnofstr.",
+    "name_long": "Gargazzone - Gargazon"
+  },
+  {
+    "name_short": "Gargazzone Stazione - Gargazon Bhf",
+    "name_long": "Gargazzone - Gargazon"
+  },
+  {
+    "name_short": "Gargazzone Municipio - Gargazon Rathaus",
+    "name_long": "Gargazzone - Gargazon"
+  },
+  {
+    "name_short": "Via delle Corse - Rennweg",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Ospedale - Krankenhaus",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Ospedale - Krankenhaus",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Terme  - Thermen",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via S. Giorgio - St. Georgen Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via S. Giorgio - St. Georgen Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Eichenhof",
+    "name_long": "Tirolo - Tirol"
+  },
+  {
+    "name_short": "Eichenhof",
+    "name_long": "Tirolo - Tirol"
+  },
+  {
+    "name_short": "Finele",
+    "name_long": "Tirolo - Tirol"
+  },
+  {
+    "name_short": "Finele",
+    "name_long": "Tirolo - Tirol"
+  },
+  {
+    "name_short": "Kuenserhof",
+    "name_long": "Rifiano - Riffian"
+  },
+  {
+    "name_short": "Kuenserhof",
+    "name_long": "Rifiano - Riffian"
+  },
+  {
+    "name_short": "Rifiano - Riffian",
+    "name_long": "Rifiano - Riffian"
+  },
+  {
+    "name_short": "Rifiano - Riffian",
+    "name_long": "Rifiano - Riffian"
+  },
+  {
+    "name_short": "Bivio Vernurio - Abzw. Vernuer",
+    "name_long": "Rifiano - Riffian"
+  },
+  {
+    "name_short": "Tennis",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Tennis",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Stazione Maia Bassa - Bhf Untermais",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Stazione Maia Bassa - Bhf Untermais",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Lackner",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Ponte Marlengo - Marlinger Brücke",
+    "name_long": "Marlengo - Marling"
+  },
+  {
+    "name_short": "Ponte Marlengo - Marlinger Brücke",
+    "name_long": "Marlengo - Marling"
+  },
+  {
+    "name_short": "Zona produttiva Marlengo - Gewerbezone Marling",
+    "name_long": "Marlengo - Marling"
+  },
+  {
+    "name_short": "Zona produttiva Marlengo - Gewerbezone Marling",
+    "name_long": "Marlengo - Marling"
+  },
+  {
+    "name_short": "Municipio - Rathaus",
+    "name_long": "Cermes - Tscherms"
+  },
+  {
+    "name_short": "Municipio - Rathaus",
+    "name_long": "Cermes - Tscherms"
+  },
+  {
+    "name_short": "Autostazione - Busbahnhof",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Scuole Fermi/Lienz - Schulen Fermi/Lienz",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Stazione Ponte Adige - Bhf Sigmundskron",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Ponte Adige - Sigmundskron",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Scuola S.Giacomo - Schule St.Jakob",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Scuole Rosmini/Stifter - Schulen Rosmini/Stifter",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Autostazione - Busbahnhof",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Municipio - Rathaus",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Chiesa S. Croce - Kreuzkirche",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Scuola Elementare - Knabenschule",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Piazza Tribus - Tribus Platz",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "S. Anna - St. Anna",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Pomus - Pomus",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Bivio Via Dogana - Abzw. Zollstr.",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Lido Lana - Lana Schwimmbad",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Stazione Lana/Postal - Bhf Lana/Burgstall",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Ufficio Turistico - Tourismusbüro",
+    "name_long": "Postal - Burgstall"
+  },
+  {
+    "name_short": "Funivia Verano - Seilbahn Vöran",
+    "name_long": "Postal - Burgstall"
+  },
+  {
+    "name_short": "Paese - Dorf",
+    "name_long": "Gargazzone - Gargazon"
+  },
+  {
+    "name_short": "Vicolo del Bosco - Waldweg",
+    "name_long": "Gargazzone - Gargazon"
+  },
+  {
+    "name_short": "Vicolo del Bosco - Waldweg",
+    "name_long": "Gargazzone - Gargazon"
+  },
+  {
+    "name_short": "Paese - Dorf",
+    "name_long": "Gargazzone - Gargazon"
+  },
+  {
+    "name_short": "Funivia Verano - Seilbahn Vöran",
+    "name_long": "Postal - Burgstall"
+  },
+  {
+    "name_short": "Zona sportiva - Sportzone",
+    "name_long": "Postal - Burgstall"
+  },
+  {
+    "name_short": "Ufficio Turistico - Tourismusbüro",
+    "name_long": "Postal - Burgstall"
+  },
+  {
+    "name_short": "Lido Lana - Lana Schwimmbad",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Via Leonardo da Vinci - Leonardo da Vinci Str.",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Tennis",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Piazza Tribus - Tribus Platz",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Via Schnatterpeck - Schnatterpeckstr.",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Bivio Via della Chiesa - Abzw. Kirchweg",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Parrocchia - Pfarrkirche",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Bivio Via Dogana - Abzw. Zollstr.",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Pomus - Pomus",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Bivio Via della Chiesa - Abzw. Kirchweg",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Via della Chiesa - Kirchweg",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Asilo S. Pietro - Kindergarten St. Peter",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Via Weingartner - Weingartnerstr.",
+    "name_long": "Lagundo - Algund"
+  },
+  {
+    "name_short": "Scuola Elementare - Knabenschule",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Campi Resia - Reschensportplätze",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Gutenberg - Gutenberg Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Gutenberg - Gutenberg Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Passaggio Tobagi - Walter Weg",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Passaggio Tobagi - Walter Weg",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Scuola Schweitzer - Schweitzer Schule",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Scuola Schweitzer - Schweitzer Schule",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Scuola J. H. Pestalozzi - J. H. Pestalozzi Schule",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Scuola J. H. Pestalozzi - J. H. Pestalozzi Schule",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Piazza Casagrande - Casagrande Platz",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Chiesa S. Croce - Kreuzkirche",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Via della Visitazione - Mariaheimweg",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via della Visitazione - Mariaheimweg",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Roen Scuola Superiore - Roenstr. Oberschule",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Roen Scuola Superiore - Roenstr. Oberschule",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Roen Asilo - Roenstr. Kindergarten",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Roen Asilo - Roenstr. Kindergarten",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Tribunale - Gericht",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Tribunale - Gericht",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Cesare Battisti - Cesare Battisti Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Municipio - Rathaus",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Via Cesare Battisti - Cesare Battisti Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Piazza Vittoria - Siegesplatz",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Piazza Vittoria - Siegesplatz",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Rosmini - Rosmini Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Piazza Università - Universitätsplatz",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Piazza Domenicani - Dominikanerplatz",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Piazza Domenicani - Dominikanerplatz",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Piazza Walther - Waltherplatz",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Piazza Walther - Waltherplatz",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Scuola Media - Mittelschule",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "via Alto Adige 2 - Suedtiroler Str. 2",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Cassa di Risparmio - Sparkassenstr.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Piazza Vittoria - Siegesplatz",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Piazza Vittoria - Siegesplatz",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Longon - Longon Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Longon - Longon Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Piazza Mazzini - Mazzini Platz",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Piazza Mazzini - Mazzini Platz",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via di Novacella - Neustifterweg",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Scuola Media - Mittelschule",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Via di Novacella - Neustifterweg",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Firenze - Florenzerstr.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Firenze - Florenzerstr.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Roma Sottopasso - Romstr. Unterführung",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Roma Sottopasso - Romstr. Unterführung",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Piazzetta Bersaglio - Schießstandplatz",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Piazzetta Bersaglio - Schießstandplatz",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Piazza Oltrisarco - Oberauer Platz",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Piazza Oltrisarco - Oberauer Platz",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Bivio Via Volta - Abzw. Voltastr.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Chiesa S. Croce - Kreuzkirche",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Bivio Via Volta - Abzw. Voltastr.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Cimitero Sud - Friedhof Süd",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Cimitero Sud - Friedhof Süd",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Maso della Pieve - Pfarrhof",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Maso della Pieve - Pfarrhof",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Scuole - Schulen",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Scuole - Schulen",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Bar Posta",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Bar Posta",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Via Vurza - Wurzerstr.",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Parcheggio Gampen - Gampenparkplatz",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Via Vurza - Wurzerstr.",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Zona produttiva Vurza - Handwerkerzone Wurzer",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Bivio Z.I. - Abzw. Industriezone",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Cimitero di Bronzolo - Friedhof Branzoll",
+    "name_long": "Bronzolo - Branzoll"
+  },
+  {
+    "name_short": "Via Aquila Nera - Schwarz Adler Str.",
+    "name_long": "Bronzolo - Branzoll"
+  },
+  {
+    "name_short": "Paese - Dorf",
+    "name_long": "Bronzolo - Branzoll"
+  },
+  {
+    "name_short": "Rione Göller - Göller Siedlung",
+    "name_long": "Bronzolo - Branzoll"
+  },
+  {
+    "name_short": "Stazione Laives - Bhf Leifers",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Lido - Schwimmbad",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Lido - Schwimmbad",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Via Palade - Gampenstr.",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "via Goethe - Goethe Str.",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Parco Marconi - Spielpark Marconi",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "via Diaz - Diaz Str.",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Via Nazario Sauro - Nazario Sauro Str.",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Via Nazario Sauro - Nazario Sauro Str.",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Scuole - Schulen",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Scuole - Schulen",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "via Pietralba 1 - Weissensteiner Str. 1 DA ELIMINARE",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "via Pietralba - Weissensteiner Str.",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "S. Giorgio - St. Georg",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Via Galizia - Galizienstr.",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Cimitero - Friedhof",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Via Andreas Hofer - Andreas Hofer Str.",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Mag. Via Hofer - Lagerhaus Hoferstr.",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Filanda",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Platteid",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Via Brennero - Brennerstr.",
+    "name_long": "Cornedo all`Isarco - Karneid"
+  },
+  {
+    "name_short": "Via Brennero - Brennerstr.",
+    "name_long": "Cornedo all`Isarco - Karneid"
+  },
+  {
+    "name_short": "Costa di Sotto - Unterleitach",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Costa di Sotto - Unterleitach",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Bivio Renon - Abzw. Ritten",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Bivio Renon - Abzw. Ritten",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Rencio Museo della scuola - Rentsch Schulmuseum",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Rencio Museo della scuola - Rentsch Schulmuseum",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Salita Rencio - Hoher Weg",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Salita Rencio - Hoher Weg",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Gasser",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Via Brennero - Brennerstr.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Brennero - Brennerstr.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Funivia del Renon - Rittner Seilbahn",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Funivia del Renon - Rittner Seilbahn",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Stazione Bolzano - Bhf Bozen",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Stazione Bolzano - Bhf Bozen",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Stazione Bolzano - Bhf Bozen",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Piazza Vittoria - Siegesplatz",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Piazza Vittoria - Siegesplatz",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Mayenburg",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Via Guncina - Guntschnastr.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Guncina - Guntschnastr.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Max Valier - Max Valier Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Max Valier - Max Valier Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Bivio Via Fago - Abzw. Fagenstr.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Fago Scuole - Fagenstr. Schulen",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Villa Serena",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Defregger - Defregger Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Viale Principe Eugenio - Prinz Eugen Allee",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Diaz - Diaz Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Casa della Cultura - Vereinshaus",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Piazza Dogana - Zollstange",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via De Lai - De Lai Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Perathoner - Perathoner Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Perathoner - Perathoner Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Pie' di Virgolo - Untervirgl",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Pie' di Virgolo - Untervirgl",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Trento - Trienterstr.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Trento - Trienterstr.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Chiesa - Kirche",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Piazza Nikoletti - Nikoletti Platz",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Piazza Nikoletti - Nikoletti Platz",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via del Parco - Parkstr.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via del Parco - Parkstr.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via S. Geltrude - St. Gertraud Weg",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via S. Geltrude - St. Gertraud Weg",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via S. Vigilio - St. Vigilstr.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Scuola Gianni Rodari - Gianni Rodari Schule",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via C. Weinegg bassa - Untere Weinegg Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Bivio Castel Flavon - Abzw. Haselburg",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Casa della Cultura - Vereinshaus",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Via C. Weinegg alta - Obere Weinegg Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via C. Weinegg rotatoria - Weinegg Str. Wendepl.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Scuola Enrico Fermi - Enrico Fermi Schule",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Piazza Adriano - Hadrianplatz",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Piazza Adriano - Hadrianplatz",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Amalfi - Amalfi Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Amalfi - Amalfi Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Sorrento - Sorrento Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Sorrento - Sorrento Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Positano - Positano Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Mayenburg",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Via Positano - Positano Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "via Druso 8 - Drusus Str. 8 DA ELIMINARE",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "via Druso 8 - Drusus Str. 8 DA ELIMINARE",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Bivio Via Resia - Abzw. Reschenstr.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Bivio Via Resia - Abzw. Reschenstr.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Ospedale - Krankenhaus",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Ospedale - Krankenhaus",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Padiglione W - Gebäude W",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Bivio Poligono - Abzw. Schießstand",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Burgwies",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Bivio Poligono - Abzw. Schießstand",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via S. Maurizio - Moritzingerweg",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via S. Maurizio - Moritzingerweg",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Vittorio Veneto Caserme - Vittorio Veneto Str. Kasernen",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Vittorio Veneto Caserme - Vittorio Veneto Str. Kasernen",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Eisenkeller - Eisenkellerweg",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Eisenkeller - Eisenkellerweg",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Piazza Gries - Grieser Platz",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Piazza Gries - Grieser Platz",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via della Zecca - Münzbankweg",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Gasser",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Via della Zecca - Münzbankweg",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Palasport - Stadthalle",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Palasport - Stadthalle",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Glorenza - Glurnser Weg",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Glorenza - Glurnser-Weg",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Malles - Malserstr.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Malles - Malserstr.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Resia S. Pio X - Reschenstr. S. Pio X",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Resia S. Pio X - Reschenstr. S. Pio X",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Ponte Resia - Reschenbrücke",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Platteid",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Ponte Resia - Reschenbrücke",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Ex Magnesio",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Ex Magnesio",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Edison - Edison Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Edison - Edison Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Fiera - Messe",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Fiera - Messe",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Parcheggio FERCAM - FERCAM Parkplatz",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Parcheggio FERCAM - FERCAM Parkplatz",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Einstein - Einstein Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "S. Giorgio - St. Georg",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Via Einstein - Einstein Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Aeroporto - Flughafen",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Aeroporto - Flughafen",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Johann Kravogl - Johann Kravogl Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Johann Kravogl - Johann Kravogl Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Palaonda - Eiswelle",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Palaonda - Eiswelle",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Pietro Gobetti - Pietro Gobetti Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Pietro Gobetti - Pietro Gobetti Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Acciaierie - Stahlwerke",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Palade - Gampenstr.",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "via Ortles - Ortlerstr.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Barletta - Barletta Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Barletta - Barletta Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Bari - Bari Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Parco delle Semirurali - Semirurali Park",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "S. Maria in Augia - Maria in der Au",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Montecassino - Montecassino Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Udine - Udine Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Milano - Mailandstr.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Parcheggio Gampen - Gampenparkplatz",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Via Aosta - Aosta Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Piazza Matteotti - Matteotti Platz",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Torino - Turinstr.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Firenze - Florenzerstr.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Regina Pacis",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Palermo - Palermo Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Scuola S. F. Neri - S. F. Neri Schule",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Cagliari - Cagliari Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Alessandria - Alessandria Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Piacenza - Piacenza Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Cermes - Tschermserweg",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Via Sassari alla Torre - Sassari Str. alla Torre",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Parma - Parma Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "via Alto Adige 1 - Suedtiroler Str. 1",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Bivio S. Genesio - Abzw. Jenesien",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Bivio S. Genesio - Abzw. Jenesien",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Ponte S. Antonio - St. Anton Brücke",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Ponte S. Antonio - St. Anton Brücke",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Funivia S. Genesio - Seilbahn Jenesien",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Lama Bolzano",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Cermes - Tschermserweg",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Lama Bolzano",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "via Giotto - Giotto Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "via Keplero- Kepler Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "via Einstein 1 - Einstein Str. 1",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Ex Alumix",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Ex Alumix",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "IVECO",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Siemens - Siemens Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Siemens - Siemens Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Grassau - Grassauerstr.",
+    "name_long": "Cermes - Tscherms"
+  },
+  {
+    "name_short": "Via Lancia SEAB - Lancia Str. SEAB",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Ponte Roma - Rombrücke",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Lancia SEAB - Lancia Str. SEAB",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Grassau - Grassauerstr.",
+    "name_long": "Cermes - Tscherms"
+  },
+  {
+    "name_short": "Via Castel Flavon - Kuepachweg",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Parcheggio Bolzano Centro - Parkhaus Bozen Mitte",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Macello Loacker - Schlachthofstr. Loacker",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Cineplexx",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Mayr Nusser - Mayr Nusser Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Funivia del Colle - Kohlerer Seilbahn",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Ponte Campiglio - Kampillerbrücke",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Carabinieri",
+    "name_long": "Cermes - Tscherms"
+  },
+  {
+    "name_short": "Mag. Generali - Allgemeines Lagerhaus",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "via Macello ex Gorio - Schlachthofstr. ex Gorio",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Canonico Michael Gamper - Kanonikus Michael Gamper Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Canonico Michael Gamper - Kanonikus Michael Gamper Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "S. Maria in Augia - Maria in der Au",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Parco delle Semirurali - Semirurali Park",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Gaismair - Gaismair Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Gaismair - Gaismair Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Cimitero di Bronzolo - Friedhof Branzoll",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Via Ortles - Ortlerstr.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Carabinieri",
+    "name_long": "Cermes - Tscherms"
+  },
+  {
+    "name_short": "Via Ortles - Ortlerstr.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Casanova - Kaiserau",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Casanova - Kaiserau",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Casanova - Kaiserau",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Don Narciso Sordo - Don Narciso Sordo Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Firmian",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Monte Leone - Lebenbergerstr.",
+    "name_long": "Marlengo - Marling"
+  },
+  {
+    "name_short": "Via Monte Leone - Lebenbergerstr.",
+    "name_long": "Marlengo - Marling"
+  },
+  {
+    "name_short": "Meranarena",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Cavour - Cavour Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Weggenstein - Weggenstein Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via S. Osvaldo - Oswaldweg",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Beato Arrigo - Selig Heinrich Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via S. Antonio - St. Anton Str.",
+    "name_long": "Renon - Ritten"
+  },
+  {
+    "name_short": "Castel Roncolo - Runkelstein",
+    "name_long": "Renon - Ritten"
+  },
+  {
+    "name_short": "Piazza Verdi - Verdi Platz",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Piazza Verdi - Verdi Platz",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Meranarena",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Ponte Druso - Drususbrücke",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Ponte Druso - Drususbrücke",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Caserma Carabinieri - Carabinieri Kaserne",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Caserma Carabinieri - Carabinieri Kaserne",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Vicenza - Vicenza Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Vicenza - Vicenza Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Funivia S. Genesio - Seilbahn Jenesien",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "via Avogadro - Avogadro Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Casa di Riposo - Altersheim",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Galileo",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Polizia Municipale - Stadtpolizei",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "TIS",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Vigili del Fuoco - Feuerwehr",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Vigili del Fuoco - Feuerwehr",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Duca d'Aosta - Duca D'Aosta Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Piani di Mezzo - Bozner Boden Mitterweg",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Ponte Campiglio - Kampillerbrücke",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "via Macello ex Gorio - Schlachthofstr. ex Gorio",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "via C. Weinegg 2 - Weinegg Str. 2",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "via Palade 1 - Gampenstr. 1 DA ELIMINARE",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Passeggiata dei Castani - Köstenweg",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Del Ronco - Neubruchweg",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Del Ronco - Neubruchweg",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Montecassino - Montecassino Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Scuola Max Valier - Max Valier Schule",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Scuola Max Valier - Max Valier Schule",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Alessandria - Alessandria Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Sassari alla Torre - Sassari Str. alla Torre",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "TIS",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Michael Pacher - Michael Pacher Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Terme  - Thermen",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Bivio Via Volta - Abzw. Voltastr.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Bivio Via Volta - Abzw. Voltastr.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Garage SASA",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Lungodegenti Firmian - Langzeitkranke Firmian",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Lungodegenti Firmian - Langzeitkranke Firmian",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Duca d'Aosta - Duca D'Aosta Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Piazza Teatro - Theaterplatz",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "via S. Giacomo 2 (cap. 4) - St. Jakob Str. 2   DA ELIMINARE",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Via Ospedale - Spitalgasse",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Stazione Bolzano - Bhf Bozen",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Stazione Ponte Adige - Bhf Sigmundskron",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Stazione Ponte Adige - Bhf Sigmundskron",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Stazione Merano - Bhf Meran",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via degli Artigiani - Handwerkerstr.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Piazza Teatro - Theaterplatz",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Kampill Center",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "S. Vito - St. Veit",
+    "name_long": "Cornedo all`Isarco - Karneid"
+  },
+  {
+    "name_short": "Stroblwiese",
+    "name_long": "Cornedo all`Isarco - Karneid"
+  },
+  {
+    "name_short": "Stroblwiese",
+    "name_long": "Cornedo all`Isarco - Karneid"
+  },
+  {
+    "name_short": "Cardano zona Art. - Kardaun Handwerkerz.",
+    "name_long": "Cornedo all`Isarco - Karneid"
+  },
+  {
+    "name_short": "ZONA PRODUTTIVA CARDANO - GEWERBEGEBIET KARDAUN",
+    "name_long": "Cornedo all`Isarco - Karneid"
+  },
+  {
+    "name_short": "Cardano zona Art. - Kardaun Handwerkerz.",
+    "name_long": "Cornedo all`Isarco - Karneid"
+  },
+  {
+    "name_short": "ZONA PRODUTTIVA CARDANO - GEWERBEGEBIET KARDAUN",
+    "name_long": "Cornedo all`Isarco - Karneid"
+  },
+  {
+    "name_short": "Mila Milkon",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "S. Vito - St. Veit",
+    "name_long": "Cornedo all`Isarco - Karneid"
+  },
+  {
+    "name_short": "Via Alpini - Alpini Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Alpini - Alpini Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Goethe - Goethe Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Goethe - Goethe Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Fonte S. Martino - Martinsbrunn",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Quarazze - Gratsch",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Quarazze - Gratsch",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Karl Wolf  - Karl Wolf Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Karl Wolf  - Karl Wolf Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Mozart - Mozart Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Mozart - Mozart Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Donizetti - Donizetti Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Donizetti - Donizetti Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Centro Commerciale - Einkaufszentrum",
+    "name_long": "Lagundo - Algund"
+  },
+  {
+    "name_short": "Centro Commerciale - Einkaufszentrum",
+    "name_long": "Lagundo - Algund"
+  },
+  {
+    "name_short": "Foresta - Forst",
+    "name_long": "Lagundo - Algund"
+  },
+  {
+    "name_short": "Parcheggio - Parkplatz",
+    "name_long": "Parcines - Partschins"
+  },
+  {
+    "name_short": "via Noldin - Noldin Str.",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "via Noldin - Noldin Str.",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Tel Ponte - Töll Brücke",
+    "name_long": "Parcines - Partschins"
+  },
+  {
+    "name_short": "Tel Ponte - Töll Brücke",
+    "name_long": "Parcines - Partschins"
+  },
+  {
+    "name_short": "Chiusa Tel - Schleuse Töll",
+    "name_long": "Parcines - Partschins"
+  },
+  {
+    "name_short": "Chiusa Tel - Schleuse Töll",
+    "name_long": "Parcines - Partschins"
+  },
+  {
+    "name_short": "Bivio Plars di Sopra - Abzw. Oberplars",
+    "name_long": "Lagundo - Algund"
+  },
+  {
+    "name_short": "Bivio Plars di Sopra - Abzw. Oberplars",
+    "name_long": "Lagundo - Algund"
+  },
+  {
+    "name_short": "Plars di mezzo - Mitterplars",
+    "name_long": "Lagundo - Algund"
+  },
+  {
+    "name_short": "Plars di mezzo - Mitterplars",
+    "name_long": "Lagundo - Algund"
+  },
+  {
+    "name_short": "Maratscher",
+    "name_long": "Lagundo - Algund"
+  },
+  {
+    "name_short": "Maratscher",
+    "name_long": "Lagundo - Algund"
+  },
+  {
+    "name_short": "Seggiovia Velloi - Sessellift Vellau",
+    "name_long": "Lagundo - Algund"
+  },
+  {
+    "name_short": "Seggiovia Velloi - Sessellift Vellau",
+    "name_long": "Lagundo - Algund"
+  },
+  {
+    "name_short": "Municipio - Rathaus",
+    "name_long": "Lagundo - Algund"
+  },
+  {
+    "name_short": "Municipio - Rathaus",
+    "name_long": "Lagundo - Algund"
+  },
+  {
+    "name_short": "Via Mair im Korn - Mair im Korn Str.",
+    "name_long": "Lagundo - Algund"
+  },
+  {
+    "name_short": "Via Mair im Korn - Mair im Korn Str.",
+    "name_long": "Lagundo - Algund"
+  },
+  {
+    "name_short": "Stazione Marlengo - Bhf Marling",
+    "name_long": "Marlengo - Marling"
+  },
+  {
+    "name_short": "Steindl",
+    "name_long": "Marlengo - Marling"
+  },
+  {
+    "name_short": "Steindl",
+    "name_long": "Marlengo - Marling"
+  },
+  {
+    "name_short": "Paese - Dorf",
+    "name_long": "Marlengo - Marling"
+  },
+  {
+    "name_short": "Paese - Dorf",
+    "name_long": "Marlengo - Marling"
+  },
+  {
+    "name_short": "Cantina di Marlengo - Kellerei Marling",
+    "name_long": "Marlengo - Marling"
+  },
+  {
+    "name_short": "Cantina di Marlengo - Kellerei Marling",
+    "name_long": "Marlengo - Marling"
+  },
+  {
+    "name_short": "S. Maria Assunta - Maria Himmelfahrt",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "COMBI",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "COMBI",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Foro Boario  - Viehmarktstr.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Foro Boario  - Viehmarktstr.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Cimitero - Friedhof",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Cimitero - Friedhof",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via S. Giuseppe  - St. Josef Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via S. Giuseppe  - St. Josef Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via IV Novembre - 4. November Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "via IV Novembre - 4. November Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Kaiserhof",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Kaiserhof",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Otto Huber - Otto Huber Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Otto Huber - Otto Huber Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Edelweiss",
+    "name_long": "Parcines - Partschins"
+  },
+  {
+    "name_short": "Via S. Francesco - St. Franziskus Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Ospedale Vecchio - Altes Krankenhaus",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Parcheggio Karl Wolf - Karl Wolf Parkplatz",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Parcheggio Karl Wolf - Karl Wolf Parkplatz",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Leopardi - Leopardi Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Scuola Enrico Toti - Enrico-Toti-Schule",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Wolkenstein - Wolkenstein Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Luis Zuegg - Luis Zuegg Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Marlengo - Marlingerstr.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Rione Marlengo - Marlinger Viertel",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Manzoni - Manzoni Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Innerhofer - Innerhofer Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "via Grabmayr - Grabmayr Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Parini - Parini Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Astoria",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via dei Campi - Feldweg",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Fink - Finkweg",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Pienzenau - Pienzenauweg",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Pienzenau - Pienzenauweg",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Tonner",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Stazione Merano - Bhf Meran",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Andreas Hofer - Andreas Hofer Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Andreas Hofer - Andreas Hofer Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "König Laurin",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Cassa di Risparmio - Sparkassenstr.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Cassa di Risparmio - Sparkassenstr.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Piazza della Rena - Sandplatz",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Piazza della Rena - Sandplatz",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Plankenstein",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Plankenstein",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Bivio Via Winkel - Abzw. Winkelweg",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Bivio Via Winkel - Abzw. Winkelweg",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Clinica S. Anna - St.-Anna-Klinik",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Clinica S. Anna - St.-Anna-Klinik",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Parco Schiller - Schillerpark",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Parco Schiller - Schillerpark",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Piazza Fontana - Brunnenplatz",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Piazza Fontana - Brunnenplatz",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Villa Maria",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Asilo Maia Alta - Kindergarten Obermais",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "via Virgilio 2 - Vergil Str. 2  DA ELIMINARE",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Lazago - Lazag",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Rundegg",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Ivigna - Ifingerstr.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Ivigna - Ifingerstr.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Planta - Plantastr.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Ponte Rametz - Rametz Brücke",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Bivio Avelengo - Abzw. Hafling",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Bivio Avelengo - Abzw. Hafling",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "via San Giuseppe 2 - St. Josef Str. 2 DA ELIMINARE",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Castel Goiano - Schloß Goyen",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Castel Goiano - Schloß Goyen",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Eremita - Einsiedler",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Eremita - Einsiedler",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Funivie Merano 2000 - Bergbahnen Meran 2000",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Schwoager",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Schwoager",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "S.Caterina - St. Kathrein",
+    "name_long": "Avelengo - Hafling"
+  },
+  {
+    "name_short": "S.Caterina - St. Kathrein",
+    "name_long": "Avelengo - Hafling"
+  },
+  {
+    "name_short": "Paese - Dorf",
+    "name_long": "Avelengo - Hafling"
+  },
+  {
+    "name_short": "Parcheggio Nusser - Parkplatz Nusser",
+    "name_long": "Avelengo - Hafling"
+  },
+  {
+    "name_short": "Parcheggio Nusser - Parkplatz Nusser",
+    "name_long": "Avelengo - Hafling"
+  },
+  {
+    "name_short": "Avelengo di sopra - Oberdorf",
+    "name_long": "Avelengo - Hafling"
+  },
+  {
+    "name_short": "Avelengo di sopra - Oberdorf",
+    "name_long": "Avelengo - Hafling"
+  },
+  {
+    "name_short": "Viertl",
+    "name_long": "Avelengo - Hafling"
+  },
+  {
+    "name_short": "Viertl",
+    "name_long": "Avelengo - Hafling"
+  },
+  {
+    "name_short": "Bergheim",
+    "name_long": "Avelengo - Hafling"
+  },
+  {
+    "name_short": "Bergheim",
+    "name_long": "Avelengo - Hafling"
+  },
+  {
+    "name_short": "Tommenknott",
+    "name_long": "Avelengo - Hafling"
+  },
+  {
+    "name_short": "Tommenknott",
+    "name_long": "Avelengo - Hafling"
+  },
+  {
+    "name_short": "Villa Schäfer",
+    "name_long": "Avelengo - Hafling"
+  },
+  {
+    "name_short": "Villa Schäfer",
+    "name_long": "Avelengo - Hafling"
+  },
+  {
+    "name_short": "Falzeben",
+    "name_long": "Avelengo - Hafling"
+  },
+  {
+    "name_short": "Campo Sportivo Lahn - Sportplatz Lahn",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Poligono - Schießstand",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Castel Gatto  - Katzensteinstr.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Förstler",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Depuratore Sinigo - Kläranlage Sinich",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Zona artigianale Sinigo - Handwerkerzone Sinich",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "S. Anna - St. Anna",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Scuole Lana - Zollschule Lana",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Scuole Lana - Zollschule Lana",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Narano - Naraun",
+    "name_long": "Tesimo - Tisens"
+  },
+  {
+    "name_short": "Zona artigianale Sinigo - Handwerkerzone Sinich",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Narano - Naraun",
+    "name_long": "Tesimo - Tisens"
+  },
+  {
+    "name_short": "Longnui",
+    "name_long": "Tesimo - Tisens"
+  },
+  {
+    "name_short": "Longnui",
+    "name_long": "Tesimo - Tisens"
+  },
+  {
+    "name_short": "Piazza Paese - Dorfplatz",
+    "name_long": "Tesimo - Tisens"
+  },
+  {
+    "name_short": "Piazza Paese - Dorfplatz",
+    "name_long": "Tesimo - Tisens"
+  },
+  {
+    "name_short": "Prissiano - Prissian",
+    "name_long": "Tesimo - Tisens"
+  },
+  {
+    "name_short": "SunEdison",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "SunEdison",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Enrico Fermi - Enrico Fermi Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Enrico Fermi - Enrico Fermi Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Enrico Tellini - Enrico Tellini Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Enrico Tellini - Enrico Tellini Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "P. Vittorio Veneto - Vittorio Veneto Platz",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "P. Vittorio Veneto - Vittorio Veneto Platz",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Ponte Mangione - Mangione Brücke",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Ponte Mangione - Mangione Brücke",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Latteria Sociale Merano - Milchhof Meran",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Latteria Sociale Merano - Milchhof Meran",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Piazza S. Vigilio - Vigilplatz",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Piazza S. Vigilio - Vigilplatz",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Fornaio - Bäckergasse",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Fornaio - Bäckergasse",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Hagen - Hagengasse",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Hagen - Hagengasse",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Piazza Kofler - Kofler Platz",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Scuola Negrelli - Negrelli Schule",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Scuola Negrelli - Negrelli Schule",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Matteotti - Matteotti Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Matteotti - Matteotti Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "A.S.L. - Sanitätseinheit",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Petrarca  - Petrarca Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Bivio Tirolo - Abzw. Tirol",
+    "name_long": "Tirolo - Tirol"
+  },
+  {
+    "name_short": "Bivio Tirolo - Abzw. Tirol",
+    "name_long": "Tirolo - Tirol"
+  },
+  {
+    "name_short": "Monte S. Zeno - Zenoberg",
+    "name_long": "Tirolo - Tirol"
+  },
+  {
+    "name_short": "Monte S. Zeno - Zenoberg",
+    "name_long": "Tirolo - Tirol"
+  },
+  {
+    "name_short": "Leiterhof",
+    "name_long": "Tirolo - Tirol"
+  },
+  {
+    "name_short": "Lido - Schwimmbad",
+    "name_long": "Tirolo - Tirol"
+  },
+  {
+    "name_short": "Lido - Schwimmbad",
+    "name_long": "Tirolo - Tirol"
+  },
+  {
+    "name_short": "Minigolf",
+    "name_long": "Tirolo - Tirol"
+  },
+  {
+    "name_short": "Minigolf",
+    "name_long": "Tirolo - Tirol"
+  },
+  {
+    "name_short": "Distributore - Tankstelle",
+    "name_long": "Tirolo - Tirol"
+  },
+  {
+    "name_short": "Autostazione - Busbahnhof",
+    "name_long": "Tirolo - Tirol"
+  },
+  {
+    "name_short": "Tirolo Croce - Tiroler Kreuz",
+    "name_long": "Tirolo - Tirol"
+  },
+  {
+    "name_short": "Lechner",
+    "name_long": "Tirolo - Tirol"
+  },
+  {
+    "name_short": "Pamer Kreuz",
+    "name_long": "Tirolo - Tirol"
+  },
+  {
+    "name_short": "Funivia Muta - Seilbahn Hochmuth",
+    "name_long": "Tirolo - Tirol"
+  },
+  {
+    "name_short": "Mühlanger",
+    "name_long": "Tirolo - Tirol"
+  },
+  {
+    "name_short": "Scuole - Schulen",
+    "name_long": "Tirolo - Tirol"
+  },
+  {
+    "name_short": "Scuole - Schulen",
+    "name_long": "Tirolo - Tirol"
+  },
+  {
+    "name_short": "Autostazione - Busbahnhof",
+    "name_long": "Tirolo - Tirol"
+  },
+  {
+    "name_short": "Lido - Schwimmbad",
+    "name_long": "Tirolo - Tirol"
+  },
+  {
+    "name_short": "Salita Tirolo - Tirolersteig",
+    "name_long": "Tirolo - Tirol"
+  },
+  {
+    "name_short": "Via Planta - Plantastr.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Azienda Energetica - Etschwerke",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Azienda Energetica - Etschwerke",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Mainardo - Meinhardstr.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Trauttmansdorff",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Campo Sportivo Lahn - Sportplatz Lahn",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Trauttmansdorff",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Parco di Maia - Maiapark",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Lorenz Böhler",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Mayr Nusser - Mayr Nusser Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Orazio Gaigher - Orazio Gaigher Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Carlo Abarth - Carlo Abarth Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Carlo Abarth - Carlo Abarth Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Carlo Abarth - Carlo Abarth Str.",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Borgo Andreina",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Borgo Andreina",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Molino Pobitzer - Pobitzer-Mühle",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Molino Pobitzer - Pobitzer-Mühle",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Scuole - Schulen",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Scuola Zuegg - Zuegg Schule",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Scuola Zuegg - Zuegg Schule",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Max Valier - Max Valier Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Max Valier - Max Valier Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Zipperle",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Zipperle",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Fabio Filzi - Fabio Filzi Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Fabio Filzi - Fabio Filzi Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Raut",
+    "name_long": "Postal - Burgstall"
+  },
+  {
+    "name_short": "Raut",
+    "name_long": "Postal - Burgstall"
+  },
+  {
+    "name_short": "Via Pfefferle - Pfefferleweg",
+    "name_long": "Postal - Burgstall"
+  },
+  {
+    "name_short": "Via Pfefferle - Pfefferleweg",
+    "name_long": "Postal - Burgstall"
+  },
+  {
+    "name_short": "Bivio Lana - Abzw. Lana",
+    "name_long": "Postal - Burgstall"
+  },
+  {
+    "name_short": "Bivio Lana - Abzw. Lana",
+    "name_long": "Postal - Burgstall"
+  },
+  {
+    "name_short": "Piazza Rena - Sandplatz",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Caserme - Kasernenstr.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Caserme - Kasernenstr.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via dei Frutteti - Angerweg",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via dei Frutteti - Angerweg",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Depuratore Sinigo - Kläranlage Sinich",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Piazza Kofler - Kofler Platz",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Stazione Maia Bassa - Bhf Untermais",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Stazione Maia Bassa - Bhf Untermais",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Piave - Piave Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Piave - Piave Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Rundegg",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Asilo Maia Alta - Kindergarten Obermais",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Parco Marlengo - Marlingerpark",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "König Laurin",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "via Schaffer 1 - Schaffer Str. 1",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Hirzer - Hirzerstr.",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Via Leonardo da Vinci - Leonardo da Vinci Str.",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Tennis",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Piazza Tribus - Tribus Platz",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Zona Industriale Lana 1 - Industriezone Lana 1",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Zona Industriale Lana 2 - Industriezone Lana 2",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Zona Industriale Lana 3 - Industriezone Lana 3",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Stazione - Bahnhof",
+    "name_long": "Lagundo - Algund"
+  },
+  {
+    "name_short": "Stazione - Bahnhof",
+    "name_long": "Lagundo - Algund"
+  },
+  {
+    "name_short": "Bodner",
+    "name_long": "Cornedo all`Isarco - Karneid"
+  },
+  {
+    "name_short": "Bodner",
+    "name_long": "Cornedo all`Isarco - Karneid"
+  },
+  {
+    "name_short": "Bivio Collepietra - Abzw. Steinegg",
+    "name_long": "Cornedo all`Isarco - Karneid"
+  },
+  {
+    "name_short": "Bivio Collepietra - Abzw. Steinegg",
+    "name_long": "Cornedo all`Isarco - Karneid"
+  },
+  {
+    "name_short": "Lido - Schwimmbad",
+    "name_long": "Tirolo - Tirol"
+  },
+  {
+    "name_short": "Leiterhof",
+    "name_long": "Tirolo - Tirol"
+  },
+  {
+    "name_short": "Distributore - Tankstelle",
+    "name_long": "Avelengo - Hafling"
+  },
+  {
+    "name_short": "Via Verande - Verandenstr.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Merano - Meranerstr.",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Via Merano - Meranerstr.",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Via Nazionale - Reichstr.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Nazionale - Reichstr.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Convento dei Cappuccini - Kapuzinerkloster",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Convento dei Cappuccini - Kapuzinerkloster",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Förstler",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Chiesa - Kirche",
+    "name_long": "Nalles - Nals"
+  },
+  {
+    "name_short": "Bivio Ospedale - Abzw. Krankenhaus",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Zona produttiva Vurza - Handwerkerzone Wurzer",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Bivio La Costa - Abzw. Seit",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Bivio Merano - Meraner Kreuzung",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Bivio Merano - Meraner Kreuzung",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Vigili del Fuoco - Feuerwehr",
+    "name_long": "Cornedo all`Isarco - Karneid"
+  },
+  {
+    "name_short": "Vigili del Fuoco - Feuerwehr",
+    "name_long": "Cornedo all`Isarco - Karneid"
+  },
+  {
+    "name_short": "Paese - Dorf",
+    "name_long": "Cornedo all`Isarco - Karneid"
+  },
+  {
+    "name_short": "Paese - Dorf",
+    "name_long": "Cornedo all`Isarco - Karneid"
+  },
+  {
+    "name_short": "S. Vito - St. Veit",
+    "name_long": "Cornedo all`Isarco - Karneid"
+  },
+  {
+    "name_short": "Via Schwanburg - Schwanburgstr.",
+    "name_long": "Nalles - Nals"
+  },
+  {
+    "name_short": "Via Schwanburg - Schwanburgstr.",
+    "name_long": "Nalles - Nals"
+  },
+  {
+    "name_short": "Vigili del Fuoco - Feuerwehr",
+    "name_long": "Nalles - Nals"
+  },
+  {
+    "name_short": "Via Giuseppe di Vittorio - Giuseppe Di Vittorio Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Braille - Braille Str.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Acciaierie - Stahlwerke",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Rotonda Via Lancia - Kreisverkehr Lanciastr.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Rotonda Via Lancia - Kreisverkehr Lanciastr.",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Passaggio a Livello Marlengo - Bahnhübergang Marling",
+    "name_long": "Marlengo - Marling"
+  },
+  {
+    "name_short": "Via Canonico Gamper - Kanonikus Gamper Str.",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Campi Resia - Reschensportplätze",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Zona Industriale Lana 1 - Industriezone Lana 1",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Zona Industriale Lana 3 - Industriezone Lana 3",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Zona Industriale Lana 2 - Industriezone Lana 2",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Via Aquila Nera - Schwarz Adler Str.",
+    "name_long": "Bronzolo - Branzoll"
+  },
+  {
+    "name_short": "Stazione - Bahnhof",
+    "name_long": "Bronzolo - Branzoll"
+  },
+  {
+    "name_short": "Ponte di Vadena - Pfattenbrücke",
+    "name_long": "Vadena - Pfatten"
+  },
+  {
+    "name_short": "Via Sottomonte - Unterbergstr.",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Via Dante - Dante Str.",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Via Dante - Dante Str.",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Via Sottomonte - Unterbergstr.",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Bivio La Costa - Abzw. Seit",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Masetta - Wachsbleiche",
+    "name_long": "Vadena - Pfatten"
+  },
+  {
+    "name_short": "Mover - Mairhof",
+    "name_long": "Vadena - Pfatten"
+  },
+  {
+    "name_short": "Masetta - Wachsbleiche",
+    "name_long": "Vadena - Pfatten"
+  },
+  {
+    "name_short": "Stadio Europa - Europa Stadium",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Stadio Europa - Europa Stadium",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Ponte Rezia - Rätiabrücke",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "via Laurin 3 - Laurin Str. 3 DA ELIMINARE",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Mainardo - Meinhardstr.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Zona produttiva Avelengo - Gewerbegebiet Hafling",
+    "name_long": "Avelengo - Hafling"
+  },
+  {
+    "name_short": "Zona produttiva Avelengo - Gewerbegebiet Hafling",
+    "name_long": "Avelengo - Hafling"
+  },
+  {
+    "name_short": "Kalkgruber",
+    "name_long": "Tirolo - Tirol"
+  },
+  {
+    "name_short": "via Aica 2 - Aichweg 2",
+    "name_long": "Tirolo - Tirol"
+  },
+  {
+    "name_short": "S. Anna - St. Anna",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Vicolo Raffein - Raffeingasse",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Via Villa - Villenerweg",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Burgwies",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Via Lorenzer - Lorenzerweg",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Via Campi - Feldweg",
+    "name_long": "Marlengo - Marling"
+  },
+  {
+    "name_short": "Via Campi - Feldweg",
+    "name_long": "Marlengo - Marling"
+  },
+  {
+    "name_short": "Funivie Merano 2000 - Bergbahnen Meran 2000",
+    "name_long": "Avelengo - Hafling"
+  },
+  {
+    "name_short": "Funivie Merano 2000 - Bergbahnen Meran 2000",
+    "name_long": "Avelengo - Hafling"
+  },
+  {
+    "name_short": "Via Aldo Moro - Aldo Moro Str.",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Via degli Alpini - Alpini Str.",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Paese - Dorf",
+    "name_long": "Bronzolo - Branzoll"
+  },
+  {
+    "name_short": "Via Prantl - Prantlweg",
+    "name_long": "Postal - Burgstall"
+  },
+  {
+    "name_short": "Via Prantl - Prantlweg",
+    "name_long": "Postal - Burgstall"
+  },
+  {
+    "name_short": "Via Cappuccini - Kapuzinerstr.",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Via Cappuccini - Kapuzinerstr.",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Gnealer",
+    "name_long": "Rifiano - Riffian"
+  },
+  {
+    "name_short": "Hochegger",
+    "name_long": "Rifiano - Riffian"
+  },
+  {
+    "name_short": "Hochegger",
+    "name_long": "Rifiano - Riffian"
+  },
+  {
+    "name_short": "Vernurio - Vernuer",
+    "name_long": "Rifiano - Riffian"
+  },
+  {
+    "name_short": "Gnealer",
+    "name_long": "Rifiano - Riffian"
+  },
+  {
+    "name_short": "Lichtenburg",
+    "name_long": "Nalles - Nals"
+  },
+  {
+    "name_short": "Lichtenburg",
+    "name_long": "Nalles - Nals"
+  },
+  {
+    "name_short": "Asilo S. Pietro - Kindergarten St. Peter",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Bivio Mutlechner - Abzw. Mutlechner",
+    "name_long": "Caines - Kuens"
+  },
+  {
+    "name_short": "Via Hirzer - Hirzerstr.",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Ponte Adige - Sigmundskron",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Ponte Adige  - Sigmundskron",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Chiesetta S. Valentino - St. Valentinskirchlein",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "S. Anna - St. Anna",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Via Länd - Ländstr.",
+    "name_long": "Lana - Lana"
+  },
+  {
+    "name_short": "Filanda",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Via Andreas Hofer - Andreas Hofer Str.",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Cimitero - Friedhof",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Via Diaz - Diaz Str.",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Parco Marconi - Spielpark Marconi",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "via Goethe - Goethe Str.",
+    "name_long": "Laives - Leifers"
+  },
+  {
+    "name_short": "Paese - Dorf",
+    "name_long": "Vadena - Pfatten"
+  },
+  {
+    "name_short": "Via Thalguter - Thalguter Str.",
+    "name_long": "Lagundo - Algund"
+  },
+  {
+    "name_short": "Scuole - Schulen",
+    "name_long": "Lagundo - Algund"
+  },
+  {
+    "name_short": "via Scena 4 - Schennastr. 4 DA ELIMINARE",
+    "name_long": "Scena - Schenna"
+  },
+  {
+    "name_short": "Bivio Scena - Abzw. Schenna",
+    "name_long": "Scena - Schenna"
+  },
+  {
+    "name_short": "Mitterplatt",
+    "name_long": "Scena - Schenna"
+  },
+  {
+    "name_short": "via Scena 5 - Schennastr. 5  DA ELIMINARE",
+    "name_long": "Scena - Schenna"
+  },
+  {
+    "name_short": "via Scena 6 - Schennastr. 6  DA ELIMINARE",
+    "name_long": "Scena - Schenna"
+  },
+  {
+    "name_short": "Bivio Lido - Abzw. Schwimmbad",
+    "name_long": "Scena - Schenna"
+  },
+  {
+    "name_short": "via Scena 7 - Schennastr. 7  DA ELIMINARE",
+    "name_long": "Scena - Schenna"
+  },
+  {
+    "name_short": "Hotel Walter",
+    "name_long": "Scena - Schenna"
+  },
+  {
+    "name_short": "via Scena 8 - Schennastr. 8  DA ELIMINARE",
+    "name_long": "Scena - Schenna"
+  },
+  {
+    "name_short": "Tannerhof",
+    "name_long": "Scena - Schenna"
+  },
+  {
+    "name_short": "Paese - Dorf",
+    "name_long": "Scena - Schenna"
+  },
+  {
+    "name_short": "via Verdins 1 - Verdinsstr. 1  DA ELIMINARE",
+    "name_long": "Scena - Schenna"
+  },
+  {
+    "name_short": "via Verdins 1 - Verdinsstr. 1  DA ELIMINARE",
+    "name_long": "Scena - Schenna"
+  },
+  {
+    "name_short": "via Verdins 2 - Verdinsstr. 2  DA ELIMINARE",
+    "name_long": "Scena - Schenna"
+  },
+  {
+    "name_short": "via Verdins 2 - Verdinsstr. 2  DA ELIMINARE",
+    "name_long": "Scena - Schenna"
+  },
+  {
+    "name_short": "via Verdins 3 - Verdinsstr. 3  DA ELIMINARE",
+    "name_long": "Scena - Schenna"
+  },
+  {
+    "name_short": "via Verdins 3 - Verdinsstr. 3  DA ELIMINARE",
+    "name_long": "Scena - Schenna"
+  },
+  {
+    "name_short": "via Verdins 4 - Verdinsstr. 4  DA ELIMINARE",
+    "name_long": "Scena - Schenna"
+  },
+  {
+    "name_short": "via Verdins 4 - Verdinsstr. 4  DA ELIMINARE",
+    "name_long": "Scena - Schenna"
+  },
+  {
+    "name_short": "Verdines - Verdins",
+    "name_long": "Scena - Schenna"
+  },
+  {
+    "name_short": "via Verdins 5 - Verdinsstr. 5  DA ELIMINARE",
+    "name_long": "Scena - Schenna"
+  },
+  {
+    "name_short": "via Verdins 5 - Verdinsstr. 5  DA ELIMINARE",
+    "name_long": "Scena - Schenna"
+  },
+  {
+    "name_short": "Moser",
+    "name_long": "Marlengo - Marling"
+  },
+  {
+    "name_short": "Moser",
+    "name_long": "Marlengo - Marling"
+  },
+  {
+    "name_short": "Via Bellini - Bellini Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Via Bellini - Bellini Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "via Caines (Mutlechner) - Kuenserstr. (Mutlechner)",
+    "name_long": "Caines - Kuens"
+  },
+  {
+    "name_short": "Vigili del Fuoco - Feuerwehr",
+    "name_long": "Caines - Kuens"
+  },
+  {
+    "name_short": "Vigili del Fuoco - Feuerwehr",
+    "name_long": "Caines - Kuens"
+  },
+  {
+    "name_short": "via Caines (Sonnenhof) - Kuenserstr. (Sonnenhof)",
+    "name_long": "Caines - Kuens"
+  },
+  {
+    "name_short": "Ungericht",
+    "name_long": "Caines - Kuens"
+  },
+  {
+    "name_short": "Sonnenhof",
+    "name_long": "Caines - Kuens"
+  },
+  {
+    "name_short": "Apres Club",
+    "name_long": "Gargazzone - Gargazon"
+  },
+  {
+    "name_short": "Ungericht",
+    "name_long": "Caines - Kuens"
+  },
+  {
+    "name_short": "Via Merano Pircher - Meranerstr. Pircher",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Merano Pircher - Meranerstr. Pircher",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Merano Camping - Meranerstr. Camping",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Via Merano Camping - Meranerstr. Camping",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Bagni di zolfo - Schwefelbad",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Bagni di zolfo - Schwefelbad",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Zona Cactus - Kaktussiedlung",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Zona Cactus - Kaktussiedlung",
+    "name_long": "Bolzano - Bozen"
+  },
+  {
+    "name_short": "Scuole - Schulen",
+    "name_long": "Terlano - Terlan"
+  },
+  {
+    "name_short": "Zona sportiva Cermes - Sportzone Tscherms",
+    "name_long": "Cermes - Tscherms"
+  },
+  {
+    "name_short": "Scuole - Schulen",
+    "name_long": "Terlano - Terlan"
+  },
+  {
+    "name_short": "Chiusa - Klaus",
+    "name_long": "Terlano - Terlan"
+  },
+  {
+    "name_short": "Chiusa - Klaus",
+    "name_long": "Terlano - Terlan"
+  },
+  {
+    "name_short": "Scuole - Schulen",
+    "name_long": "Terlano - Terlan"
+  },
+  {
+    "name_short": "Scuole - Schulen",
+    "name_long": "Terlano - Terlan"
+  },
+  {
+    "name_short": "Novale di Sotto - Unterkreuth",
+    "name_long": "Terlano - Terlan"
+  },
+  {
+    "name_short": "Novale di Sotto - Unterkreuth",
+    "name_long": "Terlano - Terlan"
+  },
+  {
+    "name_short": "Rauhenbühel",
+    "name_long": "Terlano - Terlan"
+  },
+  {
+    "name_short": "Zona sportiva Cermes - Sportzone Tscherms",
+    "name_long": "Cermes - Tscherms"
+  },
+  {
+    "name_short": "Rauhenbühel",
+    "name_long": "Terlano - Terlan"
+  },
+  {
+    "name_short": "Schlemmer",
+    "name_long": "Terlano - Terlan"
+  },
+  {
+    "name_short": "Schlemmer",
+    "name_long": "Terlano - Terlan"
+  },
+  {
+    "name_short": "Bachau",
+    "name_long": "Terlano - Terlan"
+  },
+  {
+    "name_short": "Bachau",
+    "name_long": "Terlano - Terlan"
+  },
+  {
+    "name_short": "Paese - Dorf",
+    "name_long": "Terlano - Terlan"
+  },
+  {
+    "name_short": "Paese - Dorf",
+    "name_long": "Terlano - Terlan"
+  },
+  {
+    "name_short": "Funivia - Seilbahn",
+    "name_long": "Terlano - Terlan"
+  },
+  {
+    "name_short": "Berghütten",
+    "name_long": "Terlano - Terlan"
+  },
+  {
+    "name_short": "Berghütten",
+    "name_long": "Terlano - Terlan"
+  },
+  {
+    "name_short": "Zona produttiva Winkelau - Gewerbezone Winkelau",
+    "name_long": "Postal - Burgstall"
+  },
+  {
+    "name_short": "Zona produttiva Winkelau - Gewerbezone Winkelau",
+    "name_long": "Postal - Burgstall"
+  },
+  {
+    "name_short": "Zona produttiva Enzenberg - Gewerbezone Enzenberg",
+    "name_long": "Terlano - Terlan"
+  },
+  {
+    "name_short": "Zona produttiva Enzenberg - Gewerbezone Enzenberg",
+    "name_long": "Terlano - Terlan"
+  },
+  {
+    "name_short": "Piazza S. Urbano - St. Urban Platz",
+    "name_long": "Andriano - Andrian"
+  },
+  {
+    "name_short": "Via Nalles - Nalserstr.",
+    "name_long": "Terlano - Terlan"
+  },
+  {
+    "name_short": "Via Nalles - Nalserstr.",
+    "name_long": "Terlano - Terlan"
+  },
+  {
+    "name_short": "Nalles Lichtenburg - Nals Lichtenburg",
+    "name_long": "Nalles - Nals"
+  },
+  {
+    "name_short": "Nalles Lichtenburg - Nals Lichtenburg",
+    "name_long": "Nalles - Nals"
+  },
+  {
+    "name_short": "Vigili del Fuoco - Feuerwehr",
+    "name_long": "Nalles - Nals"
+  },
+  {
+    "name_short": "Paese - Dorf DA ELIMINARE",
+    "name_long": "Tirolo - Tirol"
+  },
+  {
+    "name_short": "Mühlanger",
+    "name_long": "Tirolo - Tirol"
+  },
+  {
+    "name_short": "Funivia Muta - Seilbahn Hochmuth",
+    "name_long": "Tirolo - Tirol"
+  },
+  {
+    "name_short": "Pamer Kreuz",
+    "name_long": "Tirolo - Tirol"
+  },
+  {
+    "name_short": "Lechner",
+    "name_long": "Tirolo - Tirol"
+  },
+  {
+    "name_short": "Aspmair",
+    "name_long": "Avelengo - Hafling"
+  },
+  {
+    "name_short": "Aspmair",
+    "name_long": "Avelengo - Hafling"
+  },
+  {
+    "name_short": "Reith",
+    "name_long": "Avelengo - Hafling"
+  },
+  {
+    "name_short": "Reith",
+    "name_long": "Avelengo - Hafling"
+  },
+  {
+    "name_short": "Egger",
+    "name_long": "Avelengo - Hafling"
+  },
+  {
+    "name_short": "Egger",
+    "name_long": "Avelengo - Hafling"
+  },
+  {
+    "name_short": "Verano - Vöran",
+    "name_long": "Verano - Voeran"
+  },
+  {
+    "name_short": "Verano - Vöran",
+    "name_long": "Verano - Voeran"
+  },
+  {
+    "name_short": "Obermathon",
+    "name_long": "Verano - Voeran"
+  },
+  {
+    "name_short": "Via S.Valentino  - St. Valentin Str.",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Obermathon",
+    "name_long": "Verano - Voeran"
+  },
+  {
+    "name_short": "Campo sportivo Verano - Sportplatz Vöran",
+    "name_long": "Verano - Voeran"
+  },
+  {
+    "name_short": "Grumser",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Grumser",
+    "name_long": "Merano - Meran"
+  },
+  {
+    "name_short": "Distributore - Tankstelle",
+    "name_long": "Avelengo - Hafling"
+  },
+  {
+    "name_short": "THALER",
+    "name_long": "Verano - Voeran"
+  },
+  {
+    "name_short": "THALER",
+    "name_long": "Verano - Voeran"
+  },
+  {
+    "name_short": "Edelweiss",
+    "name_long": "Parcines - Partschins"
+  },
+  {
+    "name_short": "Ponte di Vadena - Pfattenbrücke",
+    "name_long": "Vadena - Pfatten"
+  },
+  {
+    "name_short": "Vadena Nuova - Neupfatten",
+    "name_long": "Vadena - Pfatten"
+  },
+  {
+    "name_short": "Vadena Nuova - Neupfatten",
+    "name_long": "Vadena - Pfatten"
+  },
+  {
+    "name_short": "Paese - Dorf",
+    "name_long": "Bronzolo - Branzoll"
+  },
+  {
+    "name_short": "Paese - Dorf",
+    "name_long": "Bronzolo - Branzoll"
+  },
+  {
+    "name_short": "Birti",
+    "name_long": "Vadena - Pfatten"
+  },
+  {
+    "name_short": "Unterpazeider",
+    "name_long": "Marlengo - Marling"
+  },
+  {
+    "name_short": "Unterpazeider",
+    "name_long": "Marlengo - Marling"
+  },
+  {
+    "name_short": "Krautsamer",
+    "name_long": "Marlengo - Marling"
+  },
+  {
+    "name_short": "Krautsamer",
+    "name_long": "Marlengo - Marling"
+  },
+  {
+    "name_short": "Tiefacker",
+    "name_long": "Marlengo - Marling"
+  },
+  {
+    "name_short": "Tiefacker",
+    "name_long": "Marlengo - Marling"
+  },
+  {
+    "name_short": "Reber",
+    "name_long": "Marlengo - Marling"
+  },
+  {
+    "name_short": "Reber",
+    "name_long": "Marlengo - Marling"
+  },
+  {
+    "name_short": "Zona produttiva Cermes- Gewerbegebiet Tscherms",
+    "name_long": "Cermes - Tscherms"
+  },
+  {
+    "name_short": "Zona produttiva Cermes - Gewerbegebiet Tscherms",
+    "name_long": "Cermes - Tscherms"
+  },
+  {
+    "name_short": "Wiesenhof",
+    "name_long": "Lagundo - Algund"
+  },
+  {
+    "name_short": "Wiesenhof",
+    "name_long": "Lagundo - Algund"
+  },
+  {
+    "name_short": "Acquaviva - Ackpfeif",
+    "name_long": "Lana - Lana"
+  }
+]

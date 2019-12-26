@@ -1,10 +1,16 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Mission from '../Components/Mission';
 
 const MissionScreen = props => {
   return (
     <View>
-    <Text>This is the Mission Screen</Text>
+    <Mission
+        onTransport={()=>props.navigation.navigate('MissionTransport')}
+        onEnvironment={()=>props.navigation.navigate('MissionEnvironment')}
+        onLocation={()=>props.navigation.navigate('MissionLocation')}
+        onRestaurant={()=>props.navigation.navigate('MissionRestaurant')}
+    />
     </View>
   )
 }

@@ -8,6 +8,8 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "convert-csv-to-json": "0.0.15",
+    "csvtojson": "^2.0.10",
     "expo": "~36.0.0",
     "react": "~16.9.0",
     "react-dom": "~16.9.0",
@@ -17,7 +19,8 @@
     "react-native-web": "~0.11.7",
     "react-navigation": "^4.0.10",
     "react-navigation-stack": "^1.10.3",
-    "react-navigation-tabs": "^2.6.2"
+    "react-navigation-tabs": "^2.6.2",
+    "unstated": "^2.1.1"
   },
   "devDependencies": {
     "babel-preset-expo": "~8.0.0",

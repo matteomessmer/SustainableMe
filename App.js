@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import {Provider} from 'unstated';
 import { createStackNavigator } from 'react-navigation-stack';
 import { createAppContainer } from 'react-navigation';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
@@ -50,7 +50,10 @@ const AppContainer = createAppContainer(TabNavigator);
 export default class App extends React.Component {
   render() {
     return (
-        <AppContainer />
+        <Provider>
+          <AppContainer
+          />
+        </Provider>
     );
   }
 }
