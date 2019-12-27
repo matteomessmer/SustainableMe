@@ -47,5 +47,10 @@ export const styles = StyleSheet.create({
         marginBottom: 20,
         justifyContent: 'center',
         alignItems:'center'
+    },
+    barCodeScanner: {
+        flex: 1,
+        flexDirection: 'column',
+        justifyContent: 'flex-end'
     }
 });

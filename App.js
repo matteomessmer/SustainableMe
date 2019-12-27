@@ -16,6 +16,7 @@ import MissionScreen from './Screens/MissionScreen.js';
 import LoginScreen from './Screens/LoginScreen.js';
 import LeaderBoardScreen from './Screens/LeaderboardScreen';
 import ProfileScreen from './Screens/ProfileScreen';
+import QR_CODE_Screen from './Screens/QR_CODE_Screen';
 
 const routes = {
   Login: LoginScreen,
@@ -27,6 +28,7 @@ const routes = {
   MissionTransport: MissionTransportScreen,
   MissionCompleted: MissionCompletedScreen,
   Mission: MissionScreen,
+  QR_CODE: QR_CODE_Screen,
 
 };
 
