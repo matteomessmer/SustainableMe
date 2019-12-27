@@ -25,7 +25,7 @@ export default class MissionTransport extends React.Component {
         this.setState({routes: theRoutes[0]})
         //console.log(this.state.routes);
 
-    }
+    };
 
     render() {
 
@@ -33,7 +33,7 @@ export default class MissionTransport extends React.Component {
             <ScrollView>
                 <View style={styles.logoComponent}>
                     <Image
-                        source={require('./bike.png')}
+                        source={require('../images/bike.png')}
                         style={styles.logoIcon}
                     />
                     <Text style={styles.logoTitle}>TRANSPORT MISSION</Text>
@@ -54,20 +54,24 @@ export default class MissionTransport extends React.Component {
                 <Button
                     onPress={() =>
                         this.fetchRoutes()
-
                     }
                     title={'Calculate'}
                 />
                 {this.state.routes ?
                     <ScrollView>
-                    <UserInstructions
-                        routes={this.state.routes}
-                    />
+                        <UserInstructions
+                            routes={this.state.routes}
+                        />
+                        <Button
+                            title={'Scan Code'}
+                            onPress={()=>this.props.onQR()}
+                        />
                     </ScrollView>
                     : null
 
 
                 }
+
             </ScrollView>
         )
     }

@@ -2,15 +2,16 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import MissionTransport from "../Components/MissionTransport";
 import {Subscribe} from "unstated";
-import FermateContainer from '../Container/FermateContainer';
+import TransportationContainer from '../Container/TransportationContainer';
 
 const MissionTransportScreen = props => {
   return (
     <View>
-      <Subscribe to={[FermateContainer]}>
-        {fermatecontainer => (
+      <Subscribe to={[TransportationContainer]}>
+        {transportcontainer => (
             <MissionTransport
-              fermate={(origin, destination)=>fermatecontainer.calculateRoute(origin, destination)}
+              fermate={(origin, destination)=>transportcontainer.calculateRoute(origin, destination)}
+              onQR={()=>props.navigation.navigate('QR_CODE')}
             />
         )}
       </Subscribe>

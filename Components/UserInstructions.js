@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, View, ScrollView,Button } from 'react-native';
 import { styles} from '../styles.js';
-import InstructionList from './InstructionList';
+import StepsInstruction from './StepsInstruction';
 
 export default class UserInstructions extends React.Component{
     constructor(props) {
@@ -19,7 +19,7 @@ export default class UserInstructions extends React.Component{
                     <Text>Distance: {instruct.distance}</Text>
                     <Text>Duration: {instruct.duration}</Text>
                     <Text>Departure time: {instruct.departure}</Text>
-                    <InstructionList
+                    <StepsInstruction
                         detailedRoute={instruct.routes}
                     />
                 </View>

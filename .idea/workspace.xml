@@ -2,18 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07dc5ad6-6e32-4ac7-ba0d-2aa44b12c1a6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Components/InstructionList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Components/UserInstructions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Components/bike.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Components/environment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Components/location.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Components/restaurant.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Container/FermateContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Components/QR_CODE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Screens/QR_CODE_Screen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/InstructionList.js" beforeDir="false" afterPath="$PROJECT_DIR$/Components/StepsInstruction.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Components/Mission.js" beforeDir="false" afterPath="$PROJECT_DIR$/Components/Mission.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Components/MissionTransport.js" beforeDir="false" afterPath="$PROJECT_DIR$/Components/MissionTransport.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screens/MissionScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/Screens/MissionScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/UserInstructions.js" beforeDir="false" afterPath="$PROJECT_DIR$/Components/UserInstructions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/bike.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/environment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/location.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/restaurant.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Container/FermateContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/Container/TransportationContainer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Screens/MissionTransportScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/Screens/MissionTransportScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
@@ -31,10 +32,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Screens/MissionScreen.js">
+        <entry file="file://$PROJECT_DIR$/Components/MissionTransport.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="73" selection-start-line="11" selection-start-column="73" selection-end-line="11" selection-end-column="73" />
+            <state relative-caret-position="1452">
+              <caret line="66" column="58" selection-start-line="66" selection-start-column="58" selection-end-line="66" selection-end-column="58" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -43,22 +44,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Components/Mission.js">
+        <entry file="file://$PROJECT_DIR$/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="16" column="44" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="54" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Container/FermateContainer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="26" column="37" lean-forward="true" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+            <state relative-caret-position="611">
+              <caret line="49" column="34" lean-forward="true" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -69,8 +58,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Screens/MissionTransportScreen.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="99" selection-start-line="12" selection-start-column="99" selection-end-line="12" selection-end-column="99" />
+            <state relative-caret-position="286">
+              <caret line="13" column="61" selection-start-line="13" selection-start-column="61" selection-end-line="13" selection-end-column="61" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -79,10 +68,46 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Components/MissionTransport.js">
+        <entry file="file://$PROJECT_DIR$/Components/QR_CODE.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="31" column="16" lean-forward="true" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
+            <state relative-caret-position="440">
+              <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Components/Login.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Screens/LoginScreen.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Screens/QR_CODE_Screen.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="7" column="77" selection-start-line="7" selection-start-column="77" selection-end-line="7" selection-end-column="77" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -93,8 +118,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Components/UserInstructions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="638">
-              <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+            <state>
+              <caret selection-end-line="9" selection-end-column="5" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -103,9 +128,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Components/InstructionList.js">
+        <entry file="file://$PROJECT_DIR$/Components/StepsInstruction.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
+            <state relative-caret-position="528">
               <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -114,11 +139,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styles.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="743">
-              <caret line="48" column="27" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
+            <state relative-caret-position="714">
+              <caret line="53" column="34" lean-forward="true" selection-start-line="53" selection-start-column="34" selection-end-line="53" selection-end-column="34" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -152,15 +177,18 @@
         <option value="$PROJECT_DIR$/Components/Registration.js" />
         <option value="$PROJECT_DIR$/Components/User.js" />
         <option value="$PROJECT_DIR$/Screens/MissionScreen.js" />
+        <option value="$PROJECT_DIR$/InstructionList.js" />
+        <option value="$PROJECT_DIR$/Components/InstructionList.js" />
+        <option value="$PROJECT_DIR$/Container/FermateContainer.js" />
+        <option value="$PROJECT_DIR$/Components/UserInstructions.js" />
+        <option value="$PROJECT_DIR$/Components/StepsInstruction.js" />
         <option value="$PROJECT_DIR$/Components/Mission.js" />
         <option value="$PROJECT_DIR$/App.js" />
         <option value="$PROJECT_DIR$/Screens/MissionTransportScreen.js" />
-        <option value="$PROJECT_DIR$/Container/FermateContainer.js" />
-        <option value="$PROJECT_DIR$/InstructionList.js" />
-        <option value="$PROJECT_DIR$/Components/InstructionList.js" />
-        <option value="$PROJECT_DIR$/Components/UserInstructions.js" />
         <option value="$PROJECT_DIR$/Components/MissionTransport.js" />
         <option value="$PROJECT_DIR$/styles.js" />
+        <option value="$PROJECT_DIR$/Screens/QR_CODE_Screen.js" />
+        <option value="$PROJECT_DIR$/Components/QR_CODE.js" />
       </list>
     </option>
   </component>
@@ -242,18 +270,18 @@
       <option name="presentableId" value="Default" />
       <updated>1576674962443</updated>
       <workItem from="1576674969593" duration="2300000" />
-      <workItem from="1577350395980" duration="20461000" />
+      <workItem from="1577350395980" duration="30020000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22761000" />
+    <option name="totallyTimeSpent" value="32320000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3846" y="-803" width="1933" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.09804955" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1444386" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -281,16 +309,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Components/Login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -390,45 +408,25 @@
     <entry file="file://$PROJECT_DIR$/Container/ProfileContainer.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Screens/MissionScreen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="73" selection-start-line="11" selection-start-column="73" selection-end-line="11" selection-end-column="73" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Container/fermate.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-66" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App.js">
+    <entry file="file://$PROJECT_DIR$/Components/StepsInstruction.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="677">
-          <caret line="56" column="6" lean-forward="true" selection-start-line="56" selection-start-column="6" selection-end-line="56" selection-end-column="6" />
+        <state relative-caret-position="528">
+          <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Screens/MissionTransportScreen.js">
+    <entry file="file://$PROJECT_DIR$/Container/TransportationContainer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="99" selection-start-line="12" selection-start-column="99" selection-end-line="12" selection-end-column="99" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Container/FermateContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="26" column="37" lean-forward="true" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+        <state relative-caret-position="462">
+          <caret line="21" column="54" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -437,18 +435,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Components/Mission.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="44" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Components/InstructionList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
+        <state relative-caret-position="594">
+          <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -457,8 +445,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Components/UserInstructions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        <state>
+          <caret selection-end-line="9" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Screens/MissionScreen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="18" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Screens/MissionTransportScreen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="61" selection-start-line="13" selection-start-column="61" selection-end-line="13" selection-end-column="61" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -467,8 +475,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Components/MissionTransport.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="31" column="16" lean-forward="true" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
+        <state relative-caret-position="1452">
+          <caret line="66" column="58" selection-start-line="66" selection-start-column="58" selection-end-line="66" selection-end-column="58" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -477,10 +485,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/styles.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="743">
-          <caret line="48" column="27" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
+        <state relative-caret-position="714">
+          <caret line="53" column="34" lean-forward="true" selection-start-line="53" selection-start-column="34" selection-end-line="53" selection-end-column="34" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Screens/QR_CODE_Screen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="77" selection-start-line="7" selection-start-column="77" selection-end-line="7" selection-end-column="77" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="611">
+          <caret line="49" column="34" lean-forward="true" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Components/QR_CODE.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Components/Login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Screens/LoginScreen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>

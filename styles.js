@@ -97,5 +97,10 @@ export const styles = StyleSheet.create({
 		textAlign:'center',
 		fontSize:28,
 		//fontFamily: 'Rammetto-One',		/*remove this after the loading page is created, it works fine, all it needs is just some time to load haha*/
-	}
+	},
+    barCodeScanner: {
+        flex: 1,
+        flexDirection: 'column',
+        justifyContent: 'flex-end'
+    }
 });

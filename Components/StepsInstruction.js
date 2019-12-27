@@ -2,7 +2,7 @@ import React from 'react';
 import {Text, View, TextInput, Image, Button} from 'react-native';
 import {styles} from '../styles.js';
 
-export default class InstructionList extends React.Component {
+export default class StepsInstruction extends React.Component {
     constructor(props) {
         super(props);
 

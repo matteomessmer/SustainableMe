@@ -14,7 +14,7 @@ export default class Mission extends React.Component {
                 >
 
                     <Image
-                        source={require('./bike.png')}
+                        source={require('../images/bike.png')}
                         style={styles.ImageIconStyle}
                     />
                     <Text style={styles.titleMission}>TRANSPORT</Text>
@@ -25,7 +25,7 @@ export default class Mission extends React.Component {
                     onPress={this.props.onEnvironment}
                 >
                     <Image
-                        source={require('./environment.png')}
+                        source={require('../images/environment.png')}
                         style={styles.ImageIconStyle}
                     />
                     <Text style={styles.titleMission}>ENVIRONMENT</Text>
@@ -36,7 +36,7 @@ export default class Mission extends React.Component {
                     onPress={this.props.onLocation}
                 >
                     <Image
-                        source={require('./location.png')}
+                        source={require('../images/location.png')}
                         style={styles.ImageIconStyle}
                     />
                     <Text style={styles.titleMission}>LOCATION</Text>
@@ -47,7 +47,7 @@ export default class Mission extends React.Component {
                     onPress={this.props.onRestaurant}
                 >
                     <Image
-                        source={require('./restaurant.png')}
+                        source={require('../images/restaurant.png')}
                         style={styles.ImageIconStyle}
                     />
                     <Text style={styles.titleMission}>RESTAURANT</Text>
