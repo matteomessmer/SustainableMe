@@ -10,6 +10,12 @@ Font.loadAsync({
 	'Rammetto-One': require('./assets/fonts/RammettoOne-Regular.ttf'),
 });
 
+export const Button = ({ title, onPress, disabled }) => (
+  <TouchableOpacity onPress={onPress} disabled={disabled}>
+    <Text style={styles.button}>{title}</Text>
+  </TouchableOpacity>
+);
+
 export const styles = StyleSheet.create({
     ImageIconStyle :{
         height: 60,
@@ -89,9 +95,9 @@ export const styles = StyleSheet.create({
 		fontWeight:'bold'
 	},
 	whiteCenteredText: {
-		color:'#ffffff', 
+		color:'#ffffff',
 		textAlign:'center'
-	}, 
+	},
 	logoWhite: {
 		color:'#ffffff',
 		textAlign:'center',
@@ -102,5 +108,13 @@ export const styles = StyleSheet.create({
         flex: 1,
         flexDirection: 'column',
         justifyContent: 'flex-end'
-    }
+    },
+		button: {
+margin: 8,
+fontSize: 18,
+color: 'white',
+fontWeight: 'bold',
+backgroundColor: yellow,
+textAlign: 'center',
+}
 });
