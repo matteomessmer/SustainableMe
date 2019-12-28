@@ -11,11 +11,14 @@ export default class Login extends React.Component{
 			user: null
         }
     }
-	
+
+    //need to place an await for the setState, so that the component waits until setState has been performed
+	//before navigating to the home screen, otherwise it would update on an unmounted component.
     login = async () => {
         const user = await this.props.login(this.state.email, this.state.password)
-        this.setState({user: user})
+        await this.setState({user: user})
         console.log(user);
+		this.props.onLogin()
     }
     
 	handleEmailChange = email => {
@@ -49,7 +52,9 @@ export default class Login extends React.Component{
 						onChangeText={this.handlePasswordChange}
 						value={this.state.password}
 					/>
-					<TouchableOpacity style={styles.primaryButton} onPress={() =>this.login()}>
+					<TouchableOpacity style={styles.primaryButton} onPress={() =>{
+						this.login()
+					}}>
 						<Text style={styles.buttonText}>LOGIN</Text>
 					</TouchableOpacity>
 				</View>

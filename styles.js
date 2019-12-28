@@ -102,7 +102,7 @@ export const styles = StyleSheet.create({
         color: '#ffffff',
         textAlign: 'center',
         fontSize: 28,
-        //fontFamily: 'Rammetto-One',		/*remove this after the loading page is created, it works fine, all it needs is just some time to load haha*/
+        fontFamily: 'Rammetto-One',		/*remove this after the loading page is created, it works fine, all it needs is just some time to load haha=>resolved*/
     },
     barCodeScanner: {
         flex: 1,
@@ -116,5 +116,45 @@ export const styles = StyleSheet.create({
         fontWeight: 'bold',
         backgroundColor: yellow,
         textAlign: 'center',
+    },
+    splash:{
+        padding: 20,
+        height: '100%',
+        width:'100%',
+        justifyContent:'center',
+        alignItems:'center'
+    },
+    logo_splash:{
+        width: 300,
+        height:100,
+        marginTop: 50
+    },
+    specialFont:{
+        fontFamily:'Rammetto-One',
+        fontSize: 40,
+        color: darkGreen,
+        letterSpacing: -5,
+        shadowColor: 'rgba(0,0,0, .4)', // IOS
+        shadowOffset: {height: 1, width: 1}, // IOS
+        shadowOpacity: 1, // IOS
+        shadowRadius: 1, //IOS
+        elevation: 2, // Android
+        flexDirection: 'row',
+    },
+    smallFont:{
+        fontFamily:'Rammetto-One',
+        color: darkGreen,
+        fontSize: 18
+    },
+    bigFont: {
+        fontFamily:'Rammetto-One',
+        color: 'black',
+        fontSize: 40
+    },
+    poweredBy:{
+        justifyContent:'center',
+        alignItems:'center',
+        marginTop: 150
     }
+
 });

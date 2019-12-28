@@ -1,7 +1,7 @@
 import React from 'react';
 import {Provider} from 'unstated';
 import { createStackNavigator } from 'react-navigation-stack';
-import { createAppContainer } from 'react-navigation';
+import { createAppContainer,createSwitchNavigator } from 'react-navigation';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
 
 
@@ -17,6 +17,7 @@ import LoginScreen from './Screens/LoginScreen.js';
 import LeaderBoardScreen from './Screens/LeaderboardScreen';
 import ProfileScreen from './Screens/ProfileScreen';
 import QR_CODE_Screen from './Screens/QR_CODE_Screen';
+import WelcomeSplashScreen from "./Screens/WelcomeSplashScreen";
 
 const routes = {
   Login: LoginScreen,
@@ -33,7 +34,7 @@ const routes = {
 };
 
 const options = {
-  initialRouteName: 'Login'
+  initialRouteName: 'Home'
  };
 
 const AppNavigator = createStackNavigator(routes, options);
@@ -47,7 +48,18 @@ const tabRoutes = {
 
 const TabNavigator = createBottomTabNavigator(tabRoutes);
 
-const AppContainer = createAppContainer(TabNavigator);
+const switchRoutes={
+  Welcome: WelcomeSplashScreen,
+  Login: LoginScreen,
+  App: TabNavigator
+};
+const switchOptions= {
+  initialRouteName: 'Welcome'
+};
+
+const InitialNavigator= createSwitchNavigator(switchRoutes, switchOptions)
+
+const AppContainer = createAppContainer(InitialNavigator);
 
 export default class App extends React.Component {
   render() {

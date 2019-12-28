@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Mission from '../Components/Mission';
-
+import { HeaderBackButton } from 'react-navigation';
 const MissionScreen = props => {
   return (
     <View>
@@ -13,6 +13,6 @@ const MissionScreen = props => {
     />
     </View>
   )
-}
+};
 
 export default MissionScreen;

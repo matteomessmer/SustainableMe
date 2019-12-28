@@ -9,7 +9,10 @@ const LoginScreen = props => {
 		<Subscribe to={[ProfileContainer]}>
 			{
 				profileContainer => (
-					<Login login={(email, password)=>profileContainer.login(email, password)}/>
+					<Login
+						login={(email, password)=>profileContainer.login(email, password)}
+						onLogin={()=>props.navigation.navigate('App')}
+					/>
 				)
 			}
 		</Subscribe>
