@@ -6,10 +6,6 @@ const darkGreen = '#417110';
 const lightGreen = '#70A040';
 const yellow = '#F2CB05';
 
-Font.loadAsync({
-    'Rammetto-One': require('./assets/fonts/RammettoOne-Regular.ttf'),
-});
-
 export const Button = ({title, onPress, disabled}) => (
     <TouchableOpacity onPress={onPress} disabled={disabled}>
         <Text style={styles.button}>{title}</Text>
