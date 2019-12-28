@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, Image, ScrollView } from 'react-native';
+import { Text, View, Image, ScrollView} from 'react-native';
 import { styles, Button } from '../styles.js';
 
 const nameOfEnvironmentMission = 'Pick up waste';

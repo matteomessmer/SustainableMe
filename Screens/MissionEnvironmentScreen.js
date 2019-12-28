@@ -1,8 +1,8 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import MissionEnvironment from '../components/MissionEnvironment';
+import MissionEnvironment from '../Components/MissionEnvironment';
 import { Subscribe } from 'unstated';
-import EnvironmentContainer from '../container/EnvironmentContainer';
+import EnvironmentContainer from '../Container/EnvironmentContainer';
 
 const MissionEnvironmentScreen = props => {
   return (

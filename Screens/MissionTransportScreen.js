@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import {View } from 'react-native';
 import MissionTransport from "../Components/MissionTransport";
 import {Subscribe} from "unstated";
 import TransportationContainer from '../Container/TransportationContainer';
