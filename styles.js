@@ -6,6 +6,7 @@ const darkGreen = '#417110';
 const lightGreen = '#70A040';
 const yellow = '#F2CB05';
 
+
 export const Button = ({title, onPress, disabled}) => (
     <TouchableOpacity onPress={onPress} disabled={disabled}>
         <Text style={styles.button}>{title}</Text>
@@ -43,8 +44,14 @@ export const styles = StyleSheet.create({
         height: 150,
         width: 150
     },
-    logoTitle: {
+    subHeaderRammetto: {
         fontSize: 24,
+        fontFamily: 'Rammetto-One',
+
+    },
+    subsubHeaderRammetto: {
+        fontSize: 20,
+        fontFamily: 'Rammetto-One',
     },
     inputField: {
         paddingHorizontal: 10,
@@ -75,6 +82,7 @@ export const styles = StyleSheet.create({
     primaryButton: {
         margin: 10,
         height: 35,
+        width: 231,
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: yellow,
@@ -113,20 +121,20 @@ export const styles = StyleSheet.create({
         backgroundColor: yellow,
         textAlign: 'center',
     },
-    splash:{
+    splash: {
         padding: 20,
         height: '100%',
-        width:'100%',
-        justifyContent:'center',
-        alignItems:'center'
+        width: '100%',
+        justifyContent: 'center',
+        alignItems: 'center'
     },
-    logo_splash:{
+    logo_splash: {
         width: 300,
-        height:100,
+        height: 100,
         marginTop: 50
     },
-    specialFont:{
-        fontFamily:'Rammetto-One',
+    specialFont: {
+        fontFamily: 'Rammetto-One',
         fontSize: 40,
         color: darkGreen,
         letterSpacing: -5,
@@ -137,20 +145,60 @@ export const styles = StyleSheet.create({
         elevation: 2, // Android
         flexDirection: 'row',
     },
-    smallFont:{
-        fontFamily:'Rammetto-One',
+    smallFont: {
+        fontFamily: 'Rammetto-One',
         color: darkGreen,
         fontSize: 18
     },
     bigFont: {
-        fontFamily:'Rammetto-One',
+        fontFamily: 'Rammetto-One',
         color: 'black',
         fontSize: 40
     },
-    poweredBy:{
-        justifyContent:'center',
-        alignItems:'center',
+    poweredBy: {
+        justifyContent: 'center',
+        alignItems: 'center',
         marginTop: 150
+    },
+    distanceField: {
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    normalText: {
+        fontSize: 20,
+        fontFamily: 'Roboto'
+    },
+    inputFieldText: {
+        textAlign: 'center',
+        fontFamily: 'Roboto',
+        fontSize: 16,
+        marginTop: 10,
+    },
+    instructIcon: {
+        fontSize: 30,
+        color: yellow,
+        fontWeight: 'bold',
+        textAlign: 'center',
+        marginBottom: 15
+
+    },
+    buttonDiv: {
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    instructionContainer: {
+
+        borderWidth: 2,
+        borderColor: yellow,
+
+    },
+    userInstructs: {
+        fontSize:18,
+        fontFamily: 'Roboto'
+    },
+    highlighting:{
+        fontWeight: 'bold',
+        fontSize: 18
     }
 
 });

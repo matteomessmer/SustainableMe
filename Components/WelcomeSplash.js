@@ -5,7 +5,8 @@ import * as Font from 'expo-font';
 
 export default class WelcomeSplash extends React.Component {
     state={
-        fontLoaded: false
+        fontLoaded: false,
+
     };
 
     performTimeConsumingTask = async () => {
@@ -23,6 +24,12 @@ export default class WelcomeSplash extends React.Component {
             'Rammetto-One': require('../assets/fonts/RammettoOne-Regular.ttf'),
         }).then(()=>{
             this.setState({fontLoaded: true})
+        });
+
+        await Font.loadAsync({
+            'Roboto': require('../assets/fonts/Roboto-Regular.ttf'),
+        }).then(()=>{
+           console.log('Font loaded');
         });
 
         const data = await this.performTimeConsumingTask();

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, View, TextInput, Image, Button} from 'react-native';
+import {Text, View, TextInput, Image, Button, ScrollView} from 'react-native';
 import {styles} from '../styles.js';
 
 export default class StepsInstruction extends React.Component {
@@ -14,20 +14,19 @@ export default class StepsInstruction extends React.Component {
 
     render() {
         const instructList = this.props.detailedRoute.map((obj,index) => {
-            console.log(obj)
             return (
                 <View>
-                    <Text>{index+1 +': ' +obj.instructions}</Text>
+                    <Text style={styles.highlighting}>{index+1 +': '}<Text style={styles.userInstructs}>{' '+obj.instructions +'.'}</Text>
                     {obj.distance ?
-                        <Text>{obj.distance}</Text> : null
+                        <Text  style={styles.userInstructs}>{' About '+obj.distance +'.'}</Text> : null
                     }
                     {obj.duration ?
-                        <Text> It will take you about {obj.duration}</Text> : null
+                        <Text  style={styles.userInstructs}> {' '}It will take you about {obj.duration +'.'}</Text> : null
                     }
                     {obj.details ?
-                        <Text>Means of transport: {obj.details}</Text> : null
+                        <Text  style={styles.highlighting}> Means of transport: {obj.details +'.'}</Text> : null
                     }
-
+                    </Text>
                 </View>
 
             )
