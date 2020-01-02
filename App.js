@@ -51,6 +51,7 @@ const TabNavigator = createBottomTabNavigator(tabRoutes);
 const switchRoutes={
   Welcome: WelcomeSplashScreen,
   Login: LoginScreen,
+  Registration: RegistrationScreen,
   App: TabNavigator
 };
 const switchOptions= {

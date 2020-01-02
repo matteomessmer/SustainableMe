@@ -64,7 +64,7 @@ export default class Login extends React.Component{
 					</TouchableOpacity>
 				</View>
 				<View style={{flex:1}}>
-					<TouchableOpacity>
+					<TouchableOpacity onPress={() => {this.props.onRegistration()}}>
 					<Text style={styles.whiteCenteredText}>REGISTER</Text>
 					</TouchableOpacity>
 				</View>

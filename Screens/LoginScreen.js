@@ -12,6 +12,7 @@ const LoginScreen = props => {
 					<Login
 						login={(email, password)=>profileContainer.login(email, password)}
 						onLogin={()=>props.navigation.navigate('App')}
+						onRegistration={()=>props.navigation.navigate('Registration')}
 					/>
 				)
 			}

@@ -1,12 +1,22 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Registration from '../Components/Registration';
+import {Subscribe} from 'unstated';
+import ProfileContainer from '../Container/ProfileContainer';
 
 const RegistrationScreen = props => {
-  return (
-    <View>
-    <Text>This is the Registration Screen</Text>
-    </View>
-  )
+	return (
+		<Subscribe to={[ProfileContainer]}>
+			{
+				profileContainer => (
+					<Registration
+						register={(name, email, password)=>profileContainer.register(name, email, password)}
+						login={()=>props.navigation.navigate('Login')}
+					/>
+				)
+			}
+		</Subscribe>
+	)
 }
 
 export default RegistrationScreen;
