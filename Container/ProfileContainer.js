@@ -74,6 +74,8 @@ export default class ProfileContainer extends Container {
 			return responseJson.user;
 		}
 	}
+
+
 }
 
 

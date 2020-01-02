@@ -15,10 +15,9 @@ export default class UserInstructions extends React.Component{
     render(){
         const instructions=this.props.routes.map(instruct =>{
             return (
-                <View>
-                    <Text>Distance: {instruct.distance}</Text>
-                    <Text>Duration: {instruct.duration}</Text>
-                    <Text>Departure time: {instruct.departure}</Text>
+                <View style={styles.instructionContainer}>
+                    <Text style={styles.highlighting}>Duration:<Text  style={styles.userInstructs}>{instruct.duration}</Text></Text>
+                    <Text style={styles.highlighting}>Departure: <Text  style={styles.userInstructs}>{instruct.departure}</Text></Text>
                     <StepsInstruction
                         detailedRoute={instruct.routes}
                     />

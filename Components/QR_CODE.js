@@ -18,6 +18,7 @@ export default class QR_CODE extends React.Component {
         this.setState({scanned:true});
         if(data==='SustainableMe'){
             Alert.alert('Congratulations your code is valid! Thank you for using ...');
+            this.props.onCreditPoints();
             this.props.onValidation();
         }else {
             Alert.alert('Your code is not valid! Please try again');
