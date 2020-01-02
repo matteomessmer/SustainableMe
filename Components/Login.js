@@ -8,7 +8,6 @@ export default class Login extends React.Component {
         this.state = {
             email: '',
             password: '',
-            user: null
         }
     }
 
@@ -16,9 +15,10 @@ export default class Login extends React.Component {
     //before navigating to the home screen, otherwise it would update on an unmounted component.
     login = async () => {
         const user = await this.props.login(this.state.email, this.state.password)
-        await this.setState({user: user})
-        console.log(user);
-        this.props.onLogin()
+		if(user) {
+			console.log(user);
+			this.props.onLogin()
+		}
     }
 
     handleEmailChange = email => {
