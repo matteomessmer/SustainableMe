@@ -9,22 +9,25 @@ export default class PointsContainer extends Container {
     };
 
 
+    //need to parse the kilometer to floats 
     addPointsfromDistance = async kilometer => {
         let pointsToGive = 0;
+        var integerkm = parseFloat(kilometer);
 
-        if (kilometer === 0) {
+        if (integerkm === 0.0) {
             pointsToGive = 0;
-        } else if (kilometer < 10) {
+        } else if (integerkm < 10.0) {
             pointsToGive = 50;
-        } else if (kilometer >= 10) {
+        } else if (integerkm < 15.0) {
             pointsToGive = 100;
-        } else if (kilometer >= 15) {
+        } else if (integerkm < 20.0) {
             pointsToGive = 200;
         } else {
             pointsToGive = 500;
         }
 
         await this.setState({points: pointsToGive});
+        //console.log(this.state.points);
     };
 
 
