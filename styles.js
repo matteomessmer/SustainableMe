@@ -53,6 +53,12 @@ export const styles = StyleSheet.create({
         fontSize: 20,
         fontFamily: 'Rammetto-One',
     },
+    header:{
+        padding:20,
+        marginTop:10,
+        justifyContent:'center',
+        alignItems:'center'
+    },
     inputField: {
         paddingHorizontal: 10,
         margin: 10,
@@ -199,6 +205,34 @@ export const styles = StyleSheet.create({
     highlighting:{
         fontWeight: 'bold',
         fontSize: 18
+    },
+    firstThreeLeader:{
+        flexDirection: 'row',
+        marginBottom:5,
+    },
+    leaderBoard:{
+        marginLeft: 5
+    },
+    inLineLeader:{
+        flexDirection: 'row',
+        justifyContent:'center',
+        alignItems:'center',
+
+    },
+    leaderBoardText: {
+        fontSize:20,
+        fontFamily:'Roboto-Bold',
+    },
+    followingLeader:{
+        flexDirection: 'row',
+        marginLeft: 59,
+        marginBottom: 30,
+        marginTop:10,
+    },
+    profileButton:{
+        height:40,
+        width:40,
+        marginRight:10
     }
 
 });

@@ -1,5 +1,4 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
 import Registration from '../Components/Registration';
 import {Subscribe} from 'unstated';
 import ProfileContainer from '../Container/ProfileContainer';

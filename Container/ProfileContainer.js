@@ -40,7 +40,7 @@ export default class ProfileContainer extends Container {
 			alert("Check your mailbox to confirm your email address");
 			return true;
 		}
-	}
+	};
 	
 	login = async (email, password) => {
 		//hash password
@@ -63,7 +63,8 @@ export default class ProfileContainer extends Container {
 		});
 		
 		const responseJson = await response.json();
-		
+		console.log(responseJson);
+
 		//check for errors
 		//return user or null
 		if(responseJson.error) {

@@ -22,6 +22,7 @@ import WelcomeSplashScreen from "./Screens/WelcomeSplashScreen";
 
 const routesInital = {
     Home: HomeScreen,
+
 };
 const optionsInitial = {
     initialRouteName: 'Home'

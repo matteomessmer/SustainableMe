@@ -29,8 +29,17 @@ export default class WelcomeSplash extends React.Component {
         await Font.loadAsync({
             'Roboto': require('../assets/fonts/Roboto-Regular.ttf'),
         }).then(()=>{
-           console.log('Font loaded');
+           //console.log('Font loaded');
         });
+
+        await Font.loadAsync({
+            'Roboto-Bold': require('../assets/fonts/Roboto-Bold.ttf'),
+        }).then(()=>{
+            //console.log('Font loaded');
+        });
+
+
+
 
         const data = await this.performTimeConsumingTask();
 
