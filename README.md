@@ -30,3 +30,8 @@ Project 3 for the course Engineering of Mobile Systems
 - To get the list of Missions (GET): http://sustainableme.fablabnetwork.tk/API/getMissions.php
 - To get the list of Users (GET): http://sustainableme.fablabnetwork.tk/API/getUsers.php
 - To add Points to an User (POST): http://sustainableme.fablabnetwork.tk/API/addPoints.php
+- To login (POST): http://sustainableme.fablabnetwork.tk/API/login.php
+- To register (POST): http://sustainableme.fablabnetwork.tk/API/register.php
+
+# WEBSITE
+- The email verification page: http://sustainableme.fablabnetwork.tk/API/verifyEmail.php
