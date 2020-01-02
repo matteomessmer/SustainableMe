@@ -20,6 +20,13 @@ const MissionTransportScreen = props => {
 
     </View>
   )
-}
+};
+MissionTransportScreen.navigationOptions = {
+    title: 'Transport Mission',
+    headerTintColor: '#ffffff',
+    headerStyle: {
+        backgroundColor: '#417110'
+    }
+};
 
 export default MissionTransportScreen;

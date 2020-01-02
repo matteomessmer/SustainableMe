@@ -20,8 +20,8 @@ export const styles = StyleSheet.create({
 
     },
     container: {
-        padding: 50,
-        marginTop: 20,
+        padding: 40,
+        justifyContent:'center'
     },
     missionButton: {
         marginBottom: 10,

@@ -25,7 +25,7 @@ export default class MissionTransport extends React.Component {
         const theRoutes = await this.props.fermate(this.state.from, this.state.to);
         if(theRoutes!==null){
             await this.setState({routes: theRoutes[0]})
-            await this.props.onCalculate(this.state.routes[0].distance);
+            const points=await this.props.onCalculate(this.state.routes[0].distance);
         }
         else{
             this.setState({routes: null})
