@@ -20,16 +20,13 @@ import ProfileScreen from './Screens/ProfileScreen';
 import QR_CODE_Screen from './Screens/QR_CODE_Screen';
 import WelcomeSplashScreen from "./Screens/WelcomeSplashScreen";
 
-const routes = {
-    Login: LoginScreen,
-    Registration: RegistrationScreen,
+const routesInital = {
     Home: HomeScreen,
-    QR_CODE: QR_CODE_Screen,
-
 };
-const options = {
+const optionsInitial = {
     initialRouteName: 'Home'
 };
+const AppNavigator = createStackNavigator(routesInital, optionsInitial);
 
 const routesM=({
         Mission: MissionScreen,
@@ -47,14 +44,33 @@ const optionsMissions = {
 
 const MissionNavigator = createStackNavigator(routesM, optionsMissions);
 
+const routesL=({
+    LeaderBoard: LeaderBoardScreen
+});
 
-const AppNavigator = createStackNavigator(routes, options);
+const optionsLeader={
+    initialRouteName: 'LeaderBoard'
+};
+
+const LeaderNavigator=createStackNavigator(routesL, optionsLeader);
+
+const routesP={
+    Profile:ProfileScreen
+};
+
+const optionsProfile={
+    initialRouteName:'Profile'
+};
+
+const ProfileNavigator=createStackNavigator(routesP, optionsProfile);
+
+
 
 const tabRoutes = {
     Home: AppNavigator,
     Mission: MissionNavigator,
-    LeaderBoard: LeaderBoardScreen,
-    Profile: ProfileScreen,
+    LeaderBoard: LeaderNavigator,
+    Profile: ProfileNavigator,
 
 };
 
@@ -69,10 +85,10 @@ AppNavigator.navigationOptions = {
 MissionNavigator.navigationOptions = {
     tabBarIcon: ({focused, tint}) => getIcon("ios-rocket", focused, tint),
 };
-LeaderBoardScreen.navigationOptions = {
+LeaderNavigator.navigationOptions = {
     tabBarIcon: ({focused, tint}) => getIcon("ios-people", focused, tint),
 };
-ProfileScreen.navigationOptions = {
+ProfileNavigator.navigationOptions = {
     tabBarIcon: ({focused, tint}) => getIcon("ios-person", focused, tint),
 };
 
@@ -90,6 +106,7 @@ const TabNavigator = createBottomTabNavigator(tabRoutes, {
 const switchRoutes = {
     Welcome: WelcomeSplashScreen,
     Login: LoginScreen,
+    Registration: RegistrationScreen,
     App: TabNavigator
 };
 const switchOptions = {

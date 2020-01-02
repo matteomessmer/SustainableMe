@@ -58,12 +58,14 @@ export default class Registration extends React.Component{
 						style={styles.inputField}
 						onChangeText={this.handlePasswordChange}
 						value={this.state.password}
-					/>	
+					/>
+					<View style={styles.buttonDiv}>
 					<TouchableOpacity style={styles.primaryButton} onPress={() =>{
 						this.register()
 					}}>
 						<Text style={styles.buttonText}>REGISTER</Text>
 					</TouchableOpacity>
+					</View>
 				</View>
 				<View style={{flex:1}}>
 					<TouchableOpacity onPress={() => {this.props.login()}}>

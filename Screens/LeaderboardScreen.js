@@ -1,12 +1,22 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Leaderboard from "../Components/Leaderboard";
+
 
 const LeaderBoardScreen = props => {
   return (
     <View>
-    <Text>This is the LeaderBoard Screen</Text>
+    <Leaderboard
+    />
     </View>
   )
-}
+};
+LeaderBoardScreen.navigationOptions = {
+  title: 'LeaderBoard',
+  headerTintColor: '#ffffff',
+  headerStyle: {
+    backgroundColor: '#417110'
+  }
+};
 
 export default LeaderBoardScreen;
