@@ -77,7 +77,7 @@ export default class Profile extends React.Component{
    }
 
    editInfo = async () => {
-     const user = {id: this.props.user.id, name: this.state.name, email: this.state.email}
+     const user = {id: this.props.user.id, name: this.state.name, email: this.state.email, image: this.state.image}
      console.log(user)
      await this.props.editUser(user);
      this.setState({editName: false, editEmail: false})
@@ -92,13 +92,13 @@ export default class Profile extends React.Component{
        await this.props.editUser(this.props.user.id, this.state.newPassword);
        this.setState({editPassword: false, oldPassword: '', newPassword: '', cnfPassword: ''})
      } else {
-       alert("The new password and its confirmation do NOT match. Try again, you may be luckier!")
+       alert("The new password and its confirmation do NOT match. Try again!")
    }
    }
 
   render(){
       return (
-        <View>
+        <ScrollView>
           <View style={styles.logoComponent}>
 
             {this.state.image===null?
@@ -120,12 +120,12 @@ export default class Profile extends React.Component{
               />
             </TouchableOpacity>
 
-            <Text style={styles.subHeaderRammetto}>{this.props.user.name}</Text>
+            <Text style={styles.subHeaderRammetto}>{this.state.name}</Text>
             <Text style={styles.subsubHeaderRammetto}>Points: {this.props.user.points}</Text>
           </View>
           {this.state.editName===false?
           <TouchableOpacity onPress={() => this.setState({editName: true})}>
-            <Text>Name: {this.props.user.name}</Text>
+            <Text>Name: {this.state.name}</Text>
             <Image
               source={require('../images/editprofile.png')}
               style={{width:30, height:30}}
@@ -140,14 +140,14 @@ export default class Profile extends React.Component{
                 value={this.state.name}
             />
             <TouchableOpacity onPress={() => this.setState({editName: false})}>
-              <Text>Save</Text>
+              <Text style={styles.button}>Save</Text>
             </TouchableOpacity>
           </View>
           }
 
           {this.state.editEmail===false?
           <TouchableOpacity onPress={() => this.setState({editEmail: true})}>
-            <Text>Email: {this.props.user.email}</Text>
+            <Text>Email: {this.state.email}</Text>
             <Image
               source={require('../images/editprofile.png')}
               style={{width:30, height:30}}
@@ -162,7 +162,7 @@ export default class Profile extends React.Component{
                 value={this.state.email}
             />
             <TouchableOpacity onPress={() => this.setState({editEmail: false})}>
-              <Text>Save</Text>
+              <Text style={styles.button}>Save</Text>
             </TouchableOpacity>
           </View>
           }
@@ -196,11 +196,11 @@ export default class Profile extends React.Component{
                   value={this.state.cnfPassword}
               />
               <TouchableOpacity onPress={() => this.setState({editPassword: false})}>
-                <Text>Save</Text>
+                <Text style={styles.button}>Save</Text>
               </TouchableOpacity>
             </View>
           }
-        </View>
+        </ScrollView>
       )
   }
 
