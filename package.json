@@ -11,7 +11,7 @@
     "core-js": "^3.6.1",
     "expo": "~36.0.0",
     "expo-barcode-scanner": "~8.0.0",
-    "expo-image-picker": "^8.0.1",
+    "expo-image-picker": "~8.0.1",
     "expo-permissions": "~8.0.0",
     "isaac": "0.0.5",
     "md5": "^2.2.1",

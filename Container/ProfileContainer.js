@@ -6,11 +6,11 @@ export default class ProfileContainer extends Container {
     state = {
         user: null,
     }
-	
+
 	register = async (name, email, password) => {
 		//hash password
 		const hash = md5(password);
-		
+
 		//request login (expect json containing user)
 		const response = await fetch('http://sustainableme.fablabnetwork.tk/API/register.php', {
 			method: 'POST',
@@ -28,7 +28,7 @@ export default class ProfileContainer extends Container {
 			console.error(error);
 			return null;
 		});
-		
+
 		const responseJson = await response.json();
 		alert(response);
 		//check for errors
@@ -41,11 +41,11 @@ export default class ProfileContainer extends Container {
 			return true;
 		}
 	};
-	
+
 	login = async (email, password) => {
 		//hash password
 		const hash = md5(password);
-		
+
 		//request login (expect json containing user)
 		const response = await fetch('http://sustainableme.fablabnetwork.tk/API/login.php', {
 			method: 'POST',
@@ -61,7 +61,7 @@ export default class ProfileContainer extends Container {
 			console.error(error);
 			return null;
 		});
-		
+
 		const responseJson = await response.json();
 		console.log(responseJson);
 
@@ -76,7 +76,64 @@ export default class ProfileContainer extends Container {
 		}
 	}
 
+  editUser= async (user)=>{
+
+      const response = await fetch('http://sustainableme.fablabnetwork.tk/API/addPoints.php', {
+          method: 'POST',
+          headers: {
+              Accept: 'application/json',
+              'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+              id: user.id,
+              image: user.image,
+              name: user.name,
+              email: user.email.toLowerCase(),
+          }),
+      }).catch((error) => {
+          console.error(error);
+          return null;
+      });
+
+      const responseJson = await response.json();
+
+      console.log(responseJson)
+      if(responseJson.error) {
+          alert(responseJson.description);
+          return null;
+      } else {
+          console.log(responseJson);
+      }
+  }
+
+  editPassword= async (id, password)=>{
+
+      const hash = md5(password);
+
+      const response = await fetch('http://sustainableme.fablabnetwork.tk/API/addPoints.php', {
+          method: 'POST',
+          headers: {
+              Accept: 'application/json',
+              'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+              id: id,
+              password: hash,
+          }),
+      }).catch((error) => {
+          console.error(error);
+          return null;
+      });
+
+      const responseJson = await response.json();
+
+      console.log(responseJson)
+      if(responseJson.error) {
+          alert(responseJson.description);
+          return null;
+      } else {
+          console.log(responseJson);
+      }
+  }
 
 }
-
-
