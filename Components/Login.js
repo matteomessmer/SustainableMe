@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, View, TextInput, Button, TouchableOpacity, Image} from 'react-native';
+import {Text, View, TextInput, TouchableOpacity} from 'react-native';
 import {styles} from '../styles.js';
 
 export default class Login extends React.Component {
@@ -10,24 +10,21 @@ export default class Login extends React.Component {
             password: '',
         }
     }
-
-    //need to place an await for the setState, so that the component waits until setState has been performed
-    //before navigating to the home screen, otherwise it would update on an unmounted component.
     login = async () => {
-        const user = await this.props.login(this.state.email, this.state.password)
+        const user = await this.props.login(this.state.email, this.state.password);
 		if(user) {
 			console.log(user);
 			this.props.onLogin()
 		}
-    }
+    };
 
     handleEmailChange = email => {
         this.setState({email: email})
-    }
+    };
 
     handlePasswordChange = password => {
         this.setState({password: password})
-    }
+    };
 	
     render() {
         return (
