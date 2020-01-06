@@ -3,15 +3,14 @@ import {StyleSheet, Text, View, TouchableOpacity, Button} from 'react-native';
 import Home from '../Components/Home'
 import {styles} from "../styles";
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import {Subscribe} from "unstated";
-import ProfileContainer from "../Container/ProfileContainer";
+import MissionCompleted from "./MissionCompletedScreen";
 
 
 export default class HomeScreen extends React.Component{
 
 
     static navigationOptions = ({ navigation }) => {
-
+        const nav=navigation;
         return {
             headerTitle: 'SustainableMe',
             headerTintColor: '#ffffff',
@@ -33,7 +32,9 @@ export default class HomeScreen extends React.Component{
 
         return (
             <View>
-                <Home />
+                <Home
+                    onMore={()=>this.props.navigation.navigate('Mission')}
+                />
             </View>
         )
     }

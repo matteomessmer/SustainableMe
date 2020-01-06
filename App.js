@@ -37,8 +37,7 @@ const optionsMissions = {
 const MissionNavigator = createStackNavigator(routesM, optionsMissions);
 
 const routesInital = {
-    Home: HomeScreen,
-    Mission: MissionNavigator,
+    Home: HomeScreen
 
 };
 const optionsInitial = {

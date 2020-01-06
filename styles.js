@@ -91,6 +91,32 @@ export const styles = StyleSheet.create({
         elevation: 2, // Android
         flexDirection: 'row',
     },
+    hiddenInput:{
+        flexDirection: 'row'
+    },
+    changeButton:{
+        margin: 10,
+        height: 30,
+        width: 50,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: yellow,
+        shadowColor: 'rgba(0,0,0, .4)', // IOS
+        shadowOffset: {height: 1, width: 1}, // IOS
+        shadowOpacity: 1, // IOS
+        shadowRadius: 1, //IOS
+        elevation: 2, // Android
+        flexDirection: 'row',
+    },
+    changeButtonText:{
+        color: '#ffffff',
+        fontSize: 13,
+        fontWeight: 'bold'
+    },
+    passwordChange:{
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
     instructionField: {
         padding: 10,
         marginTop: 10,
@@ -275,6 +301,24 @@ export const styles = StyleSheet.create({
         height: 300,
         width:300,
 
+    },
+    profileContent:{
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginTop: 15,
+        marginBottom: 10,
+    },
+    profileText:{
+        fontFamily: 'Roboto-Bold',
+        fontSize:18
+    },
+    changeIcon:{
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    editableItems:{
+        marginBottom:15,
+        marginTop: 5
     }
 
 });
