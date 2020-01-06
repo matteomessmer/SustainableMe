@@ -1,8 +1,9 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { View } from 'react-native';
 import MissionEnvironment from '../Components/MissionEnvironment';
 import { Subscribe } from 'unstated';
 import EnvironmentContainer from '../Container/EnvironmentContainer';
+
 
 const MissionEnvironmentScreen = props => {
   return (
@@ -17,7 +18,14 @@ const MissionEnvironmentScreen = props => {
         )}
       </Subscribe>
     </View>
-  );
+  )
+};
+MissionEnvironmentScreen.navigationOptions = {
+    title: 'Environment Mission',
+    headerTintColor: '#ffffff',
+    headerStyle: {
+        backgroundColor: '#417110'
+    }
 };
 
 export default MissionEnvironmentScreen;

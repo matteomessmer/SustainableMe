@@ -33,12 +33,30 @@ export const styles = StyleSheet.create({
     },
     titleMission: {
         marginTop: 5,
-        fontSize: 18,
+        fontSize: 20,
+        fontFamily: 'Roboto'
     },
     logoComponent: {
         justifyContent: 'center',
         alignItems: 'center',
         marginTop: 10,
+    },
+    outercircle:{
+        borderRadius: 60,
+        backgroundColor: 'white',
+        marginBottom: 10,
+
+    },
+    logo:{
+        borderWidth: 2,
+        padding:20,
+        backgroundColor: darkGreen,
+        borderColor: darkGreen,
+        borderRadius: 60,
+        width: 120,
+        height: 120,
+        justifyContent: 'center',
+        alignItems: 'center'
     },
     logoIcon: {
         height: 150,
@@ -98,6 +116,19 @@ export const styles = StyleSheet.create({
         shadowRadius: 1, //IOS
         elevation: 2, // Android
         flexDirection: 'row',
+    },
+    resetButton:{
+        backgroundColor:'white',
+        margin: 10,
+        height: 35,
+        width: 231,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    resetButtontext:{
+        color: 'black',
+        fontFamily: 'Roboto',
+        fontSize: 18
     },
     buttonText: {
         color: '#ffffff',
@@ -233,6 +264,17 @@ export const styles = StyleSheet.create({
         height:40,
         width:40,
         marginRight:10
+    },
+    pictureFrame:{
+        justifyContent:'center',
+        alignItems: 'center',
+        marginBottom: 10
+
+    },
+    uploadedImage:{
+        height: 300,
+        width:300,
+
     }
 
 });

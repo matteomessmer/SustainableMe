@@ -1,7 +1,8 @@
 import React from 'react';
-import {Text, View, TextInput, Image, Button, ScrollView, TouchableOpacity} from 'react-native';
+import {Text, View, TextInput, Image, Alert, ScrollView, TouchableOpacity} from 'react-native';
 import {styles} from '../styles.js';
 import UserInstructions from './UserInstructions';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 
 export default class MissionTransport extends React.Component {
@@ -21,14 +22,22 @@ export default class MissionTransport extends React.Component {
     handleToChange = to => {
         this.setState({to: to})
     };
+    reset =()=>{
+        this.setState({routes: null, from: '', to:'', seeInstructs: false})
+    };
     fetchRoutes = async () => {
-        const theRoutes = await this.props.fermate(this.state.from, this.state.to);
-        if(theRoutes!==null){
-            await this.setState({routes: theRoutes[0]})
-            const points=await this.props.onCalculate(this.state.routes[0].distance);
-        }
-        else{
-            this.setState({routes: null})
+        console.log(this.state.from)
+        if (this.state.from==='' || this.state.to===''){
+            Alert.alert('Ups you are missing some information, please try again!');
+        }else{
+            const theRoutes = await this.props.fermate(this.state.from, this.state.to);
+            if (theRoutes !== null) {
+                await this.setState({routes: theRoutes[0]})
+                const points = await this.props.onCalculate(this.state.routes[0].distance);
+            } else {
+                this.setState({routes: null})
+            }
+
         }
 
     };
@@ -37,10 +46,11 @@ export default class MissionTransport extends React.Component {
         return (
             <ScrollView>
                 <View style={styles.logoComponent}>
-                    <Image
-                        source={require('../images/bike.png')}
-                        style={styles.logoIcon}
-                    />
+                    <View style={styles.outercircle}>
+                        <View style={styles.logo}>
+                            <Ionicons name={'ios-bicycle'} size={80} color={'white'}/>
+                        </View>
+                    </View>
                     <Text style={styles.subHeaderRammetto}>TRANSPORT MISSION</Text>
                 </View>
                 <Text style={styles.inputFieldText}>From:</Text>
@@ -93,6 +103,16 @@ export default class MissionTransport extends React.Component {
                                 <Text style={styles.buttonText}>Scan Code</Text>
                             </TouchableOpacity>
                         </View>
+                        <View style={styles.buttonDiv}>
+                        <TouchableOpacity
+                            style={styles.resetButton}
+                            onPress={() => this.reset()}
+                        >
+                            <Text style={styles.resetButtontext}>RESET</Text>
+                        </TouchableOpacity>
+
+                        </View>
+
                     </View> : null}
 
             </ScrollView>

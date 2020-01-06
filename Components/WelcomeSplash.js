@@ -14,7 +14,7 @@ export default class WelcomeSplash extends React.Component {
             setTimeout(
                 () => {
                     resolve('result')
-                }, 4000
+                }, 3000
             )
         )
     };
