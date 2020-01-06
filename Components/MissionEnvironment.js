@@ -3,7 +3,6 @@ import {Text, View, Image, ScrollView, TouchableOpacity} from 'react-native';
 import {styles, Button} from '../styles.js';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
-
 const nameOfEnvironmentMission = 'Pick up waste';
 
 export default class MissionEnvironment extends React.Component {
@@ -24,12 +23,12 @@ export default class MissionEnvironment extends React.Component {
                 </View>
 
                 <Text>
-                    You have just completed the{'\n'}
+                    You have just chosen the{'\n'}
                     {nameOfEnvironmentMission}
                     {'\n'}mission
                 </Text>
                 <Text>
-                    {'\n'}Upload a proof photo{'\n'}and share it with your friends!
+                    {'\n'}Upload a proof photo{'\n'}to get the points!
                 </Text>
 
                 <View style={styles.buttonDiv}>
@@ -38,15 +37,6 @@ export default class MissionEnvironment extends React.Component {
                         onPress={() => this.props.uploadPhoto()}
                     >
                         <Text style={styles.buttonText}>Upload photo</Text>
-                    </TouchableOpacity>
-                </View>
-
-                <View style={styles.buttonDiv}>
-                    <TouchableOpacity
-                        style={styles.primaryButton}
-                        onPress={() => this.props.takePhoto()}
-                    >
-                        <Text style={styles.buttonText}>Take photo</Text>
                     </TouchableOpacity>
                 </View>
 

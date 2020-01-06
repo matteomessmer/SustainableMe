@@ -22,16 +22,4 @@ export default class EnvironmentContainer extends Container {
     }
   };
 
-  takePhoto = async () => {
-    const { status } = await Permissions.askAsync(Permissions.CAMERA);
-
-    console.log(Permissions.CAMERA, status);
-    if (status === 'granted') {
-      let image = await ImagePicker.launchImageLibraryAsync({
-        mediaTypes: 'Images',
-      }).catch(error => console.log(Permissions.CAMERA, { error }));
-      console.log(Permissions.CAMERA, 'SUCCESS', image);
-      this.setState({ image: image.uri });
-    }
-  };
 }

@@ -1,10 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import MissionCompleted from from '../Components/MissionCompleted';
 
 const MissionCompletedScreen = props => {
   return (
     <View>
-    <Text>This is the Mission Completed Screen</Text>
+    //Know which mission has been completed 
+    <MissionCompleted />
     </View>
   )
 }
