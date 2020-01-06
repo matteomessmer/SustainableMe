@@ -17,6 +17,11 @@ const Home = props => {
             {missionContainer => (
               <MissionList
               computeList={missionContainer.getSpotlightMissions}
+              computePicture={missionContainer.computePicture}
+              onEnvironment={props.onEnvironment}
+              onTransport={props.onTransport}
+              onLocation={props.onLocation}
+              onRestaurant={props.onRestaurant}
               />
             )}
 
@@ -33,6 +38,8 @@ const Home = props => {
 
             </View>
         )
+
+
 }
 
 

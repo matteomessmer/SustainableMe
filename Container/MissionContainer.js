@@ -42,4 +42,20 @@ export default class MissionContainer extends Container {
 
   	}
 
+    computePicture = (type) => {
+
+      if (type == 'environment')
+      return 'md-globe'
+
+      if (type == 'location')
+      return 'ios-pin'
+
+      if (type == 'restaurant')
+      return 'ios-restaurant'
+
+      if (type == 'transport')
+      return 'ios-bicycle'
+
+    }
+
 }

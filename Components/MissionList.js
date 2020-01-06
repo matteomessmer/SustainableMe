@@ -3,7 +3,7 @@ import {Text, View, ScrollView} from 'react-native';
 import {styles} from '../styles.js';
 import SpotlightMission from './SpotlightMission'
 
-export default class MissionLocation extends React.Component{
+export default class MissionList extends React.Component{
 
   constructor(props) {
       super(props);
@@ -26,6 +26,11 @@ render () {
               name={mission.name}
               points={mission.points}
               type={mission.type}
+              computePicture={this.props.computePicture}
+              onEnvironment={this.props.onEnvironment}
+              onTransport={this.props.onTransport}
+              onLocation={this.props.onLocation}
+              onRestaurant={this.props.onRestaurant}
               />
             )}
             </View>
