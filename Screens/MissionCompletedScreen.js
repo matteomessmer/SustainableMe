@@ -1,12 +1,14 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import {View} from 'react-native';
+import MissionCompleted from '../Components/MissionCompleted';
 
 const MissionCompletedScreen = props => {
-  return (
-    <View>
-    <Text>This is the Mission Completed Screen</Text>
-    </View>
-  )
+    return (
+        <View>
+            <MissionCompleted
+                onOther={() => props.navigation.navigate("Mission")}/>
+        </View>
+    )
 }
 
 export default MissionCompletedScreen;

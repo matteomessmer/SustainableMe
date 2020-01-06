@@ -1,7 +1,7 @@
 import React from 'react';
-import {Text, View, ScrollView, Image, TouchableOpacity} from 'react-native';
+import {Text, View,TouchableOpacity} from 'react-native';
 import {styles} from '../styles.js';
-
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 export default class Mission extends React.Component {
 
@@ -13,10 +13,7 @@ export default class Mission extends React.Component {
                     onPress={this.props.onTransport}
                 >
 
-                    <Image
-                        source={require('../images/bike.png')}
-                        style={styles.ImageIconStyle}
-                    />
+                    <Ionicons name={'ios-bicycle'} size={50} color={'#417110'}/>
                     <Text style={styles.titleMission}>TRANSPORT</Text>
                 </TouchableOpacity>
 
@@ -24,10 +21,7 @@ export default class Mission extends React.Component {
                     style={styles.missionButton}
                     onPress={this.props.onEnvironment}
                 >
-                    <Image
-                        source={require('../images/environment.png')}
-                        style={styles.ImageIconStyle}
-                    />
+                    <Ionicons name={'md-globe'} size={50} color={'#417110'}/>
                     <Text style={styles.titleMission}>ENVIRONMENT</Text>
                 </TouchableOpacity>
 
@@ -35,10 +29,7 @@ export default class Mission extends React.Component {
                     style={styles.missionButton}
                     onPress={this.props.onLocation}
                 >
-                    <Image
-                        source={require('../images/location.png')}
-                        style={styles.ImageIconStyle}
-                    />
+                    <Ionicons name={'ios-pin'} size={50} color={'#417110'}/>
                     <Text style={styles.titleMission}>LOCATION</Text>
                 </TouchableOpacity>
 
@@ -46,10 +37,7 @@ export default class Mission extends React.Component {
                     style={styles.missionButton}
                     onPress={this.props.onRestaurant}
                 >
-                    <Image
-                        source={require('../images/restaurant.png')}
-                        style={styles.ImageIconStyle}
-                    />
+                    <Ionicons name={'ios-restaurant'} size={50} color={'#417110'}/>
                     <Text style={styles.titleMission}>RESTAURANT</Text>
                 </TouchableOpacity>
 

@@ -1,51 +1,57 @@
 import React from 'react';
-import { Text, View, Image, ScrollView} from 'react-native';
-import { styles, Button } from '../styles.js';
+import {Text, View, Image, ScrollView, TouchableOpacity} from 'react-native';
+import {styles, Button} from '../styles.js';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 const nameOfEnvironmentMission = 'Pick up waste';
 
 export default class MissionEnvironment extends React.Component {
-  render() {
-    return (
-      <ScrollView>
-        <View style={styles.logoComponent}>
-          <Image
-            source={require('../images/environment.png')}
-            style={styles.logoIcon}
-          />
-          <Text style={styles.logoTitle}>ENVIRONMENT MISSION</Text>
-        </View>
+    constructor(props) {
+        super(props);
+    }
 
-        <Text>
-          You have just completed the{'\n'}
-          {nameOfEnvironmentMission}
-          {'\n'}mission
-        </Text>
-        <Text>
-          {'\n'}Upload a proof photo{'\n'}and share it with your friends!
-        </Text>
+    render() {
+        return (
+            <ScrollView>
+                <View style={styles.logoComponent}>
+                    <View style={styles.outercircle}>
+                        <View style={styles.logo}>
+                            <Ionicons name={'md-globe'} size={80} color={'white'}/>
+                        </View>
+                    </View>
+                    <Text style={styles.subHeaderRammetto}>ENVIRONMENT MISSION</Text>
+                </View>
 
-        <Button
-          style={styles.button}
-          title="Upload photo"
-          onPress={this.props.uploadPhoto}
-        />
-        <Button
-          style={styles.button}
-          title="Take photo"
-          onPress={this.props.takePhoto}
-        />
+                <Text>
+                    You have just chosen the{'\n'}
+                    {nameOfEnvironmentMission}
+                    {'\n'}mission
+                </Text>
+                <Text>
+                    {'\n'}Upload a proof photo{'\n'}to get the points!
+                </Text>
 
-        {this.props.image ? (
-          <ScrollView>
-            <Text>Here is your picture</Text>
-            <Image
-              source={{ uri: this.props.image }}
-              style={{ width: 200, height: 200 }}
-            />
-          </ScrollView>
-        ) : null}
-      </ScrollView>
-    );
-  }
+                <View style={styles.buttonDiv}>
+                    <TouchableOpacity
+                        style={styles.primaryButton}
+                        onPress={() => this.props.uploadPhoto()}
+                    >
+                        <Text style={styles.buttonText}>Upload photo</Text>
+                    </TouchableOpacity>
+                </View>
+
+                {this.props.image ? (
+                    <View style={styles.pictureFrame}>
+                    <ScrollView >
+                        <Text>Here is your picture</Text>
+                        <Image
+                            source={{uri: this.props.image}}
+                            style={styles.uploadedImage}
+                        />
+                    </ScrollView>
+                    </View>
+                ) : null}
+            </ScrollView>
+        );
+    }
 }

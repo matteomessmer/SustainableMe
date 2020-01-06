@@ -20,15 +20,6 @@ import ProfileScreen from './Screens/ProfileScreen';
 import QR_CODE_Screen from './Screens/QR_CODE_Screen';
 import WelcomeSplashScreen from "./Screens/WelcomeSplashScreen";
 
-const routesInital = {
-    Home: HomeScreen,
-
-};
-const optionsInitial = {
-    initialRouteName: 'Home'
-};
-const AppNavigator = createStackNavigator(routesInital, optionsInitial);
-
 const routesM=({
         Mission: MissionScreen,
         MissionLocation: MissionLocationScreen,
@@ -44,6 +35,15 @@ const optionsMissions = {
 };
 
 const MissionNavigator = createStackNavigator(routesM, optionsMissions);
+
+const routesInital = {
+    Home: HomeScreen
+
+};
+const optionsInitial = {
+    initialRouteName: 'Home'
+};
+const AppNavigator = createStackNavigator(routesInital, optionsInitial);
 
 const routesL=({
     LeaderBoard: LeaderBoardScreen
