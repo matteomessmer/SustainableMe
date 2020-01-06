@@ -5,8 +5,8 @@ import MissionCompleted from from '../Components/MissionCompleted';
 const MissionCompletedScreen = props => {
   return (
     <View>
-    //Know which mission has been completed 
-    <MissionCompleted />
+    //Know which mission has been completed
+    <MissionCompleted onOther={() => props.navigation.navigate("Mission")}/>
     </View>
   )
 }
