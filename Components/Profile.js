@@ -86,10 +86,6 @@ export default class Profile extends React.Component{
    }
 
    editPwd = async () => {
-     console.log("id: " + this.props.user.id)
-     console.log("Old Password: " + this.state.oldPassword)
-     console.log("New Password: " + this.state.newPassword)
-     console.log("Cnf Password: " + this.state.cnfPassword)
      if (this.state.newPassword === this.state.cnfPassword) {
        await this.props.editPassword(this.props.user.id, this.state.oldPassword, this.state.newPassword);
        this.setState({editPassword: false, oldPassword: '', newPassword: '', cnfPassword: ''})
@@ -102,7 +98,6 @@ export default class Profile extends React.Component{
       return (
         <ScrollView>
           <View style={styles.logoComponent}>
-            <Text>{JSON.stringify(this.props.user)}</Text>
             {this.state.image===null?
             <Image
               source={require('../images/profile.png')}
