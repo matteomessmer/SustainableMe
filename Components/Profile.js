@@ -66,21 +66,23 @@ export default class Profile extends React.Component{
 
      if (!result.cancelled) {
        this.setState({ image: result.uri });
+
      }
    }
 
    editImage = async () => {
      const permission = await this.getPermissionAsync();
      if (permission) {
-       this._pickImage();
+       await this._pickImage();
+       this.editInfo();
      }
    }
 
    editInfo = async () => {
      const user = {id: this.props.user.id, name: this.state.name, email: this.state.email, image: this.state.image}
-     console.log(user)
+     console.log("my uri: " + user.image)
      await this.props.editUser(user);
-     this.setState({editName: false, editEmail: false})
+     this.setState({editName: false, editEmail: false});
    }
 
    editPwd = async () => {
@@ -89,7 +91,7 @@ export default class Profile extends React.Component{
      console.log("New Password: " + this.state.newPassword)
      console.log("Cnf Password: " + this.state.cnfPassword)
      if (this.state.newPassword === this.state.cnfPassword) {
-       await this.props.editUser(this.props.user.id, this.state.newPassword);
+       await this.props.editPassword(this.props.user.id, this.state.oldPassword, this.state.newPassword);
        this.setState({editPassword: false, oldPassword: '', newPassword: '', cnfPassword: ''})
      } else {
        alert("The new password and its confirmation do NOT match. Try again!")
@@ -100,7 +102,7 @@ export default class Profile extends React.Component{
       return (
         <ScrollView>
           <View style={styles.logoComponent}>
-
+            <Text>{JSON.stringify(this.props.user)}</Text>
             {this.state.image===null?
             <Image
               source={require('../images/profile.png')}
@@ -123,6 +125,7 @@ export default class Profile extends React.Component{
             <Text style={styles.subHeaderRammetto}>{this.state.name}</Text>
             <Text style={styles.subsubHeaderRammetto}>Points: {this.props.user.points}</Text>
           </View>
+
           {this.state.editName===false?
           <TouchableOpacity onPress={() => this.setState({editName: true})}>
             <Text>Name: {this.state.name}</Text>
@@ -139,7 +142,7 @@ export default class Profile extends React.Component{
                 onChangeText={this.handleNameChange}
                 value={this.state.name}
             />
-            <TouchableOpacity onPress={() => this.setState({editName: false})}>
+            <TouchableOpacity onPress={() => this.editInfo()}>
               <Text style={styles.button}>Save</Text>
             </TouchableOpacity>
           </View>
@@ -161,7 +164,7 @@ export default class Profile extends React.Component{
                 onChangeText={this.handleEmailChange}
                 value={this.state.email}
             />
-            <TouchableOpacity onPress={() => this.setState({editEmail: false})}>
+            <TouchableOpacity onPress={() => this.editInfo()}>
               <Text style={styles.button}>Save</Text>
             </TouchableOpacity>
           </View>
@@ -182,24 +185,33 @@ export default class Profile extends React.Component{
                   style={styles.inputField}
                   onChangeText={this.handleOldPasswordChange}
                   value={this.state.oldPassword}
+                  secureTextEntry={true}
               />
               <TextInput
                   placeholder="New password"
                   style={styles.inputField}
                   onChangeText={this.handleNewPasswordChange}
                   value={this.state.newPassword}
+                  secureTextEntry={true}
               />
               <TextInput
                   placeholder="Confirm password"
                   style={styles.inputField}
                   onChangeText={this.handleCnfPasswordChange}
                   value={this.state.cnfPassword}
+                  secureTextEntry={true}
               />
-              <TouchableOpacity onPress={() => this.setState({editPassword: false})}>
+              <TouchableOpacity onPress={() => this.editPwd()}>
                 <Text style={styles.button}>Save</Text>
               </TouchableOpacity>
+
             </View>
           }
+          <View>
+          <TouchableOpacity onPress={() => this.props.logout()}>
+            <Text style={styles.button}>Logout</Text>
+          </TouchableOpacity>
+          </View>
         </ScrollView>
       )
   }

@@ -11,8 +11,9 @@ const ProfileScreen = props => {
 				profileContainer => (
         <Profile
           user={profileContainer.state.user}
-          editPassword={(id, password)=>profileContainer.editPassword(id, password)}
+          editPassword={(id, oldPassword, newPassword)=>profileContainer.editPassword(id, oldPassword, newPassword)}
           editUser={(user)=>profileContainer.editUser(user)}
+          logout={()=>props.navigation.navigate('Login')}
         />
         )
       }

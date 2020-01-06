@@ -76,9 +76,9 @@ export default class ProfileContainer extends Container {
 		}
 	}
 
-  editUser= async (user)=>{
+  editUser = async (user)=>{
 
-      const response = await fetch('http://sustainableme.fablabnetwork.tk/API/addPoints.php', {
+      const response = await fetch('http://sustainableme.fablabnetwork.tk/API/modifyUser.php', {
           method: 'POST',
           headers: {
               Accept: 'application/json',
@@ -86,9 +86,9 @@ export default class ProfileContainer extends Container {
           },
           body: JSON.stringify({
               id: user.id,
-              image: user.image,
               name: user.name,
               email: user.email.toLowerCase(),
+              image: user.image,
           }),
       }).catch((error) => {
           console.error(error);
@@ -106,11 +106,12 @@ export default class ProfileContainer extends Container {
       }
   }
 
-  editPassword= async (id, password)=>{
+  editPassword = async (id, oldPassword, newPassword)=>{
 
-      const hash = md5(password);
+      const oldHash = md5(oldPassword);
+      const newHash = md5(newPassword);
 
-      const response = await fetch('http://sustainableme.fablabnetwork.tk/API/addPoints.php', {
+      const response = await fetch('http://sustainableme.fablabnetwork.tk/API/modifyUser.php', {
           method: 'POST',
           headers: {
               Accept: 'application/json',
@@ -118,7 +119,8 @@ export default class ProfileContainer extends Container {
           },
           body: JSON.stringify({
               id: id,
-              password: hash,
+              oldPassword: oldHash,
+              password: newHash,
           }),
       }).catch((error) => {
           console.error(error);

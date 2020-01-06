@@ -1,10 +1,11 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import MissionLocation from "../Components/MissionLocation";
 
 const MissionLocationScreen = props => {
   return (
     <View>
-    <Text>This is the Mission Location Screen</Text>
+    <MissionLocation />
     </View>
   )
 }
