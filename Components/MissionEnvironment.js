@@ -25,13 +25,13 @@ export default class MissionEnvironment extends React.Component {
                     <Text style={styles.subHeaderRammetto}>ENVIRONMENT MISSION</Text>
                 </View>
 
-                <Text>
+                <Text style={styles.inputFieldText}>
                     You have just chosen the{'\n'}
-                    {this.props.nameOfMission}
+                    "{this.props.nameOfMission}"
                     {'\n'}mission
                 </Text>
-                <Text>
-                    {'\n'}Upload a proof photo{'\n'}to get the points!
+                <Text style={styles.inputFieldText}>
+                    {'\n'}Upload a proof photo{'\n'}to get the points
                 </Text>
 
                 <View style={styles.buttonDiv}>
@@ -46,13 +46,14 @@ export default class MissionEnvironment extends React.Component {
                 {this.props.image ? (
                     <View style={styles.pictureFrame}>
                     <ScrollView >
-                        <Text>Here is your picture</Text>
+                      <Text style={styles.inputFieldText}>Here is your picture</Text>
                         <Image
                             source={{uri: this.props.image}}
                             style={styles.uploadedImage}
                         />
 
                         <View style={styles.buttonDiv}>
+                          <Text style={styles.inputFieldText}>Satisfied?</Text>
                             <TouchableOpacity
                                 style={styles.primaryButton}
                                 onPress={() => this.props.confirm(this.props.nameOfMission)}

@@ -11,9 +11,9 @@ export default class MissionCompleted extends React.Component {
         return (
             <ScrollView>
                 <View style={styles.logoComponent}>
-                    <Text style={styles.logoTitle}>Thank you!</Text>
-                    <Text>You have just completed the{'\n'}
-                    {this.props.mission}{'\n'}
+                    <Text style={styles.subHeaderRammetto}>Thank you!</Text>
+                    <Text style={styles.inputFieldText}>You have just completed the{'\n'}
+                    "{this.props.mission}"{'\n'}
                     mission!</Text>
                     <Image
                         source={require('../images/completed.png')}
@@ -23,8 +23,8 @@ export default class MissionCompleted extends React.Component {
 
                 <Subscribe to={[ProfileContainer, UserContainer]}>
                     {(profileContainer, userContainer) => (
-                      <Text>Now you have a total of{'\n'}{profileContainer.state.user.points} points.{'\n'}{'\n'}
-                      {userContainer.computePointsLeft(profileContainer.state.user.points)} points left{'\n'}
+                      <Text style={styles.inputFieldText}>Now you have a total of{'\n'}{profileContainer.state.user.points} points.{'\n'}{'\n'}
+                      You need {userContainer.computePointsLeft(profileContainer.state.user.points)} points{'\n'}
                       to reach next level</Text>
                     )
                     }
