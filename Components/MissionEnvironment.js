@@ -3,11 +3,14 @@ import {Text, View, Image, ScrollView, TouchableOpacity} from 'react-native';
 import {styles, Button} from '../styles.js';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
-const nameOfEnvironmentMission = 'Pick up waste';
-
 export default class MissionEnvironment extends React.Component {
+
     constructor(props) {
         super(props);
+    }
+
+    componentWillUnmount() {
+      this.props.clearPage();
     }
 
     render() {
@@ -24,7 +27,7 @@ export default class MissionEnvironment extends React.Component {
 
                 <Text>
                     You have just chosen the{'\n'}
-                    {nameOfEnvironmentMission}
+                    {this.props.nameOfMission}
                     {'\n'}mission
                 </Text>
                 <Text>
@@ -48,6 +51,16 @@ export default class MissionEnvironment extends React.Component {
                             source={{uri: this.props.image}}
                             style={styles.uploadedImage}
                         />
+
+                        <View style={styles.buttonDiv}>
+                            <TouchableOpacity
+                                style={styles.primaryButton}
+                                onPress={() => this.props.confirm(this.props.nameOfMission)}
+                            >
+                                <Text style={styles.buttonText}>Confirm</Text>
+                            </TouchableOpacity>
+                        </View>
+
                     </ScrollView>
                     </View>
                 ) : null}

@@ -14,16 +14,16 @@ const Home = props => {
             </View>
 
             <Subscribe to={[MissionContainer]}>
-                {missionContainer => (
-                    <MissionList
-                        computeList={missionContainer.getSpotlightMissions}
-                        computePicture={missionContainer.computePicture}
-                        onEnvironment={props.onEnvironment}
-                        onTransport={props.onTransport}
-                        onLocation={props.onLocation}
-                        onRestaurant={props.onRestaurant}
-                    />
-                )}
+            {missionContainer => (
+              <MissionList
+              computeList={missionContainer.getSpotlightMissions}
+              computePicture={missionContainer.computePicture}
+              onEnvironment={props.onEnvironment}
+              onTransport={props.onTransport}
+              onLocation={props.onLocation}
+              onRestaurant={props.onRestaurant}
+              />
+            )}
 
             </Subscribe>
 

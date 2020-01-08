@@ -22,4 +22,8 @@ export default class EnvironmentContainer extends Container {
     }
   };
 
+  clearPage = () => {
+    this.setState({image: null})
+  }
+
 }

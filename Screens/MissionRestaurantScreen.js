@@ -1,10 +1,14 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import MissionRestaurant from '../Components/MissionRestaurant'
 
 const MissionRestaurantScreen = props => {
+
+    const nameOfMission = props.navigation.getParam('mission');
+
   return (
     <View>
-    <Text>This is the Mission Restaurant Screen</Text>
+    <MissionRestaurant mission={nameOfMission}/>
     </View>
   )
 }

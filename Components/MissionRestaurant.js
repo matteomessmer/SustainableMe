@@ -7,7 +7,7 @@ export default class MissionRestaurant extends React.Component{
   render(){
       return (
         <View>
-        <Text>MissionRestaurant component</Text>
+        <Text>MissionRestaurant component for mission {this.props.mission}</Text>
         </View>
       )
   }

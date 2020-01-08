@@ -5,26 +5,36 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 
 const SpotlightMission = props => {
 
-    const picture = props.computePicture(props.type);
+const picture = props.computePicture(props.type);
 
-//TODO: Change action based on type of the mission
+        return (
+          <View>
 
-    return (
-        <View>
+          <TouchableOpacity
+              style={styles.missionButton}
+              onPress={() =>
+                {
+                  if (props.type=='environment')
+                  props.onEnvironment(props.name)
 
-            <TouchableOpacity
-                style={styles.missionButton}
-                onPress={() => props.onEnvironment()}
-            >
+                  if (props.type=="location")
+                  props.onLocation(props.name)
 
-                <Ionicons name={picture} size={50} color={'#417110'}/>
+                  if (props.type=='restaurant')
+                  props.onRestaurant(props.name)
+                }
+              }
 
-                <Text style={styles.titleMission}>{props.name}</Text>
-                <Text>{props.points}</Text>
-            </TouchableOpacity>
+          >
 
-        </View>
-    )
+            <Ionicons name={picture} size={50} color={'#417110'}/>
+
+              <Text style={styles.titleMission}>{props.name}</Text>
+              <Text>{props.points}</Text>
+          </TouchableOpacity>
+
+            </View>
+        )
 
 
 }
