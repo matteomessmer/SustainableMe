@@ -1,8 +1,10 @@
 import React from 'react';
 import {Text, View, ScrollView, Button, Image, TouchableOpacity} from 'react-native';
 import {styles} from '../styles.js';
+import {Subscribe} from 'unstated';
+import ProfileContainer from '../Container/ProfileContainer';
+import UserContainer from '../Container/UserContainer';
 
-//TODO: reset missions after completion
 export default class MissionCompleted extends React.Component {
 
     render() {
@@ -10,12 +12,23 @@ export default class MissionCompleted extends React.Component {
             <ScrollView>
                 <View style={styles.logoComponent}>
                     <Text style={styles.logoTitle}>Thank you!</Text>
-                    <Text> {this.props.mission} </Text>
+                    <Text>You have just completed the{'\n'}
+                    {this.props.mission}{'\n'}
+                    mission!</Text>
                     <Image
-                        source={require('../images/completed_75.png')}
-                        style={{height: 150, width: 250}}
+                        source={require('../images/completed.png')}
+                        style={{height: 200, width: 200}}
                     />
                 </View>
+
+                <Subscribe to={[ProfileContainer, UserContainer]}>
+                    {(profileContainer, userContainer) => (
+                      <Text>Now you have a total of{'\n'}{profileContainer.state.user.points} points.{'\n'}{'\n'}
+                      {userContainer.computePointsLeft(profileContainer.state.user.points)} points left{'\n'}
+                      to reach next level</Text>
+                    )
+                    }
+                </Subscribe>
 
 
                 <View style={styles.buttonDiv}>

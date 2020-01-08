@@ -90,4 +90,42 @@ export default class UserContainer extends Container {
         }
 
     }
+
+
+    computePointsLeft=(points)=> {
+
+      let pointsLeft = 0;
+
+      if (points < 100){
+          pointsLeft=100-points;
+      }else if(points <200){
+          pointsLeft=200-points;
+      }else if(points <300){
+        pointsLeft=300-points;
+      }else if(points <400){
+          pointsLeft=400-points;
+      }else if(points <500){
+          pointsLeft=500-points;
+      }else if(points <700){
+        pointsLeft=700-points;
+      }else if(points <900){
+          pointsLeft=900-points;
+      }else if(points <1100){
+          pointsLeft=1100-points;
+      }else if(points <1500){
+          pointsLeft=1500-points;
+      }else if(points <2000){
+        pointsLeft=2000-points;
+      }else if(points <2500){
+          pointsLeft=2500-points;
+      }else if(points <3000){
+          pointsLeft=3000-points;
+      }else if(points <4000){
+          pointsLeft=4000-points;
+      }else if(points <5000){
+          pointsLeft=5000-points;
+      }
+
+      return pointsLeft;
+    }
 }
