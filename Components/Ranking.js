@@ -35,9 +35,9 @@ export default class Ranking extends React.Component {
         const usersinLead = leaderBoard.map(this.addKeys);
 
         return (
-            <View style={styles.leaderBoard}>
+            <ScrollView style={styles.leaderBoard}>
                 {usersinLead}
-            </View>
+            </ScrollView>
         )
     }
 }
