@@ -32,6 +32,7 @@ Project 3 for the course Engineering of Mobile Systems
 - To add Points to an User (POST): http://sustainableme.fablabnetwork.tk/API/addPoints.php
 - To login (POST): http://sustainableme.fablabnetwork.tk/API/login.php
 - To register (POST): http://sustainableme.fablabnetwork.tk/API/register.php
+- To modify an user (POST): http://sustainableme.fablabnetwork.tk/API/modifyUser.php
 
 # WEBSITE
 - The email verification page: http://sustainableme.fablabnetwork.tk/API/verifyEmail.php
