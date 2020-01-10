@@ -9,6 +9,7 @@ import PictureContainer from "../Container/PictureContainer";
 const MissionEnvironmentScreen = props => {
 
   const nameOfMission = props.navigation.getParam('mission');
+  const description = props.navigation.getParam('description');
 
   return (
     <View>
@@ -18,6 +19,7 @@ const MissionEnvironmentScreen = props => {
             uploadPhoto={environmentcontainer.uploadPhoto}
             image={environmentcontainer.state.image}
             nameOfMission={nameOfMission}
+            description={description}
             confirm={(nameOfMission)=> props.navigation.navigate('MissionCompleted', {mission: nameOfMission})}
             clearPage={environmentcontainer.clearPage}
             onSave={picture=>picturecontainer.savePicture(picture)}

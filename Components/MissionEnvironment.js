@@ -30,6 +30,12 @@ export default class MissionEnvironment extends React.Component {
                     {this.props.nameOfMission}
                     {'\n'}mission
                 </Text>
+
+                <Text style={styles.inputFieldText}>
+                    What is it about?{'\n'}
+                    {this.props.description}
+                </Text>
+
                 <Text style={styles.inputFieldText}>
                     {'\n'}Upload a proof photo{'\n'}to get the points
                 </Text>

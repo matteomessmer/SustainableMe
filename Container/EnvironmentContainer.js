@@ -26,4 +26,31 @@ export default class EnvironmentContainer extends Container {
         this.setState({image: null})
     }
 
+    //TODO: why post request with empty body? Why not having get?
+    getEnvironmentMissions = async () => {
+        const response = await fetch('http://sustainableme.fablabnetwork.tk/API/getMissions.php', {
+            method: 'POST',
+            headers: {
+                Accept: 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body: null,
+        }).catch((error) => {
+            console.error(error);
+            return null;
+        });
+
+        const responseJson = await response.json();
+        const result = await responseJson.missionsEnvironment;
+
+        console.log(result)
+
+        if (responseJson.error) {
+            alert(responseJson.description);
+            return null;
+        } else {
+            return result;
+        }
+    }
+
 }

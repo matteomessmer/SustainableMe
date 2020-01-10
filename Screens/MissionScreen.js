@@ -8,7 +8,7 @@ const MissionScreen = props => {
     <View>
     <Mission
         onTransport={()=>props.navigation.navigate('MissionTransport')}
-        onEnvironment={()=>props.navigation.navigate('MissionEnvironment')}
+        onEnvironment={()=>props.navigation.navigate('MissionsEnvironmentList')}
         onLocation={()=>props.navigation.navigate('MissionLocation')}
         onRestaurant={()=>props.navigation.navigate('MissionsRestaurantList')}
     />
