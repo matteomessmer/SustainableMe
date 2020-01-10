@@ -10,6 +10,7 @@ import RegistrationScreen from './Screens/RegistrationScreen.js';
 import HomeScreen from './Screens/HomeScreen.js';
 import MissionLocationScreen from './Screens/MissionLocationScreen.js';
 import MissionEnvironmentScreen from './Screens/MissionEnvironmentScreen.js';
+import MissionsRestaurantListScreen from './Screens/MissionsRestaurantListScreen.js';
 import MissionRestaurantScreen from './Screens/MissionRestaurantScreen.js';
 import MissionTransportScreen from './Screens/MissionTransportScreen.js';
 import MissionCompletedScreen from './Screens/MissionCompletedScreen.js';
@@ -24,6 +25,7 @@ const routesM=({
         Mission: MissionScreen,
         MissionLocation: MissionLocationScreen,
         MissionEnvironment: MissionEnvironmentScreen,
+        MissionsRestaurantList: MissionsRestaurantListScreen,
         MissionRestaurant: MissionRestaurantScreen,
         MissionTransport: MissionTransportScreen,
         MissionCompleted: MissionCompletedScreen,

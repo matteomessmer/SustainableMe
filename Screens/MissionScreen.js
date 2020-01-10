@@ -10,7 +10,7 @@ const MissionScreen = props => {
         onTransport={()=>props.navigation.navigate('MissionTransport')}
         onEnvironment={()=>props.navigation.navigate('MissionEnvironment')}
         onLocation={()=>props.navigation.navigate('MissionLocation')}
-        onRestaurant={()=>props.navigation.navigate('MissionRestaurant')}
+        onRestaurant={()=>props.navigation.navigate('MissionsRestaurantList')}
     />
     </View>
   )

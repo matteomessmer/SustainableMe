@@ -26,6 +26,7 @@ export default class MissionList extends React.Component {
                 name={mission.name}
                 points={mission.points}
                 type={mission.type}
+				mission={mission}
                 computePicture={this.props.computePicture}
                 onEnvironment={this.props.onEnvironment}
                 onTransport={this.props.onTransport}

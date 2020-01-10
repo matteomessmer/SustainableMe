@@ -37,7 +37,7 @@ export default class HomeScreen extends React.Component{
                 onEnvironment={(nameOfMission)=>this.props.navigation.navigate('MissionEnvironment', {mission: nameOfMission})}
                 onTransport={()=>this.props.navigation.navigate('MissionTransport')}
                 onLocation={()=>this.props.navigation.navigate('MissionLocation')}
-                onRestaurant={(nameOfMission)=>this.props.navigation.navigate('MissionRestaurant', {mission: nameOfMission})}
+                onRestaurant={(restaurant)=>this.props.navigation.navigate('MissionRestaurant', {restaurant: restaurant})}
                 />
             </View>
         )

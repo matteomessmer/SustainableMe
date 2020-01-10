@@ -21,7 +21,7 @@ const picture = props.computePicture(props.type);
                   props.onLocation(props.name)
 
                   if (props.type=='restaurant')
-                  props.onRestaurant(props.name)
+                  props.onRestaurant(props.mission)
                 }
               }
 

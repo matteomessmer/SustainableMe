@@ -4,11 +4,11 @@ import MissionRestaurant from '../Components/MissionRestaurant'
 
 const MissionRestaurantScreen = props => {
 
-    const nameOfMission = props.navigation.getParam('mission');
+    const restaurant = props.navigation.getParam('restaurant');
 
   return (
     <View>
-    <MissionRestaurant mission={nameOfMission}/>
+    <MissionRestaurant mission={restaurant}/>
     </View>
   )
 }
