@@ -22,14 +22,14 @@ export default class MissionTransport extends React.Component {
     handleToChange = to => {
         this.setState({to: to})
     };
-    reset =()=>{
-        this.setState({routes: null, from: '', to:'', seeInstructs: false})
+    reset = () => {
+        this.setState({routes: null, from: '', to: '', seeInstructs: false})
     };
     fetchRoutes = async () => {
         console.log(this.state.from)
-        if (this.state.from==='' || this.state.to===''){
+        if (this.state.from === '' || this.state.to === '') {
             Alert.alert('Ups you are missing some information, please try again!');
-        }else{
+        } else {
             const theRoutes = await this.props.fermate(this.state.from, this.state.to);
             if (theRoutes !== null) {
                 await this.setState({routes: theRoutes[0]})
@@ -104,12 +104,12 @@ export default class MissionTransport extends React.Component {
                             </TouchableOpacity>
                         </View>
                         <View style={styles.buttonDiv}>
-                        <TouchableOpacity
-                            style={styles.resetButton}
-                            onPress={() => this.reset()}
-                        >
-                            <Text style={styles.resetButtontext}>RESET</Text>
-                        </TouchableOpacity>
+                            <TouchableOpacity
+                                style={styles.resetButton}
+                                onPress={() => this.reset()}
+                            >
+                                <Text style={styles.resetButtontext}>RESET</Text>
+                            </TouchableOpacity>
 
                         </View>
 

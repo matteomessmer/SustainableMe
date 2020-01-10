@@ -53,6 +53,16 @@ export default class MissionEnvironment extends React.Component {
                             />
 
                             <View style={styles.buttonDiv}>
+
+                                <TouchableOpacity
+                                    style={styles.primaryButton}
+                                    onPress={()=>this.props.onSave(this.props.image)}
+                                >
+                                    <Text style={styles.buttonText}>Save Picture</Text>
+                                </TouchableOpacity>
+                            </View>
+
+                            <View style={styles.buttonDiv}>
                                 <Text style={styles.inputFieldText}>Satisfied?</Text>
                                 <TouchableOpacity
                                     style={styles.primaryButton}

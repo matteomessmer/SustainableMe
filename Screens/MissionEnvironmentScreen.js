@@ -3,6 +3,7 @@ import { View } from 'react-native';
 import MissionEnvironment from '../Components/MissionEnvironment';
 import { Subscribe } from 'unstated';
 import EnvironmentContainer from '../Container/EnvironmentContainer';
+import PictureContainer from "../Container/PictureContainer";
 
 
 const MissionEnvironmentScreen = props => {
@@ -11,14 +12,15 @@ const MissionEnvironmentScreen = props => {
 
   return (
     <View>
-      <Subscribe to={[EnvironmentContainer]}>
-        {environmentcontainer => (
+      <Subscribe to={[EnvironmentContainer, PictureContainer]}>
+        {(environmentcontainer, picturecontainer) => (
           <MissionEnvironment
             uploadPhoto={environmentcontainer.uploadPhoto}
             image={environmentcontainer.state.image}
             nameOfMission={nameOfMission}
             confirm={(nameOfMission)=> props.navigation.navigate('MissionCompleted', {mission: nameOfMission})}
             clearPage={environmentcontainer.clearPage}
+            onSave={picture=>picturecontainer.savePicture(picture)}
           />
         )}
       </Subscribe>

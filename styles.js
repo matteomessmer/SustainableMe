@@ -23,6 +23,10 @@ export const styles = StyleSheet.create({
         padding: 40,
         justifyContent:'center'
     },
+    container_home:{
+        padding: 15,
+        justifyContent:'center'
+    },
     missionButton: {
         marginBottom: 10,
         borderWidth: 2,
@@ -73,7 +77,7 @@ export const styles = StyleSheet.create({
     },
     header:{
         padding:20,
-        marginTop:10,
+        marginTop:5,
         justifyContent:'center',
         alignItems:'center'
     },

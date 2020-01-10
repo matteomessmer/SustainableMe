@@ -20,8 +20,10 @@ import LeaderBoardScreen from './Screens/LeaderboardScreen';
 import ProfileScreen from './Screens/ProfileScreen';
 import QR_CODE_Screen from './Screens/QR_CODE_Screen';
 import WelcomeSplashScreen from "./Screens/WelcomeSplashScreen";
+import GalleryScreen from './Screens/GalleryScreen';
 
 const routesM=({
+        Home: HomeScreen,
         Mission: MissionScreen,
         MissionLocation: MissionLocationScreen,
         MissionEnvironment: MissionEnvironmentScreen,
@@ -39,7 +41,15 @@ const optionsMissions = {
 const MissionNavigator = createStackNavigator(routesM, optionsMissions);
 
 const routesInital = {
-    Home: HomeScreen
+    Home: HomeScreen,
+    Mission: MissionScreen,
+    MissionLocation: MissionLocationScreen,
+    MissionEnvironment: MissionEnvironmentScreen,
+    MissionsRestaurantList: MissionsRestaurantListScreen,
+    MissionRestaurant: MissionRestaurantScreen,
+    MissionTransport: MissionTransportScreen,
+    MissionCompleted: MissionCompletedScreen,
+    QR_CODE: QR_CODE_Screen,
 
 };
 const optionsInitial = {
@@ -58,7 +68,8 @@ const optionsLeader={
 const LeaderNavigator=createStackNavigator(routesL, optionsLeader);
 
 const routesP={
-    Profile:ProfileScreen
+    Profile:ProfileScreen,
+    Gallery: GalleryScreen
 };
 
 const optionsProfile={

@@ -7,31 +7,32 @@ import {styles} from '../styles.js';
 export default class QR_CODE extends React.Component {
     constructor(props) {
         super(props);
-        this.state={
+        this.state = {
             scanned: false,
             hasPermission: null,
         }
     }
 
     //TODO: add props for displaying line information after scanning.
-    handleBarCodeScanned=({type, data})=>{
-        this.setState({scanned:true});
+    handleBarCodeScanned = ({type, data}) => {
+        this.setState({scanned: true});
 
-        if(data===this.props.code){
+        if (data === this.props.code) {
             Alert.alert('Congratulations your code is valid! Thank you for using ...');
             this.props.onCreditPoints();
             this.props.onValidation();
-        }else {
+        } else {
             Alert.alert('Your code is not valid! Please try again');
         }
 
     };
 
-    askPermission =async ()=>{
-        const {status}=await BarCodeScanner.requestPermissionsAsync();
-        if(status==='granted'){
+    askPermission = async () => {
+        const {status} = await BarCodeScanner.requestPermissionsAsync();
+        if (status === 'granted') {
             this.setState({hasPermission: true})
-        };
+        }
+        ;
     };
 
     componentDidMount() {
@@ -39,19 +40,18 @@ export default class QR_CODE extends React.Component {
     }
 
 
-
     render() {
         return (
             <View style={styles.barCodeScanner}>
 
                 <BarCodeScanner
-                    onBarCodeScanned={this.state.scanned ? undefined: this.handleBarCodeScanned}
+                    onBarCodeScanned={this.state.scanned ? undefined : this.handleBarCodeScanned}
                     style={StyleSheet.absoluteFillObject}
                 />
                 {this.state.scanned && (
                     <Button title={'Tap to Scan Again'} onPress={() => {
-                        this.setState({scanned:false})
-                    }} />
+                        this.setState({scanned: false})
+                    }}/>
                 )}
             </View>
         )

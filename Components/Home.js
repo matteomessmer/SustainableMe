@@ -12,31 +12,33 @@ const Home = props => {
             <View style={styles.header}>
                 <Text style={styles.subHeaderRammetto}>Spotlight missions</Text>
             </View>
+            <View style={styles.container_home}>
+                <Subscribe to={[MissionContainer]}>
+                    {missionContainer => (
+                        <MissionList
+                            computeList={missionContainer.getSpotlightMissions}
+                            computePicture={missionContainer.computePicture}
+                            onEnvironment={props.onEnvironment}
+                            onTransport={props.onTransport}
+                            onLocation={props.onLocation}
+                            onRestaurant={props.onRestaurant}
+                        />
+                    )}
 
-            <Subscribe to={[MissionContainer]}>
-            {missionContainer => (
-              <MissionList
-              computeList={missionContainer.getSpotlightMissions}
-              computePicture={missionContainer.computePicture}
-              onEnvironment={props.onEnvironment}
-              onTransport={props.onTransport}
-              onLocation={props.onLocation}
-              onRestaurant={props.onRestaurant}
-              />
-            )}
+                </Subscribe>
 
-            </Subscribe>
+                <View style={styles.buttonDiv}>
+                    <TouchableOpacity
+                        style={styles.primaryButton}
+                        onPress={() => props.onMore()}
+                    >
+                        <Text style={styles.buttonText}>See more</Text>
+                    </TouchableOpacity>
+                </View>
 
-            <View style={styles.buttonDiv}>
-                <TouchableOpacity
-                    style={styles.primaryButton}
-                    onPress={() => props.onMore()}
-                >
-                    <Text style={styles.buttonText}>See more</Text>
-                </TouchableOpacity>
             </View>
-
         </View>
+
     )
 
 

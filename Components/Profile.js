@@ -214,6 +214,16 @@ export default class Profile extends React.Component {
                         </View>
                     }
                 </View>
+
+                <View style={styles.buttonDiv}>
+                    <TouchableOpacity
+                        style={styles.primaryButton}
+                        onPress={() => this.props.onGallery()}
+                    >
+                        <Text style={styles.buttonText}>See Gallery</Text>
+                    </TouchableOpacity>
+                </View>
+
                 <View style={styles.buttonDiv}>
                     <TouchableOpacity
                         style={styles.primaryButton}
