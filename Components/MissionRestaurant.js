@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, View,ScrollView, TouchableOpacity, Image } from 'react-native';
 import { styles} from '../styles.js';
 
-export default class MissionRestaurant extends React.Component{
+export default class MissionRestaurant extends React.Component {
 
     constructor(props) {
         super(props);

@@ -1,6 +1,5 @@
 import React from 'react';
-import {Text, View, ScrollView} from 'react-native';
-import {styles} from '../styles.js';
+import {View} from 'react-native';
 import SpotlightMission from './SpotlightMission'
 
 export default class MissionList extends React.Component {
@@ -16,17 +15,18 @@ export default class MissionList extends React.Component {
         const missions = await this.props.computeList();
         this.setState({missions: missions})
     }
+
     addKeys = (val, index) => (
         {...val, key: index}
     );
 
     render() {
-        const spot= this.state.missions.map(mission=>
+        const spot = this.state.missions.map(mission =>
             <SpotlightMission
                 name={mission.name}
                 points={mission.points}
                 type={mission.type}
-				mission={mission}
+                mission={mission}
                 computePicture={this.props.computePicture}
                 onEnvironment={this.props.onEnvironment}
                 onTransport={this.props.onTransport}
@@ -34,10 +34,10 @@ export default class MissionList extends React.Component {
                 onRestaurant={this.props.onRestaurant}
             />
         );
-        const spotlightMission=spot.map(this.addKeys);
+        const spotlightMission = spot.map(this.addKeys);
         return (
             <View>
-               {spotlightMission}
+                {spotlightMission}
             </View>
         )
     }

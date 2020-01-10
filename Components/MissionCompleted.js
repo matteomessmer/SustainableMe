@@ -4,7 +4,7 @@ import {styles} from '../styles.js';
 import {Subscribe} from 'unstated';
 import ProfileContainer from '../Container/ProfileContainer';
 import UserContainer from '../Container/UserContainer';
-
+//TODO: the subscribing could be done also already in the props, i.e., in the MissionCompletedScreen
 export default class MissionCompleted extends React.Component {
 
     render() {
@@ -13,8 +13,8 @@ export default class MissionCompleted extends React.Component {
                 <View style={styles.logoComponent}>
                     <Text style={styles.subHeaderRammetto}>Thank you!</Text>
                     <Text style={styles.inputFieldText}>You have just completed the{'\n'}
-                    "{this.props.mission}"{'\n'}
-                    mission!</Text>
+                        {this.props.mission}{'\n'}
+                        mission!</Text>
                     <Image
                         source={require('../images/completed.png')}
                         style={{height: 200, width: 200}}
@@ -23,9 +23,10 @@ export default class MissionCompleted extends React.Component {
 
                 <Subscribe to={[ProfileContainer, UserContainer]}>
                     {(profileContainer, userContainer) => (
-                      <Text style={styles.inputFieldText}>Now you have a total of{'\n'}{profileContainer.state.user.points} points.{'\n'}{'\n'}
-                      You need {userContainer.computePointsLeft(profileContainer.state.user.points)} points{'\n'}
-                      to reach next level</Text>
+                        <Text style={styles.inputFieldText}>Now you have a total
+                            of{'\n'}{profileContainer.state.user.points} points.{'\n'}{'\n'}
+                            You need {userContainer.computePointsLeft(profileContainer.state.user.points)} points{'\n'}
+                            to reach next level</Text>
                     )
                     }
                 </Subscribe>
