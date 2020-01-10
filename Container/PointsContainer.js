@@ -1,11 +1,13 @@
 import React from 'react';
-import {Container} from 'unstated'
+import {Container, Subscribe} from 'unstated'
 import md5 from "md5";
+import ProfileContainer from "./ProfileContainer";
 
 
 export default class PointsContainer extends Container {
     state = {
         points: 0,
+        totalPoints: null,
     };
 
     setPoints = async points => {
@@ -31,15 +33,12 @@ export default class PointsContainer extends Container {
         }
 
         await this.setState({points: pointsToGive});
-        console.log(this.state.points);
+        //console.log(this.state.points);
         return this.state.points
     };
 
 
     creditPointsUser = async (points, id) => {
-        console.log(this.state.points);
-        console.log(id);
-
 
         const response = await fetch('http://sustainableme.fablabnetwork.tk/API/addPoints.php', {
             method: 'POST',
@@ -60,12 +59,11 @@ export default class PointsContainer extends Container {
 
         const responseJson = await response.json();
 
-        console.log(responseJson)
         if (responseJson.error) {
             alert(responseJson.description);
             return null;
         } else {
-            console.log(responseJson);
+            await this.setState({totalPoints:responseJson.points})
         }
     }
 }

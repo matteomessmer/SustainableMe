@@ -72,7 +72,10 @@ export default class MissionEnvironment extends React.Component {
                                 <Text style={styles.inputFieldText}>Satisfied?</Text>
                                 <TouchableOpacity
                                     style={styles.primaryButton}
-                                    onPress={() => this.props.confirm(this.props.nameOfMission)}
+                                    onPress={() => {
+                                        this.props.onValid(this.props.points)
+                                        this.props.confirm(this.props.nameOfMission)
+                                    }}
                                 >
                                     <Text style={styles.buttonText}>Confirm</Text>
                                 </TouchableOpacity>

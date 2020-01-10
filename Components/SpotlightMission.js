@@ -13,7 +13,7 @@ const SpotlightMission = props => {
             style={styles.missionButton}
             onPress={() => {
                 if (props.type == 'environment')
-                    props.onEnvironment(props.name, props.description)
+                    props.onEnvironment(props.name, props.description, props.points);
 
                 if (props.type == "location")
                     props.onLocation(props.name, props.description)

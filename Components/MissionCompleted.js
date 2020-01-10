@@ -4,6 +4,7 @@ import {styles} from '../styles.js';
 import {Subscribe} from 'unstated';
 import ProfileContainer from '../Container/ProfileContainer';
 import UserContainer from '../Container/UserContainer';
+import PointsContainer from "../Container/PointsContainer";
 //TODO: the subscribing could be done also already in the props, i.e., in the MissionCompletedScreen
 export default class MissionCompleted extends React.Component {
 
@@ -21,11 +22,11 @@ export default class MissionCompleted extends React.Component {
                     />
                 </View>
 
-                <Subscribe to={[ProfileContainer, UserContainer]}>
-                    {(profileContainer, userContainer) => (
+                <Subscribe to={[ProfileContainer, UserContainer, PointsContainer]}>
+                    {(profileContainer, userContainer, pointscontainer) => (
                         <Text style={styles.inputFieldText}>Now you have a total
-                            of{'\n'}{profileContainer.state.user.points} points.{'\n'}{'\n'}
-                            You need {userContainer.computePointsLeft(profileContainer.state.user.points)} points{'\n'}
+                            of{'\n'}{pointscontainer.state.totalPoints} points.{'\n'}{'\n'}
+                            You need {userContainer.computePointsLeft(profileContainer.state.points)} points{'\n'}
                             to reach next level</Text>
                     )
                     }

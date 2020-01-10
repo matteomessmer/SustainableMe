@@ -20,6 +20,7 @@ export default class Profile extends React.Component {
             newPassword: '',
             cnfPassword: '',
             image: this.props.user.image,
+
         }
     }
 
@@ -96,6 +97,13 @@ export default class Profile extends React.Component {
         } else {
             alert("The new password and its confirmation do NOT match. Try again!")
         }
+    };
+
+    async componentDidMount() {
+        console.log(this.props.newPoints);
+        if (this.props.newPoints !== 0) {
+            await this.setState({points: this.props.newPoints})
+        }
     }
 
     render() {
@@ -116,7 +124,11 @@ export default class Profile extends React.Component {
                     </TouchableOpacity>
 
                     <Text style={styles.subHeaderRammetto}>{this.state.name}</Text>
-                    <Text style={styles.subsubHeaderRammetto}>Points: {this.props.user.points}</Text>
+                    {this.props.newPoints ?
+                        <Text style={styles.subsubHeaderRammetto}>Points: {this.props.newPoints}</Text>:
+                        <Text style={styles.subsubHeaderRammetto}>Points: {this.props.user.points}</Text>
+                    }
+
                 </View>
 
                 <View style={styles.profileContent}>
