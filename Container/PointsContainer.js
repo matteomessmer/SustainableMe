@@ -39,7 +39,7 @@ export default class PointsContainer extends Container {
 
 
     creditPointsUser = async (points, id) => {
-
+        console.log(points);
         const response = await fetch('http://sustainableme.fablabnetwork.tk/API/addPoints.php', {
             method: 'POST',
             headers: {
@@ -47,7 +47,7 @@ export default class PointsContainer extends Container {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                points: this.state.points,
+                points: points,
                 id: id,
 
 
@@ -58,7 +58,7 @@ export default class PointsContainer extends Container {
         });
 
         const responseJson = await response.json();
-
+        console.log(responseJson)
         if (responseJson.error) {
             alert(responseJson.description);
             return null;

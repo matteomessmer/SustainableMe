@@ -25,7 +25,11 @@ export default class MissionCompleted extends React.Component {
                 <Subscribe to={[ProfileContainer, UserContainer, PointsContainer]}>
                     {(profileContainer, userContainer, pointscontainer) => (
                         <Text style={styles.inputFieldText}>Now you have a total
-                            of{'\n'}{pointscontainer.state.totalPoints} points.{'\n'}{'\n'}
+                            of{'\n'} {pointscontainer.state.totalPoints?
+                                <Text> You have a total of {pointscontainer.state.totalPoints}</Text>
+                                :
+                                null
+                            }{'\n'}{'\n'}
                             You need {userContainer.computePointsLeft(profileContainer.state.points)} points{'\n'}
                             to reach next level</Text>
                     )

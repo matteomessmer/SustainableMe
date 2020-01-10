@@ -12,6 +12,7 @@ const MissionEnvironmentScreen = props => {
 
   const nameOfMission = props.navigation.getParam('mission');
   const description = props.navigation.getParam('description');
+  const points=props.navigation.getParam('points');
 
   return (
     <View>
@@ -26,6 +27,7 @@ const MissionEnvironmentScreen = props => {
             clearPage={environmentcontainer.clearPage}
             onSave={picture=>picturecontainer.savePicture(picture)}
             onValid={points =>pointscontainer.creditPointsUser(points, profilecontainer.state.user.id)}
+            points={points}
 
           />
         )}
