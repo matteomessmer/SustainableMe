@@ -1,6 +1,8 @@
 import React from 'react';
 import {Container} from 'unstated'
 import md5 from 'md5';
+import * as ImagePicker from 'expo-image-picker';
+import * as Permissions from 'expo-permissions';
 
 export default class ProfileContainer extends Container {
     state = {
@@ -136,6 +138,45 @@ export default class ProfileContainer extends Container {
       } else {
           console.log(responseJson);
       }
+  }
+  /*methods to handle image pick and change*/
+  getPermissionAsync = async () => {
+      const {status} = await Permissions.askAsync(Permissions.CAMERA_ROLL);
+      console.log(status)
+      if (status !== 'granted') {
+          alert('Sorry, we need camera roll permissions to make this work!');
+          return false
+      } else {
+          return true
+      }
+  }
+
+  _pickImage = async () => {
+      let result = await ImagePicker.launchImageLibraryAsync({
+          mediaTypes: ImagePicker.MediaTypeOptions.All,
+          allowsEditing: true,
+          aspect: [4, 3],
+          quality: 1
+      });
+
+      if (!result.cancelled) {
+          const newUser = {id:this.state.user.id, name:this.state.user.name, email:this.state.user.email, image:result.uri}
+          this.setState({user: newUser});
+      }
+  }
+
+  editImage = async () => {
+      const permission = await this.getPermissionAsync();
+      if (permission) {
+          await this._pickImage();
+          await this.editInfo();
+      }
+  }
+
+  editInfo = async () => {
+      const user = this.state.user;
+      await this.editUser(user);
+      /*this.setState({editName: false, editEmail: false});*/
   }
 
 }

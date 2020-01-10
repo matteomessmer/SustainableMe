@@ -51,7 +51,7 @@ export default class TransportationContainer extends Container {
     pickAndCheckPosition = async (lat, lon) => {
       console.log("The location i want is placed at " + lat + ", " + lon)
       const currentPosition = await this._getLocationAsync();
-      const response = await fetch('https://maps.googleapis.com/maps/api/directions/json?origin=' + lat + "," + lon + '&destination=' + currentPosition.lat + "," + currentPosition.lon + '&key=AIzaSyDnOaaU_CIxZxa45NcrN0G2Nzl7xVTKFdA');
+      const response = await fetch('https://maps.googleapis.com/maps/api/directions/json?origin=' + lat + "," + lon + '&destination=' + /*currentPosition.*/lat + "," + /*currentPosition.*/lon + '&key=AIzaSyDnOaaU_CIxZxa45NcrN0G2Nzl7xVTKFdA');
       const theAnswer = await response.json();
       /*console.log("my distance is: " + JSON.stringify(theAnswer.routes[0].legs[0].distance.value));*/
       if (theAnswer.routes[0].legs[0].distance.value < 5000) {

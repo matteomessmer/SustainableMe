@@ -19,8 +19,6 @@ export default class Profile extends React.Component {
             oldPassword: '',
             newPassword: '',
             cnfPassword: '',
-            image: this.props.user.image,
-
         }
     }
 
@@ -44,48 +42,6 @@ export default class Profile extends React.Component {
         this.setState({cnfPassword: cnfPassword})
     }
 
-    getPermissionAsync = async () => {
-        const {status} = await Permissions.askAsync(Permissions.CAMERA_ROLL);
-        console.log(status)
-        if (status !== 'granted') {
-            alert('Sorry, we need camera roll permissions to make this work!');
-            return false
-        } else {
-            return true
-        }
-    }
-
-    _pickImage = async () => {
-        let result = await ImagePicker.launchImageLibraryAsync({
-            mediaTypes: ImagePicker.MediaTypeOptions.All,
-            allowsEditing: true,
-            aspect: [4, 3],
-            quality: 1
-        });
-
-        console.log(result);
-
-        if (!result.cancelled) {
-            this.setState({image: result.uri});
-
-        }
-    }
-
-    editImage = async () => {
-        const permission = await this.getPermissionAsync();
-        if (permission) {
-            await this._pickImage();
-            this.editInfo();
-        }
-    }
-
-    editInfo = async () => {
-        const user = {id: this.props.user.id, name: this.state.name, email: this.state.email, image: this.state.image}
-        console.log("my uri: " + user.image)
-        await this.props.editUser(user);
-        this.setState({editName: false, editEmail: false});
-    }
-
     editPwd = async () => {
         console.log("id: " + this.props.user.id)
         console.log("Old Password: " + this.state.oldPassword)
@@ -99,6 +55,12 @@ export default class Profile extends React.Component {
         }
     };
 
+    editInfo = async () => {
+        const user = {id: this.props.user.id, name: this.state.name, email: this.state.email, image: this.state.image}
+        await this.props.editUser(user);
+        this.setState({editName: false, editEmail: false});
+    }
+
     async componentDidMount() {
         console.log(this.props.newPoints);
         if (this.props.newPoints !== 0) {
@@ -110,16 +72,16 @@ export default class Profile extends React.Component {
         return (
             <ScrollView>
                 <View style={styles.logoComponent}>
-                    {this.state.image === null ?
+                    {this.props.user.image === null ?
                         <Ionicons name={'ios-person'} size={150} color={'#417110'}/>
                         :
                         <Image
-                            source={{uri: this.state.image}}
+                            source={{uri: this.props.user.image}}
                             style={{width: 150, height: 150}}
                         />
                     }
 
-                    <TouchableOpacity onPress={() => this.editImage()}>
+                    <TouchableOpacity onPress={() => this.props.editImage()}>
                         <Ionicons name={'md-create'} size={30} color={'#417110'}/>
                     </TouchableOpacity>
 

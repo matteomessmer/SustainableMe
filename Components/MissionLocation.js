@@ -16,7 +16,7 @@ class ListedMission extends React.Component {
           style={styles.ImageIconStyle}
       />
       <Text>{this.props.name}</Text>
-      <Text>+100</Text>
+      <Text>{this.props.points}</Text>
 
     </TouchableOpacity>
   )
@@ -35,7 +35,9 @@ class SingleMission extends React.Component {
   async advance() {
     const success = await this.props.pickAndCheckPosition(this.props.mission.lat, this.props.mission.lon);
     if (success) {
-      this.props.onValidation();
+      await this.props.setPoints(100);
+      await this.props.creditPointsUser();
+      await this.props.onValidation();
     }
     else {
       this.setState({error: "Sorry, you're not close enough."})
@@ -88,6 +90,7 @@ export default class MissionLocation extends React.Component{
                 name={mission.name}
                 lat={mission.lat}
                 lon={mission.lon}
+                points={"100"}
                 myOnPress={() => this.setState({selectedMission: mission})}
               />
             )}
@@ -99,6 +102,8 @@ export default class MissionLocation extends React.Component{
             mission={this.state.selectedMission}
             pickAndCheckPosition={this.props.pickAndCheckPosition}
             onValidation={this.props.onValidation}
+            setPoints={this.props.setPoints}
+            creditPointsUser={this.props.creditPointsUser}
           />
         )
       }

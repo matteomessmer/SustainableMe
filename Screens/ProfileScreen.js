@@ -15,6 +15,7 @@ const ProfileScreen = props => {
                     editUser={(user) => profileContainer.editUser(user)}
                     logout={() => props.navigation.navigate('Login')}
                     onGallery={()=>props.navigation.navigate('Gallery')}
+                    editImage={()=>profileContainer.editImage()}
                 />
             )
             }
