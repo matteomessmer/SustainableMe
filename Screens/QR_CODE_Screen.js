@@ -5,6 +5,8 @@ import PointsContainer from "../Container/PointsContainer";
 import ProfileContainer from "../Container/ProfileContainer";
 
 const QR_CODE_Screen = props => {
+	    const code = props.navigation.getParam('code');
+
     return (
 
 
@@ -13,6 +15,7 @@ const QR_CODE_Screen = props => {
                 <QR_CODE
                     onCreditPoints={()=>pointscontainer.creditPointsUser(pointscontainer.state.points, profilecontainer.state.user.id)}
                     onValidation={() => props.navigation.navigate('MissionCompleted')}
+					code={code}	
                 />
             )}
         </Subscribe>

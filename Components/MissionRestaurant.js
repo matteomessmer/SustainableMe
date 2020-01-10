@@ -1,11 +1,12 @@
 import React from 'react';
-import { Text, View,ScrollView, Button, Image } from 'react-native';
+import { Text, View,ScrollView, TouchableOpacity, Image } from 'react-native';
 import { styles} from '../styles.js';
 
 export default class MissionRestaurant extends React.Component{
 
     constructor(props) {
         super(props);
+		this.props.setPoints(this.props.mission.points);
     }
 
 	render(){
@@ -21,6 +22,15 @@ export default class MissionRestaurant extends React.Component{
 				<Text>{this.props.mission.qr}</Text>
 				<Text>{this.props.mission.url}</Text>
 				<Text>{this.props.mission.description}</Text>
+				
+				<View style={styles.buttonDiv}>
+					<TouchableOpacity
+						style={styles.primaryButton}
+						onPress={() => this.props.onQR(this.props.mission.qr)}
+						>
+						<Text style={styles.buttonText}>Scan Code</Text>
+					</TouchableOpacity>
+				</View>
 			</View>
 		)
 	}

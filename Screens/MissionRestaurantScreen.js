@@ -1,6 +1,9 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import MissionRestaurant from '../Components/MissionRestaurant'
+import {Subscribe} from 'unstated';
+import MissionRestaurant from '../Components/MissionRestaurant';
+import PointsContainer from '../Container/PointsContainer';
+
 
 const MissionRestaurantScreen = props => {
 
@@ -8,7 +11,15 @@ const MissionRestaurantScreen = props => {
 
   return (
     <View>
-    <MissionRestaurant mission={restaurant}/>
+		<Subscribe to={[PointsContainer]}>
+			{ pointsContainer => (
+				<MissionRestaurant 
+					mission={restaurant}
+					setPoints={(points) => pointsContainer.setPoints(points)}
+					onQR={(code) => props.navigation.navigate('QR_CODE', {code:code})}
+				/>
+			)}
+		</Subscribe>
     </View>
   )
 }

@@ -7,7 +7,11 @@ export default class PointsContainer extends Container {
     state = {
         points: 0,
     };
-
+	
+	setPoints = async points => {
+		console.log(points);
+		await this.setState({points: points});
+	}
 
     //need to parse the kilometer to floats
     addPointsfromDistance = async kilometer => {
@@ -33,7 +37,7 @@ export default class PointsContainer extends Container {
 
 
     creditPointsUser= async (points, id)=>{
-        console.log(points);
+        console.log(this.state.points);
         console.log(id);
 
 
@@ -44,7 +48,7 @@ export default class PointsContainer extends Container {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                points: points,
+                points: this.state.points,
                 id: id,
 
 
