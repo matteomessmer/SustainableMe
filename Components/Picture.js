@@ -12,7 +12,8 @@ export default class Picture extends React.Component {
         super(props);
     }
 
-
+//Picture component shown in the gallery with the picture itself and a button
+//"delete" to delete the picture from the gallery
     render() {
 
         return(

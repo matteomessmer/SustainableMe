@@ -4,6 +4,9 @@ import {styles} from '../styles.js';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
 export default class SpotlightMission extends React.Component {
+
+  //Component for the spotlight mission showing the name of the mission and the points.
+  //Each mission leads to the specific screen of the mission depending on its type
     render() {
 
         return (
@@ -34,4 +37,3 @@ export default class SpotlightMission extends React.Component {
 
 
 };
-

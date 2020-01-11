@@ -10,7 +10,7 @@ export default class Gallery extends React.Component {
         super(props);
     }
 
-
+//For every picture of the list stored in the container, a Picture component is created
     render() {
         const pictures = this.props.pictureList.map((picture, index) => {
             return (

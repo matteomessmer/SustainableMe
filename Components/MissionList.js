@@ -12,15 +12,18 @@ export default class MissionList extends React.Component {
         }
     }
 
+//When the component mounts, it loads the spotlight missions
     async componentDidMount() {
         const missions = await this.props.computeList();
         this.setState({missions: missions})
     }
 
+//Create keys for the elements of the list
     addKeys = (val, index) => (
         {...val, key: index}
     );
 
+//List composed by single spotlight missions (SpotlightMission components)
     render() {
         const spot = this.state.missions.map(mission =>
             <SpotlightMission

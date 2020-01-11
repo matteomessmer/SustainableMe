@@ -7,9 +7,10 @@ import PictureContainer from "../Container/PictureContainer";
 import PointsContainer from "../Container/PointsContainer";
 import ProfileContainer from "../Container/ProfileContainer";
 
-
+//Screen to show the MissionEnvironment component
 const MissionEnvironmentScreen = props => {
 
+//Get the navigation parameters for the info about the specific environment mission
   const nameOfMission = props.navigation.getParam('mission');
   const description = props.navigation.getParam('description');
   const points=props.navigation.getParam('points');
@@ -36,6 +37,7 @@ const MissionEnvironmentScreen = props => {
   )
 };
 
+//Navigation options for the header
 MissionEnvironmentScreen.navigationOptions = {
     title: 'Environment Mission',
     headerTintColor: '#ffffff',

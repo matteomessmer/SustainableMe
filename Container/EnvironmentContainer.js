@@ -4,10 +4,14 @@ import * as ImagePicker from 'expo-image-picker';
 import * as Permissions from 'expo-permissions';
 
 export default class EnvironmentContainer extends Container {
+
+  //State storing temporarly the picture uploaded by the user
     state = {
         image: null,
     };
 
+//Ask permission to the user to access its gallery so that he can upload the photo
+//from his camera roll
     uploadPhoto = async () => {
         const {status} = await Permissions.askAsync(Permissions.CAMERA_ROLL);
 
@@ -22,11 +26,13 @@ export default class EnvironmentContainer extends Container {
         }
     };
 
+    //Clear the picture
     clearPage = () => {
         this.setState({image: null})
     }
 
     //TODO: why post request with empty body? Why not having get?
+    //Retrieve all the environment missions from the database
     getEnvironmentMissions = async () => {
         const response = await fetch('http://sustainableme.fablabnetwork.tk/API/getMissions.php', {
             method: 'POST',

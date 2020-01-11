@@ -4,6 +4,7 @@ import {Subscribe} from "unstated";
 import EnvironmentContainer from "../Container/EnvironmentContainer";
 import MissionsEnvironmentList from '../Components/MissionsEnvironmentList';
 
+//Screen to show the list of environment missions available
 const MissionsEnvironmentListScreen = props => {
 	return (
 		<View>
@@ -20,6 +21,8 @@ const MissionsEnvironmentListScreen = props => {
 		</View>
 	)
 }
+
+//Navigation options for the header
 MissionsEnvironmentListScreen.navigationOptions = {
     title: 'Environment missions',
     headerTintColor: '#ffffff',

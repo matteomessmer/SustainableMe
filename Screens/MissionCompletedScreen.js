@@ -5,7 +5,7 @@ import ProfileContainer from "../Container/ProfileContainer";
 import UserContainer from "../Container/UserContainer";
 import PointsContainer from "../Container/PointsContainer";
 
-
+//Screen to show the information about the mission that the user just completed
 const MissionCompletedScreen = props => {
 
     const nameOfMission = props.navigation.getParam('mission');
@@ -27,6 +27,7 @@ const MissionCompletedScreen = props => {
 
 };
 
+//Navigation options for the header
 MissionCompletedScreen.navigationOptions = {
     headerTintColor: '#ffffff',
     headerStyle: {

@@ -9,7 +9,7 @@ import {Subscribe} from "unstated";
 
 export default class HomeScreen extends React.Component {
 
-
+//Navigation options for the header of the screen
     static navigationOptions = ({navigation}) => {
         const nav = navigation;
         return {
@@ -29,6 +29,7 @@ export default class HomeScreen extends React.Component {
 
     };
 
+//Screen containing the Home component
     render() {
 
         return (

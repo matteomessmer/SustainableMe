@@ -6,6 +6,9 @@ import MissionList from './MissionList';
 export default class Home extends React.Component {
     render() {
 
+//Home component showing the spotlight missions (the missions that are highlighted as
+//more important and relevant than others). A list of missions is shown and a button "See more"
+//allows the user to see the complete list of missions available
         return (
             <View style={styles.container_home}>
                 <View style={styles.header}>
@@ -37,6 +40,3 @@ export default class Home extends React.Component {
 
 
 }
-
-
-
