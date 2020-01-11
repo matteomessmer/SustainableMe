@@ -12,11 +12,17 @@ export default class PictureContainer extends PersistContainer {
 
     //Save the picture in the gallery
     savePicture=picture=>{
+      const withPic= this.state.picList.filter(pic => pic == picture)
+
+      if (withPic.length != 0) {
+        Alert.alert('The picture is already in the gallery!');
+      } else {
         const newpicList=[...this.state.picList, picture];
         this.setState({picList: newpicList});
         Alert.alert('Your picture has been saved succesfully!');
         console.log(this.state.picList)
     };
+}
 
 //Delete the picture from the gallery
     delete=picture=>{
