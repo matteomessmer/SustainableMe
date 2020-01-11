@@ -21,7 +21,7 @@ export default class Leaderboard extends React.Component {
 
 
         return (
-            <View>
+            <ScrollView>
                 <View style={styles.header}>
                     <Text style={styles.subHeaderRammetto}>Leaderboard</Text>
                 </View>
@@ -37,7 +37,7 @@ export default class Leaderboard extends React.Component {
 
                 </View>
 
-            </View>
+            </ScrollView>
         )
     }
 
