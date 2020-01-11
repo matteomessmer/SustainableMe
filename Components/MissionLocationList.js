@@ -14,11 +14,10 @@ export default class MissionLocationList extends React.Component {
         }
     }
 
-    async componentDidMount() {
-        const missions = await this.props.getLocationMissions();
+     async componentDidMount() {
+        const missions =  await this.props.getLocationMissions();
         await this.setState({missions: missions, isLoading: false});
     }
-
 
     render() {
         if (this.state.isLoading) {
