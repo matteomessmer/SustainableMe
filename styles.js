@@ -200,6 +200,9 @@ export const styles = StyleSheet.create({
         height: 100,
         marginTop: 50
     },
+    splashLoading:{
+        marginTop:15,
+    },
     specialFont: {
         fontFamily: 'Rammetto-One',
         fontSize: 40,

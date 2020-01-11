@@ -59,7 +59,7 @@ export default class Profile extends React.Component {
         const user = {id: this.props.user.id, name: this.state.name, email: this.state.email, image: this.state.image}
         await this.props.editUser(user);
         this.setState({editName: false, editEmail: false});
-    }
+    };
 
     render() {
         return (

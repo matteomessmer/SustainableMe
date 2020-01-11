@@ -1,7 +1,5 @@
 import React from 'react';
-import {Container, Subscribe} from 'unstated'
-import md5 from "md5";
-import ProfileContainer from "./ProfileContainer";
+import {Container} from 'unstated'
 
 
 export default class PointsContainer extends Container {

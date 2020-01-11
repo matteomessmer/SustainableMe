@@ -31,7 +31,6 @@
     "react-navigation-tabs": "^2.6.2",
     "react-unstated": "0.0.3",
     "unstated": "^2.1.1",
-    "unstated-next": "^1.1.0",
     "unstated-persist": "0.0.4"
   },
   "devDependencies": {
