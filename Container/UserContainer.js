@@ -64,6 +64,8 @@ export default class UserContainer extends Container {
             level=13;
         }else if(points <5000){
             level=14;
+        } else if(points <50000) {
+            level=15;
         }
 
         return level;
@@ -124,6 +126,8 @@ export default class UserContainer extends Container {
           pointsLeft=4000-points;
       }else if(points <5000){
           pointsLeft=5000-points;
+      } else {
+        pointsLeft=50000-points;
       }
 
       return pointsLeft;

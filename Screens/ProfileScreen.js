@@ -3,11 +3,12 @@ import Profile from "../Components/Profile";
 import {Subscribe} from 'unstated';
 import ProfileContainer from '../Container/ProfileContainer';
 import PointsContainer from "../Container/PointsContainer";
+import UserContainer from "../Container/UserContainer";
 
 const ProfileScreen = props => {
     return (
-        <Subscribe to={[ProfileContainer, PointsContainer]}>
-            {(profileContainer,pointscontainer) => (
+        <Subscribe to={[ProfileContainer, PointsContainer, UserContainer]}>
+            {(profileContainer,pointscontainer, usercontainer) => (
                 <Profile
                     user={profileContainer.state.user}
                     newPoints={pointscontainer.state.totalPoints}
@@ -18,6 +19,7 @@ const ProfileScreen = props => {
                     logout={() => props.navigation.navigate('Login')}
                     onGallery={()=>props.navigation.navigate('Gallery')}
                     editImage={()=>profileContainer.editImage()}
+                    whatLevel={(points)=>usercontainer.whatLevel(points)}
                 />
             )
             }

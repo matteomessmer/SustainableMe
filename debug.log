@@ -83,3 +83,5 @@
 [0111/123251.270:ERROR:crash_report_database_win.cc(469)] failed to stat report
 [0111/124751.270:ERROR:crash_report_database_win.cc(469)] failed to stat report
 [0111/130251.270:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0111/131751.272:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0111/133251.277:ERROR:crash_report_database_win.cc(469)] failed to stat report

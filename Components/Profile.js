@@ -80,8 +80,15 @@ export default class Profile extends React.Component {
 
                     <Text style={styles.subHeaderRammetto}>{this.state.name}</Text>
                     {this.props.newPoints ?
-                        <Text style={styles.subsubHeaderRammetto}>Points: {this.props.newPoints}</Text> :
-                        <Text style={styles.subsubHeaderRammetto}>Points: {this.props.user.points}</Text>
+                        <View>
+                          <Text style={styles.subsubHeaderRammetto}>Points: {this.props.newPoints}</Text>
+                          <Text style={styles.subsubHeaderRammetto}>Level: {this.props.whatLevel(this.props.newPoints)}</Text>
+                        </View>
+                        :
+                        <View>
+                          <Text style={styles.subsubHeaderRammetto}>Points: {this.props.user.points}</Text>
+                          <Text style={styles.subsubHeaderRammetto}>Level: {this.props.whatLevel(this.props.user.points)}</Text>
+                        </View>
                     }
 
                 </View>
