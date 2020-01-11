@@ -39,7 +39,7 @@ export default class MissionsRestaurantList extends React.Component {
                             subtitle={mission.points + ' points'}
                             bottomDivider
                             chevron
-                            onPress={() => this.props.onMissionClick(mission.name, mission.description)}
+                            onPress={() => this.props.onMissionClick(mission.name, mission.description, mission.points)}
                         />
                     ))
                 }

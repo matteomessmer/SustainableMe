@@ -95,7 +95,7 @@ export default class UserContainer extends Container {
 
 
     computePointsLeft=(points)=> {
-
+    console.log(points)
       let pointsLeft = 0;
 
       if (points < 100){
@@ -130,6 +130,7 @@ export default class UserContainer extends Container {
         pointsLeft=50000-points;
       }
 
+      console.log(pointsLeft);
       return pointsLeft;
     }
 }

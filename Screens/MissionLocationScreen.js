@@ -1,10 +1,12 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import {View } from 'react-native';
 import MissionLocation from "../Components/MissionLocation";
 import {Subscribe} from "unstated";
 import MissionLocationContainer from '../Container/MissionLocationContainer';
 import PointsContainer from '../Container/PointsContainer';
 import ProfileContainer from '../Container/ProfileContainer';
+import MissionEnvironment from "./MissionEnvironmentScreen";
+
 
 const MissionLocationScreen = props => {
 
@@ -19,12 +21,19 @@ const MissionLocationScreen = props => {
             pickAndCheckPosition={(lat, lon) => missionlocationcontainer.pickAndCheckPosition(lat, lon)}
             setPoints={(points) => pointscontainer.setPoints(points)}
             creditPointsUser={()=>pointscontainer.creditPointsUser(pointscontainer.state.points, profilecontainer.state.user.id)}
-            onValidation={() => props.navigation.navigate('MissionCompleted')}
+            onValidation={(nameOfMission)=> props.navigation.navigate('MissionCompleted', {mission: nameOfMission})}
           />
         )}
       </Subscribe>
     </View>
   )
-}
+};
+MissionLocationScreen.navigationOptions = {
+    title: 'Location Mission',
+    headerTintColor: '#ffffff',
+    headerStyle: {
+        backgroundColor: '#417110'
+    }
+};
 
 export default MissionLocationScreen;

@@ -1,11 +1,8 @@
 import React from 'react';
 import {Text, View, ScrollView, Button, Image, TouchableOpacity} from 'react-native';
 import {styles} from '../styles.js';
-import {Subscribe} from 'unstated';
-import ProfileContainer from '../Container/ProfileContainer';
-import UserContainer from '../Container/UserContainer';
-import PointsContainer from "../Container/PointsContainer";
-//TODO: the subscribing could be done also already in the props, i.e., in the MissionCompletedScreen
+
+
 export default class MissionCompleted extends React.Component {
 
     render() {
@@ -22,19 +19,16 @@ export default class MissionCompleted extends React.Component {
                     />
                 </View>
 
-                <Subscribe to={[ProfileContainer, UserContainer, PointsContainer]}>
-                    {(profileContainer, userContainer, pointscontainer) => (
-                        <Text style={styles.inputFieldText}>Now you have a total
-                            of{'\n'} {pointscontainer.state.totalPoints?
-                                <Text> You have a total of {pointscontainer.state.totalPoints}</Text>
-                                :
-                                null
-                            }{'\n'}{'\n'}
-                            You need {userContainer.computePointsLeft(profileContainer.state.points)} points{'\n'}
-                            to reach next level</Text>
-                    )
-                    }
-                </Subscribe>
+                <View>
+                    <Text style={styles.inputFieldText}>Now you have a total
+                        of{'\n'} {this.props.totalPoints ?
+                            <Text> You have a total of {this.props.totalPoints}</Text>
+                            :
+                            null
+                        }{'\n'}{'\n'}
+                        You need {this.props.pointsLeft(this.props.totalPoints)} points{'\n'}
+                        to reach next level</Text>
+                </View>
 
 
                 <View style={styles.buttonDiv}>

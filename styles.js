@@ -27,13 +27,16 @@ export const styles = StyleSheet.create({
         padding: 15,
         justifyContent:'center'
     },
+    spotLight:{
+       marginTop: 15,
+    },
     missionButton: {
-        marginBottom: 10,
         borderWidth: 2,
         borderColor: darkGreen,
         padding: 10,
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        marginBottom: 10,
     },
     titleMission: {
         marginTop: 5,
@@ -76,10 +79,36 @@ export const styles = StyleSheet.create({
         fontFamily: 'Rammetto-One',
     },
     header:{
-        padding:20,
+        padding:0,
         marginTop:5,
         justifyContent:'center',
         alignItems:'center'
+    },
+    environsubTitle:{
+        fontSize: 20,
+        fontFamily: 'Roboto',
+        textAlign:'center',
+    },
+    environsubTitleColor:{
+        fontSize: 20,
+        fontFamily: 'Roboto',
+        textAlign:'center',
+        color:'black'
+    },
+    titleheader:{
+        marginTop: 10,
+        marginBottom: 15,
+        justifyContent:'center',
+        alignItems:'center',
+    },
+    inlineHeader:{
+        fontSize: 18,
+        fontFamily: 'Rammetto-One',
+        color:yellow
+    },
+    satisfied:{
+        marginTop:30,
+
     },
     inputField: {
         paddingHorizontal: 10,
@@ -256,6 +285,11 @@ export const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center'
     },
+    buttonDivLoc: {
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginTop:30,
+    },
     instructionContainer: {
 
         borderWidth: 2,
@@ -265,6 +299,19 @@ export const styles = StyleSheet.create({
     userInstructs: {
         fontSize:18,
         fontFamily: 'Roboto'
+    },
+    locInstructs:{
+        fontSize:15,
+        fontFamily: 'Roboto'
+    },
+    errorInstruct: {
+        fontSize:18,
+        fontFamily: 'Roboto-Bold',
+        margin: 15,
+    },
+
+    loading:{
+        marginBottom:40,
     },
     highlighting:{
         fontWeight: 'bold',

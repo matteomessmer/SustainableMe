@@ -12,7 +12,7 @@ const MissionsEnvironmentListScreen = props => {
 					environmentContainer => (
 						<MissionsEnvironmentList
 							getEnvironmentMissions={environmentContainer.getEnvironmentMissions}
-							onMissionClick={(mission, description)=>props.navigation.navigate('MissionEnvironment', {mission: mission, description: description})}
+							onMissionClick={(mission, description, points)=>props.navigation.navigate('MissionEnvironment', {mission: mission, description: description, points: points})}
 						/>
 					)
 				}

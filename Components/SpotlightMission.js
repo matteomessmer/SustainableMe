@@ -1,39 +1,37 @@
 import React from 'react';
-import {Text, View, ScrollView, TouchableOpacity} from 'react-native';
+import {Text, TouchableOpacity} from 'react-native';
 import {styles} from '../styles.js';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
-const SpotlightMission = props => {
+export default class SpotlightMission extends React.Component {
+    render() {
 
-    //TODO: this could be moved to the screen part!
-    const picture = props.computePicture(props.type);
+        return (
+            <TouchableOpacity
+                style={styles.missionButton}
+                onPress={() => {
+                    if (this.props.type == 'environment')
+                        this.props.onEnvironment(this.props.name, this.props.description, this.props.points);
 
-    return (
-        <TouchableOpacity
-            style={styles.missionButton}
-            onPress={() => {
-                if (props.type == 'environment')
-                    props.onEnvironment(props.name, props.description, props.points);
+                    if (this.props.type == "location")
+                        this.props.onLocation(this.props.mission)
 
-                if (props.type == "location")
-                    props.onLocation(props.mission)
+                    if (this.props.type == 'restaurant')
+                        this.props.onRestaurant(this.props.mission, this.props.description)
+                }
+                }
+            >
 
-                if (props.type == 'restaurant')
-                    props.onRestaurant(props.mission, props.description)
-            }
-            }
-        >
+                <Ionicons name={this.props.picture(this.props.type)} size={50} color={'#417110'}/>
 
-            <Ionicons name={picture} size={50} color={'#417110'}/>
-
-            <Text style={styles.titleMission}>{props.name}</Text>
-            <Text>{props.points}</Text>
-        </TouchableOpacity>
+                <Text style={styles.titleMission}>{this.props.name}</Text>
+                <Text>{this.props.points}</Text>
+            </TouchableOpacity>
 
 
-    )
+        )
+    }
 
 
 };
 
-export default SpotlightMission;

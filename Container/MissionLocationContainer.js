@@ -53,7 +53,7 @@ export default class TransportationContainer extends Container {
         const response = await fetch('https://maps.googleapis.com/maps/api/directions/json?origin=' + lat + "," + lon + '&destination=' + currentPosition.lat + "," + currentPosition.lon + '&key=AIzaSyDnOaaU_CIxZxa45NcrN0G2Nzl7xVTKFdA');
         const theAnswer = await response.json();
         /*console.log("my distance is: " + JSON.stringify(theAnswer.routes[0].legs[0].distance.value));*/
-        if (theAnswer.routes[0].legs[0].distance.value < 5000) {
+        if (theAnswer.routes[0].legs[0].distance.value < 50000) {
             console.log(true);
             return true;
         } else {

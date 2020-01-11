@@ -2,47 +2,41 @@ import React from 'react';
 import {Text, View, ScrollView, Button, TouchableOpacity} from 'react-native';
 import {styles} from '../styles.js';
 import MissionList from './MissionList';
-import {Subscribe} from 'unstated';
-import MissionContainer from '../Container/MissionContainer';
 
-const Home = props => {
+export default class Home extends React.Component {
+    render() {
 
-    return (
-        <View>
-            <View style={styles.header}>
-                <Text style={styles.subHeaderRammetto}>Spotlight missions</Text>
-            </View>
+        return (
             <View style={styles.container_home}>
-                <Subscribe to={[MissionContainer]}>
-                    {missionContainer => (
-                        <MissionList
-                            computeList={missionContainer.getSpotlightMissions}
-                            computePicture={missionContainer.computePicture}
-                            onEnvironment={props.onEnvironment}
-                            onTransport={props.onTransport}
-                            onLocation={props.onLocation}
-                            onRestaurant={props.onRestaurant}
-                        />
-                    )}
-
-                </Subscribe>
-
-                <View style={styles.buttonDiv}>
-                    <TouchableOpacity
-                        style={styles.primaryButton}
-                        onPress={() => props.onMore()}
-                    >
-                        <Text style={styles.buttonText}>See more</Text>
-                    </TouchableOpacity>
+                <View style={styles.header}>
+                    <Text style={styles.subHeaderRammetto}>Spotlight missions</Text>
                 </View>
+                <View>
+                    <MissionList
+                        computeList={this.props.computeList}
+                        computePicture={this.props.computePicture}
+                        onEnvironment={this.props.onEnvironment}
+                        onTransport={this.props.onTransport}
+                        onLocation={this.props.onLocation}
+                        onRestaurant={this.props.onRestaurant}
+                    />
 
+                    <View style={styles.buttonDiv}>
+                        <TouchableOpacity
+                            style={styles.primaryButton}
+                            onPress={() => props.onMore()}
+                        >
+                            <Text style={styles.buttonText}>See more</Text>
+                        </TouchableOpacity>
+                    </View>
+                </View>
             </View>
-        </View>
 
-    )
+        )
+    }
 
 
 }
 
 
-export default Home;
+

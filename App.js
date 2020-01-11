@@ -99,21 +99,21 @@ const getIcon = (name, focused, tint) => {
 };
 
 AppNavigator.navigationOptions = {
-    tabBarIcon: ({focused, tint}) => getIcon("ios-home", focused, tint),
+    tabBarIcon: ({focused, tint}) => getIcon("ios-home", focused, '#F2CB05'),
 };
 MissionNavigator.navigationOptions = {
-    tabBarIcon: ({focused, tint}) => getIcon("ios-rocket", focused, tint),
+    tabBarIcon: ({focused, tint}) => getIcon("ios-rocket", focused, '#F2CB05'),
 };
 LeaderNavigator.navigationOptions = {
-    tabBarIcon: ({focused, tint}) => getIcon("ios-people", focused, tint),
+    tabBarIcon: ({focused, tint}) => getIcon("ios-people", focused, '#F2CB05'),
 };
 ProfileNavigator.navigationOptions = {
-    tabBarIcon: ({focused, tint}) => getIcon("ios-person", focused, tint),
+    tabBarIcon: ({focused, tint}) => getIcon("ios-person", focused, '#F2CB05'),
 };
 
 const TabNavigator = createBottomTabNavigator(tabRoutes, {
     tabBarOptions: {
-        activeTintColor: '#ffffff',
+        activeTintColor: '#F2CB05',
         inactiveTintColor: '#ffffff',
         style: {
             backgroundColor: '#417110'

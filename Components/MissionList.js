@@ -1,6 +1,7 @@
 import React from 'react';
 import {View} from 'react-native';
 import SpotlightMission from './SpotlightMission'
+import {styles} from '../styles.js';
 
 export default class MissionList extends React.Component {
 
@@ -28,16 +29,16 @@ export default class MissionList extends React.Component {
                 type={mission.type}
                 description={mission.description}
                 mission={mission}
-                computePicture={this.props.computePicture}
                 onEnvironment={this.props.onEnvironment}
                 onTransport={this.props.onTransport}
                 onLocation={this.props.onLocation}
                 onRestaurant={this.props.onRestaurant}
+                picture={type=>this.props.computePicture(type)}
             />
         );
         const spotlightMission = spot.map(this.addKeys);
         return (
-            <View>
+            <View style={styles.spotLight}>
                 {spotlightMission}
             </View>
         )

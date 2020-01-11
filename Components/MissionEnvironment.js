@@ -24,22 +24,22 @@ export default class MissionEnvironment extends React.Component {
                     </View>
                     <Text style={styles.subHeaderRammetto}>ENVIRONMENT MISSION</Text>
                 </View>
-
-                <Text style={styles.inputFieldText}>
-                    You have just chosen the{'\n'}
-                    {this.props.nameOfMission}
-                    {'\n'}mission
-                </Text>
-
-                <Text style={styles.inputFieldText}>
-                    What is it about?{'\n'}
-                    {this.props.description}
-                </Text>
-
-                <Text style={styles.inputFieldText}>
-                    {'\n'}Upload a proof photo{'\n'}to get the points
-                </Text>
-
+                <View style={styles.titleheader}>
+                    <Text style={styles.environsubTitle}>
+                        You have just chosen the {'\n'}
+                        <Text style={styles.inlineHeader}>{this.props.nameOfMission} </Text> {'\n'}
+                        mission
+                    </Text>
+                </View>
+                <View style={styles.titleheader}>
+                    <Text style={styles.environsubTitleColor}>
+                        What is it about?{'\n'}
+                        <Text style={styles.inlineHeader}>{this.props.description}</Text>
+                    </Text>
+                    <Text style={styles.environsubTitle}>
+                        {'\n'}Upload a proof photo{'\n'}to get the points
+                    </Text>
+                </View>
                 <View style={styles.buttonDiv}>
                     <TouchableOpacity
                         style={styles.primaryButton}
@@ -52,7 +52,7 @@ export default class MissionEnvironment extends React.Component {
                 {this.props.image ? (
                     <View style={styles.pictureFrame}>
                         <ScrollView>
-                            <Text style={styles.inputFieldText}>Here is your picture</Text>
+                            <Text style={styles.environsubTitle}>Here is your picture</Text>
                             <Image
                                 source={{uri: this.props.image}}
                                 style={styles.uploadedImage}
@@ -61,15 +61,17 @@ export default class MissionEnvironment extends React.Component {
                             <View style={styles.buttonDiv}>
 
                                 <TouchableOpacity
-                                    style={styles.primaryButton}
-                                    onPress={()=>this.props.onSave(this.props.image)}
+                                    style={styles.changeButton}
+                                    onPress={() => this.props.onSave(this.props.image)}
                                 >
-                                    <Text style={styles.buttonText}>Save Picture</Text>
+                                    <Text style={styles.changeButtonText}>Save</Text>
                                 </TouchableOpacity>
                             </View>
 
                             <View style={styles.buttonDiv}>
-                                <Text style={styles.inputFieldText}>Satisfied?</Text>
+                                <View style={styles.satisfied}>
+                                    <Text style={styles.environsubTitle}>Satisfied?</Text>
+                                </View>
                                 <TouchableOpacity
                                     style={styles.primaryButton}
                                     onPress={() => {
