@@ -39,7 +39,9 @@ export default class MissionsEnvironmentList extends React.Component {
                         <ListItem
                             key={i}
                             title={mission.name}
+                            titleStyle={styles.listTitle}
                             subtitle={mission.points + ' points'}
+                            subTitleStyle={styles.subTitle}
                             bottomDivider
                             chevron
                             onPress={() => this.props.onMissionClick(mission.name, mission.description, mission.points)}

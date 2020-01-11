@@ -12,7 +12,7 @@ const MissionTransportScreen = props => {
         {(transportcontainer, pointscontainer) => (
             <MissionTransport
               fermate={(origin, destination)=>transportcontainer.calculateRoute(origin, destination)}
-              onQR={(code)=>props.navigation.navigate('QR_CODE', {code:code})}
+              onQR={(code,name)=>props.navigation.navigate('QR_CODE', {code:code, name: name})}
               onCalculate={kilometer=>pointscontainer.addPointsfromDistance(kilometer)}
             />
         )}

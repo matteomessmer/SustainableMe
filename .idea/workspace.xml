@@ -5,21 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07dc5ad6-6e32-4ac7-ba0d-2aa44b12c1a6" name="Default Changelist" comment="Merge branch 'master' of https://github.com/matteo-messmer/SustainableMe&#10;&#10;# Conflicts:&#10;#&#9;App.js">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/Components/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Components/MissionCompleted.js" beforeDir="false" afterPath="$PROJECT_DIR$/Components/MissionCompleted.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Components/MissionEnvironment.js" beforeDir="false" afterPath="$PROJECT_DIR$/Components/MissionEnvironment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Components/MissionList.js" beforeDir="false" afterPath="$PROJECT_DIR$/Components/MissionList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Components/MissionLocation.js" beforeDir="false" afterPath="$PROJECT_DIR$/Components/MissionLocation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/MissionRestaurant.js" beforeDir="false" afterPath="$PROJECT_DIR$/Components/MissionRestaurant.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/MissionTransport.js" beforeDir="false" afterPath="$PROJECT_DIR$/Components/MissionTransport.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Components/MissionsEnvironmentList.js" beforeDir="false" afterPath="$PROJECT_DIR$/Components/MissionsEnvironmentList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Components/SpotlightMission.js" beforeDir="false" afterPath="$PROJECT_DIR$/Components/SpotlightMission.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/MissionsRestaurantList.js" beforeDir="false" afterPath="$PROJECT_DIR$/Components/MissionsRestaurantList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/QR_CODE.js" beforeDir="false" afterPath="$PROJECT_DIR$/Components/QR_CODE.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/WelcomeSplash.js" beforeDir="false" afterPath="$PROJECT_DIR$/Components/WelcomeSplash.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Container/MissionLocationContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/Container/MissionLocationContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Container/UserContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/Container/UserContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screens/HomeScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/Screens/HomeScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screens/MissionCompletedScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/Screens/MissionCompletedScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Screens/MissionLocationScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/Screens/MissionLocationScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screens/MissionsEnvironmentListScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/Screens/MissionsEnvironmentListScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screens/MissionRestaurantScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/Screens/MissionRestaurantScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screens/MissionTransportScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/Screens/MissionTransportScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screens/QR_CODE_Screen.js" beforeDir="false" afterPath="$PROJECT_DIR$/Screens/QR_CODE_Screen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/styles.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -36,8 +32,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styles.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="129" column="16" selection-start-line="129" selection-start-column="4" selection-end-line="129" selection-end-column="16" />
+            <state relative-caret-position="360">
+              <caret line="398" column="7" selection-start-line="398" selection-start-column="7" selection-end-line="398" selection-end-column="27" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -45,11 +41,101 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Components/MissionTransport.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="929">
+              <caret line="105" column="97" selection-start-line="105" selection-start-column="97" selection-end-line="105" selection-end-column="97" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Container/ProfileContainer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3327">
+              <caret line="1" column="33" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Screens/MissionTransportScreen.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Components/QR_CODE.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="22" column="48" lean-forward="true" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Screens/QR_CODE_Screen.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Components/WelcomeSplash.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="40" column="67" selection-start-line="40" selection-start-column="67" selection-end-line="40" selection-end-column="67" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Container/MissionLocationContainer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Components/MissionsEnvironmentList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="35" column="33" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="33" />
+            <state relative-caret-position="506">
+              <caret line="38" column="57" selection-start-line="38" selection-start-column="57" selection-end-line="38" selection-end-column="57" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Components/MissionsRestaurantList.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="39" column="27" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="57" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -90,6 +176,8 @@
       <find>loading</find>
       <find>sub</find>
       <find>changeButton</find>
+      <find>image</find>
+      <find>instructionContainer</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -99,12 +187,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Components/Welcome.js" />
         <option value="$PROJECT_DIR$/Screens/WelcomeSplashScreen.js" />
         <option value="$PROJECT_DIR$/Components/UserInstructions.js" />
         <option value="$PROJECT_DIR$/Components/StepsInstruction.js" />
         <option value="$PROJECT_DIR$/Container/TransportationContainer.js" />
-        <option value="$PROJECT_DIR$/Screens/MissionTransportScreen.js" />
         <option value="$PROJECT_DIR$/Components/Registration.js" />
         <option value="$PROJECT_DIR$/Screens/RegistrationScreen.js" />
         <option value="$PROJECT_DIR$/Screens/LeaderboardScreen.js" />
@@ -113,25 +199,20 @@
         <option value="$PROJECT_DIR$/Components/ProfileBtn.js" />
         <option value="$PROJECT_DIR$/Components/Login.js" />
         <option value="$PROJECT_DIR$/Components/Mission.js" />
-        <option value="$PROJECT_DIR$/Screens/QR_CODE_Screen.js" />
         <option value="$PROJECT_DIR$/Components/Leaderboard.js" />
         <option value="$PROJECT_DIR$/Components/Ranking.js" />
         <option value="$PROJECT_DIR$/Container/MissionContainer.js" />
-        <option value="$PROJECT_DIR$/Components/MissionRestaurant.js" />
-        <option value="$PROJECT_DIR$/Components/MissionsRestaurantList.js" />
         <option value="$PROJECT_DIR$/Container/EnvironmentContainer.js" />
         <option value="$PROJECT_DIR$/Container/RestaurantContainer.js" />
         <option value="$PROJECT_DIR$/Screens/GalleryScreen.js" />
         <option value="$PROJECT_DIR$/Components/Gallery.js" />
         <option value="$PROJECT_DIR$/Components/Picture.js" />
         <option value="$PROJECT_DIR$/Container/PictureContainer.js" />
-        <option value="$PROJECT_DIR$/Components/QR_CODE.js" />
         <option value="$PROJECT_DIR$/Screens/MissionScreen.js" />
         <option value="$PROJECT_DIR$/Screens/MissionEnvironmentScreen.js" />
         <option value="$PROJECT_DIR$/Screens/ProfileScreen.js" />
         <option value="$PROJECT_DIR$/Container/PointsContainer.js" />
         <option value="$PROJECT_DIR$/Components/Profile.js" />
-        <option value="$PROJECT_DIR$/Components/WelcomeSplash.js" />
         <option value="$PROJECT_DIR$/Container/ProfileContainer.js" />
         <option value="$PROJECT_DIR$/Components/MissionLocationList.js" />
         <option value="$PROJECT_DIR$/Screens/HomeScreen.js" />
@@ -139,17 +220,24 @@
         <option value="$PROJECT_DIR$/Components/SpotlightMission.js" />
         <option value="$PROJECT_DIR$/Components/MissionList.js" />
         <option value="$PROJECT_DIR$/App.js" />
-        <option value="$PROJECT_DIR$/Components/MissionTransport.js" />
-        <option value="$PROJECT_DIR$/Container/MissionLocationContainer.js" />
-        <option value="$PROJECT_DIR$/Screens/MissionLocationScreen.js" />
         <option value="$PROJECT_DIR$/Components/MissionLocation.js" />
         <option value="$PROJECT_DIR$/Container/UserContainer.js" />
         <option value="$PROJECT_DIR$/Components/MissionCompleted.js" />
         <option value="$PROJECT_DIR$/Screens/MissionCompletedScreen.js" />
         <option value="$PROJECT_DIR$/Screens/MissionsEnvironmentListScreen.js" />
-        <option value="$PROJECT_DIR$/Components/MissionsEnvironmentList.js" />
-        <option value="$PROJECT_DIR$/styles.js" />
         <option value="$PROJECT_DIR$/Components/MissionEnvironment.js" />
+        <option value="$PROJECT_DIR$/Components/MissionsRestaurantList.js" />
+        <option value="$PROJECT_DIR$/Screens/MissionLocationScreen.js" />
+        <option value="$PROJECT_DIR$/Components/WelcomeSplash.js" />
+        <option value="$PROJECT_DIR$/styles.js" />
+        <option value="$PROJECT_DIR$/Screens/MissionRestaurantScreen.js" />
+        <option value="$PROJECT_DIR$/Screens/QR_CODE_Screen.js" />
+        <option value="$PROJECT_DIR$/Components/QR_CODE.js" />
+        <option value="$PROJECT_DIR$/Components/MissionRestaurant.js" />
+        <option value="$PROJECT_DIR$/Screens/MissionTransportScreen.js" />
+        <option value="$PROJECT_DIR$/Components/MissionTransport.js" />
+        <option value="$PROJECT_DIR$/Container/MissionLocationContainer.js" />
+        <option value="$PROJECT_DIR$/Components/MissionsEnvironmentList.js" />
       </list>
     </option>
   </component>
@@ -238,12 +326,12 @@
       <workItem from="1578303068444" duration="12138000" />
       <workItem from="1578486118694" duration="1350000" />
       <workItem from="1578653985780" duration="20894000" />
-      <workItem from="1578753846249" duration="6215000" />
+      <workItem from="1578753846249" duration="9280000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127414000" />
+    <option name="totallyTimeSpent" value="130479000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3846" y="-803" width="1933" height="1053" extended-state="6" />
@@ -299,27 +387,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/matteo-messmer/SustainableMe&#10;&#10;# Conflicts:&#10;#&#9;App.js" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Screens/RegistrationScreen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" selection-start-column="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Container/TransportationContainer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="7" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Components/UserInstructions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="13" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -364,26 +435,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Components/MissionRestaurant.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Components/MissionsRestaurantList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-66">
-          <caret line="5" column="90" selection-start-line="5" selection-start-column="90" selection-end-line="5" selection-end-column="90" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Container/RestaurantContainer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -398,16 +449,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Screens/MissionTransportScreen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -454,16 +495,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Screens/QR_CODE_Screen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="15" column="128" lean-forward="true" selection-start-line="15" selection-start-column="128" selection-end-line="15" selection-end-column="128" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Container/EnvironmentContainer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
@@ -484,30 +515,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Components/QR_CODE.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Screens/ProfileScreen.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="16" column="66" selection-start-line="16" selection-start-column="66" selection-end-line="16" selection-end-column="66" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Components/WelcomeSplash.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="65" column="72" selection-start-line="65" selection-start-column="72" selection-end-line="65" selection-end-column="72" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -521,13 +532,6 @@
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Container/ProfileContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-242">
-          <caret line="1" column="33" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -601,26 +605,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Screens/MissionEnvironmentScreen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="25" column="111" lean-forward="true" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="111" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Screens/MissionLocationScreen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="30" selection-start-line="30" selection-end-line="36" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Container/UserContainer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
@@ -661,26 +645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Components/MissionTransport.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="67" column="46" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Container/MissionLocationContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1210">
-          <caret line="55" column="58" selection-start-line="55" selection-start-column="58" selection-end-line="55" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Screens/MissionLocationListScreen.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -705,16 +669,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="26" selection-start-column="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Components/MissionEnvironment.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="66" column="78" selection-start-line="66" selection-start-column="78" selection-end-line="66" selection-end-column="78" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -748,20 +702,154 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Screens/MissionLocationScreen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Components/UserInstructions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="56" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Components/WelcomeSplash.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="40" column="67" selection-start-line="40" selection-start-column="67" selection-end-line="40" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Components/MissionEnvironment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="78" column="63" lean-forward="true" selection-start-line="78" selection-start-column="63" selection-end-line="78" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Screens/MissionEnvironmentScreen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="25" column="93" selection-start-line="25" selection-start-column="86" selection-end-line="25" selection-end-column="93" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Components/QR_CODE.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="48" lean-forward="true" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Screens/MissionRestaurantScreen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Components/MissionRestaurant.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="35" column="101" selection-start-line="35" selection-start-column="101" selection-end-line="35" selection-end-column="101" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/styles.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="129" column="16" selection-start-line="129" selection-start-column="4" selection-end-line="129" selection-end-column="16" />
+        <state relative-caret-position="360">
+          <caret line="398" column="7" selection-start-line="398" selection-start-column="7" selection-end-line="398" selection-end-column="27" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Screens/QR_CODE_Screen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Screens/MissionTransportScreen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Components/MissionTransport.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="929">
+          <caret line="105" column="97" selection-start-line="105" selection-start-column="97" selection-end-line="105" selection-end-column="97" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Container/ProfileContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3327">
+          <caret line="1" column="33" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Container/MissionLocationContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Components/MissionsRestaurantList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="39" column="27" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Components/MissionsEnvironmentList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="35" column="33" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="33" />
+        <state relative-caret-position="506">
+          <caret line="38" column="57" selection-start-line="38" selection-start-column="57" selection-end-line="38" selection-end-column="57" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

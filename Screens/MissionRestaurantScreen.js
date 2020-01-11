@@ -1,8 +1,9 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { View } from 'react-native';
 import {Subscribe} from 'unstated';
 import MissionRestaurant from '../Components/MissionRestaurant';
 import PointsContainer from '../Container/PointsContainer';
+
 
 
 const MissionRestaurantScreen = props => {
@@ -16,13 +17,20 @@ const MissionRestaurantScreen = props => {
 				<MissionRestaurant
 					mission={restaurant}
 					setPoints={(points) => pointsContainer.setPoints(points)}
-					onQR={(code) => props.navigation.navigate('QR_CODE', {code:code})}
+					onQR={(code, nameMission) => props.navigation.navigate('QR_CODE', {code:code, name: nameMission})}
 				/>
 			)}
 		</Subscribe>
     </View>
   )
-}
+};
+MissionRestaurantScreen.navigationOptions = {
+    title: 'Restaurant Mission',
+    headerTintColor: '#ffffff',
+    headerStyle: {
+        backgroundColor: '#417110'
+    }
+};
 
 
 export default MissionRestaurantScreen;

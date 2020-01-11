@@ -37,7 +37,9 @@ export default class MissionsRestaurantList extends React.Component {
                             key={i}
                             leftAvatar={{source: {uri: restaurant.image}}}
                             title={restaurant.name}
+                            titleStyle={styles.listTitle}
                             subtitle={restaurant.points + ' points'}
+                            subTitleStyle={styles.subTitle}
                             bottomDivider
                             chevron
                             onPress={() => this.props.onRestaurantClick(restaurant)}

@@ -291,11 +291,11 @@ export const styles = StyleSheet.create({
         marginTop:30,
     },
     instructionContainer: {
-
         borderWidth: 2,
         borderColor: yellow,
 
     },
+
     userInstructs: {
         fontSize:18,
         fontFamily: 'Roboto'
@@ -373,6 +373,42 @@ export const styles = StyleSheet.create({
     editableItems:{
         marginBottom:15,
         marginTop: 5
+    },
+    listTitle:{
+        fontFamily: 'Roboto',
+        fontSize:18
+    },
+    subTitle:{
+        fontFamily: 'Roboto',
+        fontSize:15
+    },
+    listContainer:{
+        margin:15,
+    },
+    restImageContainer:{
+        marginTop:15,
+        marginBottom:20,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    restImage: {
+        width:300,
+        height:200,
+    },
+    descpRestText:{
+        textAlign:'center',
+        fontSize:18,
+        fontFamily: 'Roboto-Italic'
+    },
+    descpRest:{
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginBottom:20,
+    },
+    restLink:{
+        textAlign:'center',
+        fontSize:18,
+        fontFamily: 'Roboto-Bold'
     }
 
 });
