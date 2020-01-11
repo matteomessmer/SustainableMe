@@ -5,7 +5,7 @@ import {Subscribe} from "unstated";
 import MissionLocationContainer from '../Container/MissionLocationContainer';
 import PointsContainer from '../Container/PointsContainer';
 import ProfileContainer from '../Container/ProfileContainer';
-import MissionEnvironment from "./MissionEnvironmentScreen";
+
 
 
 const MissionLocationScreen = props => {
