@@ -61,13 +61,6 @@ export default class Profile extends React.Component {
         this.setState({editName: false, editEmail: false});
     }
 
-    async componentDidMount() {
-        console.log(this.props.newPoints);
-        if (this.props.newPoints !== 0) {
-            await this.setState({points: this.props.newPoints})
-        }
-    }
-
     render() {
         return (
             <ScrollView>
@@ -87,7 +80,7 @@ export default class Profile extends React.Component {
 
                     <Text style={styles.subHeaderRammetto}>{this.state.name}</Text>
                     {this.props.newPoints ?
-                        <Text style={styles.subsubHeaderRammetto}>Points: {this.props.newPoints}</Text>:
+                        <Text style={styles.subsubHeaderRammetto}>Points: {this.props.newPoints}</Text> :
                         <Text style={styles.subsubHeaderRammetto}>Points: {this.props.user.points}</Text>
                     }
 
@@ -201,7 +194,11 @@ export default class Profile extends React.Component {
                 <View style={styles.buttonDiv}>
                     <TouchableOpacity
                         style={styles.primaryButton}
-                        onPress={() => this.props.logout()}
+                        onPress={() => {
+                            this.props.resetUser()
+                            this.props.resetPoints()
+                            this.props.logout()
+                        }}
                     >
                         <Text style={styles.buttonText}>Logout</Text>
                     </TouchableOpacity>

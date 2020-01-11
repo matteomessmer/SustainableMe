@@ -1,6 +1,7 @@
 import React from 'react';
 import {View} from 'react-native';
 import MissionCompleted from '../Components/MissionCompleted';
+import {NavigationActions, StackActions} from "react-navigation";
 
 const MissionCompletedScreen = props => {
 
@@ -14,6 +15,7 @@ const MissionCompletedScreen = props => {
                 />
         </View>
     )
+
 }
 
 export default MissionCompletedScreen;

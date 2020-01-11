@@ -177,6 +177,10 @@ export default class ProfileContainer extends Container {
       const user = this.state.user;
       await this.editUser(user);
       /*this.setState({editName: false, editEmail: false});*/
-  }
+  };
+
+  resetUser= ()=>{
+      this.setState({user: null})
+  };
 
 }

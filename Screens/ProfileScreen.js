@@ -13,6 +13,8 @@ const ProfileScreen = props => {
                     newPoints={pointscontainer.state.totalPoints}
                     editPassword={(id, oldPassword, newPassword) => profileContainer.editPassword(id, oldPassword, newPassword)}
                     editUser={(user) => profileContainer.editUser(user)}
+                    resetUser={()=>profileContainer.resetUser()}
+                    resetPoints={()=>pointscontainer.resetPoints()}
                     logout={() => props.navigation.navigate('Login')}
                     onGallery={()=>props.navigation.navigate('Gallery')}
                     editImage={()=>profileContainer.editImage()}
