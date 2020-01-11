@@ -1,8 +1,8 @@
 import React from 'react';
-import { Text, View,ScrollView, Button, TouchableOpacity, Image } from 'react-native';
+import { Text, View,ScrollView, Button, TouchableOpacity, Image, ActivityIndicator } from 'react-native';
 import { styles} from '../styles.js';
 
-class ListedMission extends React.Component {
+/*class ListedMission extends React.Component {
 
   constructor(props) {
     super(props);
@@ -31,12 +31,26 @@ class SingleMission extends React.Component {
       error: '',
     }
    }
+}*/
+
+export default class MissionLocation extends React.Component{
+
+  constructor(props) {
+      super(props);
+      this.state = {
+          location: this.props.location,
+          error: '',
+          loading: false,
+      }
+  }
 
   async advance() {
-    const success = await this.props.pickAndCheckPosition(this.props.mission.lat, this.props.mission.lon);
+    const success = await this.props.pickAndCheckPosition(this.state.location.lat, this.state.location.lon);
     if (success) {
-      await this.props.setPoints(100);
+      await this.setState({loading:true})
+      await this.props.setPoints(this.state.location.points);
       await this.props.creditPointsUser();
+      await this.setState({loading:false})
       await this.props.onValidation();
     }
     else {
@@ -51,62 +65,20 @@ class SingleMission extends React.Component {
           source={require('../images/location.png')}
           style={styles.ImageIconStyle}
       />
-      <Text style={styles.subHeaderRammetto}>{this.props.mission.name}</Text>
-      <Text style={styles.subsubHeaderRammetto}>+100</Text>
+      <Text style={styles.subHeaderRammetto}>{this.state.location.name}</Text>
+      <Text style={styles.subsubHeaderRammetto}>{this.state.location.points}</Text>
       <TouchableOpacity onPress={() => this.advance()}>
         <Text style={styles.button}>Pick your current position</Text>
       </TouchableOpacity>
       <Text>{this.state.error}</Text>
+      {this.state.loading?
+        <ActivityIndicator style={styles.splashLoading} size="large" color="black"/>
+        :
+        null
+      }
       <Text>Note: we apply a tolerance of about 5km</Text>
 
     </View>
   )
-  }
-}
-
-export default class MissionLocation extends React.Component{
-
-  constructor(props) {
-      super(props);
-      this.state = {
-          missions: [],
-          selectedMission: null,
-      }
-  }
-
-  async componentDidMount() {
-      const missions = await this.props.getLocationMissions();
-      this.setState({missions: missions})
-  }
-
-  render(){
-      if (this.state.selectedMission===null) {
-        return (
-          <View>
-            <Text>{JSON.stringify(this.state.missions)}</Text>
-            {this.state.missions.map(mission =>
-              <ListedMission
-                key={mission.id}
-                name={mission.name}
-                lat={mission.lat}
-                lon={mission.lon}
-                points={"100"}
-                myOnPress={() => this.setState({selectedMission: mission})}
-              />
-            )}
-          </View>
-        )
-      } else {
-        return (
-          <SingleMission
-            mission={this.state.selectedMission}
-            pickAndCheckPosition={this.props.pickAndCheckPosition}
-            onValidation={this.props.onValidation}
-            setPoints={this.props.setPoints}
-            creditPointsUser={this.props.creditPointsUser}
-          />
-        )
-      }
-
   }
 }

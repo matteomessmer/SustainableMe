@@ -13,7 +13,7 @@ const MissionRestaurantScreen = props => {
     <View>
 		<Subscribe to={[PointsContainer]}>
 			{ pointsContainer => (
-				<MissionRestaurant 
+				<MissionRestaurant
 					mission={restaurant}
 					setPoints={(points) => pointsContainer.setPoints(points)}
 					onQR={(code) => props.navigation.navigate('QR_CODE', {code:code})}
@@ -23,5 +23,6 @@ const MissionRestaurantScreen = props => {
     </View>
   )
 }
+
 
 export default MissionRestaurantScreen;

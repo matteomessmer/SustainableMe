@@ -8,6 +8,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import RegistrationScreen from './Screens/RegistrationScreen.js';
 import HomeScreen from './Screens/HomeScreen.js';
+import MissionLocationListScreen from './Screens/MissionLocationListScreen.js';
 import MissionLocationScreen from './Screens/MissionLocationScreen.js';
 import MissionEnvironmentScreen from './Screens/MissionEnvironmentScreen.js';
 import MissionsEnvironmentListScreen from './Screens/MissionsEnvironmentListScreen.js';
@@ -26,6 +27,7 @@ import GalleryScreen from './Screens/GalleryScreen';
 const routesM=({
         Home: HomeScreen,
         Mission: MissionScreen,
+        MissionLocationList: MissionLocationListScreen,
         MissionLocation: MissionLocationScreen,
         MissionEnvironment: MissionEnvironmentScreen,
         MissionsEnvironmentList: MissionsEnvironmentListScreen,
@@ -46,9 +48,10 @@ const routesInital = {
     Home: HomeScreen,
     Mission: MissionScreen,
     MissionLocation: MissionLocationScreen,
+    MissionLocationList: MissionLocationListScreen,
     MissionEnvironment: MissionEnvironmentScreen,
-    MissionsRestaurantList: MissionsRestaurantListScreen,
     MissionRestaurant: MissionRestaurantScreen,
+    MissionsRestaurantList: MissionsRestaurantListScreen,
     MissionTransport: MissionTransportScreen,
     MissionCompleted: MissionCompletedScreen,
     QR_CODE: QR_CODE_Screen,
