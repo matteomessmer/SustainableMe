@@ -16,7 +16,7 @@ const SpotlightMission = props => {
                     props.onEnvironment(props.name, props.description, props.points);
 
                 if (props.type == "location")
-                    props.onLocation(props.name, props.description)
+                    props.onLocation(props.mission)
 
                 if (props.type == 'restaurant')
                     props.onRestaurant(props.mission, props.description)
