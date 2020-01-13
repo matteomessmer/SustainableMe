@@ -13,7 +13,6 @@ export default class QR_CODE extends React.Component {
         }
     }
 
-    //TODO: add props for displaying line information after scanning.
     handleBarCodeScanned =  ({type, data}) => {
         this.setState({scanned: true});
 

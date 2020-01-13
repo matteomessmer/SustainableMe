@@ -22,7 +22,7 @@ export default class MissionsEnvironmentList extends React.Component {
         await this.setState({missions: missions, isLoading: false});
     }
 
-//Each mission is mapped to a ListItem component with a title and a number of points
+    //Each mission is mapped to a ListItem component with a title and a number of points
     render() {
         if (this.state.isLoading) {
             return (

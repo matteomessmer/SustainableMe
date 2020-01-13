@@ -42,7 +42,7 @@ export default class MissionTransport extends React.Component {
 
     };
     returnRoute=()=>{
-        const route='From '+this.state.from +'to '+this.state.to +' ';
+        const route='From '+this.state.from +' to '+this.state.to +' ';
         return route;
     }
 
