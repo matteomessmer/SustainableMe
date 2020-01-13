@@ -77,6 +77,26 @@ export default class ProfileContainer extends Container {
 			return responseJson.user;
 		}
 	}
+	
+	resetPassword = async (email) => {
+		const response = await fetch('http://sustainableme.fablabnetwork.tk/API/resetPassword.php', {
+			method: 'POST',
+			headers: {
+				Accept: 'application/json',
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify({
+				email: email.toLowerCase(),
+			}),
+		}).catch((error) => {
+			console.error(error);
+			return null;
+		});
+
+		const responseJson = await response.json();
+
+		return responseJson;
+	}
 
   editUser = async (user)=>{
 
@@ -139,6 +159,7 @@ export default class ProfileContainer extends Container {
           console.log(responseJson);
       }
   }
+  
   /*methods to handle image pick and change*/
   getPermissionAsync = async () => {
       const {status} = await Permissions.askAsync(Permissions.CAMERA_ROLL);

@@ -18,6 +18,7 @@ import MissionTransportScreen from './Screens/MissionTransportScreen.js';
 import MissionCompletedScreen from './Screens/MissionCompletedScreen.js';
 import MissionScreen from './Screens/MissionScreen.js';
 import LoginScreen from './Screens/LoginScreen.js';
+import ForgotPasswordScreen from './Screens/ForgotPasswordScreen.js';
 import LeaderBoardScreen from './Screens/LeaderboardScreen';
 import ProfileScreen from './Screens/ProfileScreen';
 import QR_CODE_Screen from './Screens/QR_CODE_Screen';
@@ -126,6 +127,7 @@ const switchRoutes = {
     Welcome: WelcomeSplashScreen,
     Login: LoginScreen,
     Registration: RegistrationScreen,
+	ForgotPassword: ForgotPasswordScreen,
     App: TabNavigator
 };
 const switchOptions = {

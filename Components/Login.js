@@ -58,7 +58,7 @@ export default class Login extends React.Component {
                     </View>
                 </View>
                 <View style={{flex: 1}}>
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={() => {this.props.onForgotPassword()}}>
                         <Text style={styles.whiteCenteredText}>Forgot password?</Text>
                     </TouchableOpacity>
                 </View>
