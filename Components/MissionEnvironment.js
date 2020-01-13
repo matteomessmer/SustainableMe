@@ -81,6 +81,7 @@ export default class MissionEnvironment extends React.Component {
                                 <TouchableOpacity
                                     style={styles.primaryButton}
                                     onPress={() => {
+                                      this.props.clearPage()
                                         this.props.onValid(this.props.points)
                                         this.props.confirm(this.props.nameOfMission)
                                     }}
