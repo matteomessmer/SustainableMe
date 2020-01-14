@@ -9,13 +9,13 @@ Project 3 for the course Engineering of Mobile Systems
 - Mission Completed Screen
 
 # Simonluca
-- Mission Restaurant Screen
+- Mission Location Screen
 - Profile Screen
 - Next thing we forget to do
 
 # Matteo
 - Login Screen
-- Mission Location Screen
+- Mission Restaurant Screen
 
 # Ulli
 - Style
@@ -33,6 +33,9 @@ Project 3 for the course Engineering of Mobile Systems
 - To login (POST): http://sustainableme.fablabnetwork.tk/API/login.php
 - To register (POST): http://sustainableme.fablabnetwork.tk/API/register.php
 - To modify an user (POST): http://sustainableme.fablabnetwork.tk/API/modifyUser.php
+- To reset the password (POST): http://sustainableme.fablabnetwork.tk/API/resetPassword.php
+- To set the new password (POST): http://sustainableme.fablabnetwork.tk/API/setNewPassword.php
 
 # WEBSITE
 - The email verification page: http://sustainableme.fablabnetwork.tk/API/verifyEmail.php
+- To set the new password: http://sustainableme.fablabnetwork.tk/API/newPassword.html
