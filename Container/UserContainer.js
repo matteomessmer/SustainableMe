@@ -66,7 +66,9 @@ export default class UserContainer extends Container {
             level=14;
         } else if(points <50000) {
             level=15;
-        }
+        } else {
+			level=16;
+		}
 
         return level;
 
@@ -84,7 +86,7 @@ export default class UserContainer extends Container {
                     }
             });
             const sorted=theUsers.sort(function(a,b){
-                return (b.level) - (a.level);
+                return (b.points) - (a.points);
             });
             return sorted;
         }else{
@@ -126,9 +128,11 @@ export default class UserContainer extends Container {
           pointsLeft=4000-points;
       }else if(points <5000){
           pointsLeft=5000-points;
-      } else {
+      } else if(points <50000) {
         pointsLeft=50000-points;
-      }
+      } else {
+		pointsLeft = -1;
+	  }
 
       console.log(pointsLeft);
       return pointsLeft;

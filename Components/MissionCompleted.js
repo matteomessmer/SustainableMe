@@ -30,8 +30,13 @@ export default class MissionCompleted extends React.Component {
                             :
                             null
                         }{'\n'}{'\n'}
-                        You need {this.props.pointsLeft(this.props.totalPoints)} points{'\n'}
-                        to reach next level</Text>
+						{ this.props.pointsLeft(this.props.totalPoints)>=0?
+							 <Text> You need {this.props.pointsLeft(this.props.totalPoints)} points{'\n'}
+							to reach next level </Text> 
+						:
+						null
+						}
+						</Text>
                 </View>
 
 
