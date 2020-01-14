@@ -409,6 +409,11 @@ export const styles = StyleSheet.create({
         textAlign:'center',
         fontSize:18,
         fontFamily: 'Roboto-Bold'
+    },
+    pictureGallery:{
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginTop:5
     }
 
 });

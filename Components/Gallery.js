@@ -23,9 +23,9 @@ export default class Gallery extends React.Component {
         });
 
         return (
-            <View>
+            <ScrollView>
                 {pictures}
-            </View>
+            </ScrollView>
         )
     }
 };

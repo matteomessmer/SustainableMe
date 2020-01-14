@@ -1,5 +1,4 @@
 import React from 'react';
-import {View} from 'react-native';
 import {Subscribe} from 'unstated';
 import PictureContainer from "../Container/PictureContainer";
 import Gallery from '../Components/Gallery';
@@ -20,5 +19,11 @@ const GalleryScreen = props => {
 
     )
 
-}
+};
+GalleryScreen.navigationOptions = {
+    headerTintColor: '#ffffff',
+    headerStyle: {
+        backgroundColor: '#417110'
+    }
+};
 export default GalleryScreen;
