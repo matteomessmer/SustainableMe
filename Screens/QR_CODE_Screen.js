@@ -5,6 +5,9 @@ import PointsContainer from "../Container/PointsContainer";
 import ProfileContainer from "../Container/ProfileContainer";
 import {NavigationActions, StackActions} from "react-navigation";
 
+//screen to call the QR code component. It passes callback functions to calculate the points and to give them to
+//the user, furthermore it passes a onClear callback which resets the navigation stack so that after completed the
+//user cannot go back
 const QR_CODE_Screen = props => {
     const code = props.navigation.getParam('code');
     const name = props.navigation.getParam('name')

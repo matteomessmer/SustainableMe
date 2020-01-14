@@ -3,6 +3,9 @@ import {Text, View, ScrollView} from 'react-native';
 import {styles} from '../styles.js';
 import FirstThree from './FirstThree';
 
+//the ranking component is used to show all users in a ranking depending on their progress in the game.
+//for the first three an additional component FirstThree is called, since they are displayed differently.
+//otherwise user's name and level is shown.
 export default class Ranking extends React.Component {
 
     addKeys = (val, index) => (

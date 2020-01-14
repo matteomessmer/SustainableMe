@@ -7,15 +7,16 @@ import PointsContainer from "../Container/PointsContainer";
 import {NavigationActions, StackActions} from 'react-navigation'
 
 //Screen to show the information about the mission that the user just completed
+//additionally, this screen needs to check if the mission the user has just completed came from home or from mission screen,
+//depending on that the stack of navigation needs to be reset
+//also some callbacks are passed to the component to compute the points the user needs to achieve.
 const MissionCompletedScreen = props => {
 
     const nameOfMission = props.navigation.getParam('mission');
     let resetAction = null;
-
     const spot = props.navigation.getParam('spot');
 
-    console.log("the spot is:" +spot);
-    console.log(nameOfMission)
+    //if mission come from spotlight mission (home) home stack needs to be reset
     if (spot !== undefined) {
         resetAction = StackActions.reset({
             index: 0,
@@ -23,7 +24,8 @@ const MissionCompletedScreen = props => {
                 NavigationActions.navigate({routeName: 'Home'})
             ],
         });
-    } else {
+    } //otherwise the mission stack needs to be reset.
+    else {
         resetAction = StackActions.reset({
             index: 0,
             actions: [

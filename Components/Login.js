@@ -2,6 +2,7 @@ import React from 'react';
 import {Text, View, TextInput, TouchableOpacity} from 'react-native';
 import {styles} from '../styles.js';
 
+//this component is used to log in a user
 export default class Login extends React.Component {
     constructor(props) {
         super(props);
@@ -10,18 +11,21 @@ export default class Login extends React.Component {
             password: 'Chiara1234',
         }
     }
+    //takes the callback function passed as props and sets the parameters to the values the user has
+    //entered and sends it back to the container which will check in the db if a user with such credentials exists.
+    //if yes the user is successfully logged in.
     login = async () => {
         const user = await this.props.login(this.state.email, this.state.password);
 		if(user) {
-			console.log(user);
 			this.props.onLogin()
 		}
     };
 
+    // sets the state when user has entered email
     handleEmailChange = email => {
         this.setState({email: email})
     };
-
+    //sets the state when user has entered password
     handlePasswordChange = password => {
         this.setState({password: password})
     };

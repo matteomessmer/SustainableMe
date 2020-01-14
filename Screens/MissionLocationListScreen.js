@@ -1,9 +1,10 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import {View } from 'react-native';
 import MissionLocationList from '../Components/MissionLocationList';
 import {Subscribe} from "unstated";
 import MissionLocationContainer from "../Container/MissionLocationContainer";
 
+//screen to call the list component for location missions.
 const MissionLocationListScreen = props => {
 	return (
 		<View>

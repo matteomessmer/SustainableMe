@@ -9,7 +9,6 @@ export default class PointsContainer extends Container {
     };
 
     setPoints = async points => {
-        console.log(points);
         await this.setState({points: points});
     }
 
@@ -31,7 +30,6 @@ export default class PointsContainer extends Container {
         }
 
         await this.setState({points: pointsToGive});
-        //console.log(this.state.points);
         return this.state.points
     };
 
@@ -59,11 +57,11 @@ export default class PointsContainer extends Container {
             alert(responseJson.description);
             return null;
         } else {
-            await this.setState({totalPoints:responseJson.points})
+            await this.setState({totalPoints: responseJson.points})
         }
     };
 
-    resetPoints=()=>{
-        this.setState({totalPoints:null})
+    resetPoints = () => {
+        this.setState({totalPoints: null})
     };
 }

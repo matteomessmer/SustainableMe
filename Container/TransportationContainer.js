@@ -1,11 +1,8 @@
 import React from 'react';
 import {Container} from 'unstated'
-import { Alert} from 'react-native';
+import {Alert} from 'react-native';
 
 export default class TransportationContainer extends Container {
-    state = {
-        fermate: require('./fermate.json'),
-    }
 
     calculateRoute = async (origin, destination) => {
         const response = await fetch('https://maps.googleapis.com/maps/api/directions/json?origin=' + origin + '&destination=' + destination + '&departure_time=&mode=transit&key=AIzaSyDnOaaU_CIxZxa45NcrN0G2Nzl7xVTKFdA');
@@ -15,7 +12,7 @@ export default class TransportationContainer extends Container {
         if (theRoute.status === 'NOT_FOUND') {
             Alert.alert('No Route has been found for your places. Please use ue; ae; oe; for Umlauts or do not mix Italian with German :) and try again!')
             return null;
-        }else if(theRoute.status==='ZERO_RESULTS'){
+        } else if (theRoute.status === 'ZERO_RESULTS') {
             Alert.alert('Unfortunately no results could be found for your trip :(')
             return null;
         } else {
@@ -51,7 +48,6 @@ export default class TransportationContainer extends Container {
                     }
                 });
                 return innerRoute;
-                console.log(innerRoute)
             });
             return convertedRoutes;
         }

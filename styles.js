@@ -77,9 +77,16 @@ export const styles = StyleSheet.create({
     subsubHeaderRammetto: {
         fontSize: 20,
         fontFamily: 'Rammetto-One',
+        textAlign:'center'
     },
     header:{
         padding:0,
+        marginTop:5,
+        justifyContent:'center',
+        alignItems:'center'
+    },
+    headerleaderboard:{
+        padding:20,
         marginTop:5,
         justifyContent:'center',
         alignItems:'center'
@@ -413,7 +420,8 @@ export const styles = StyleSheet.create({
     pictureGallery:{
         justifyContent: 'center',
         alignItems: 'center',
-        marginTop:5
+        marginTop:5,
+        marginBottom: 5,
     }
 
 });

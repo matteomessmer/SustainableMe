@@ -1,8 +1,10 @@
 import React from 'react';
-import {Text, View,TouchableOpacity} from 'react-native';
+import {Text, View, TouchableOpacity} from 'react-native';
 import {styles} from '../styles.js';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
+//component to display all different categories of missions that are available as
+//buttons the user can click on which calls a callback function for navigation passed as props.
 export default class Mission extends React.Component {
 
     render() {

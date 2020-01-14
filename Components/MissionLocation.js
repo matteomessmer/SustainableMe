@@ -1,39 +1,9 @@
 import React from 'react';
-import {Text, View, ScrollView, Button, TouchableOpacity, Image, ActivityIndicator} from 'react-native';
+import {Text, View, TouchableOpacity, ActivityIndicator} from 'react-native';
 import {styles} from '../styles.js';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
-/*class ListedMission extends React.Component {
-
-  constructor(props) {
-    super(props);
-   }
-
-  render() {
-    return (
-    <TouchableOpacity onPress={this.props.myOnPress}>
-      <Image
-          source={require('../images/location.png')}
-          style={styles.ImageIconStyle}
-      />
-      <Text>{this.props.name}</Text>
-      <Text>{this.props.points}</Text>
-
-    </TouchableOpacity>
-  )
-  }
-}
-
-class SingleMission extends React.Component {
-
-  constructor(props) {
-    super(props);
-    this.state = {
-      error: '',
-    }
-   }
-}*/
-
+//component that represents the mission location.
 export default class MissionLocation extends React.Component {
 
     constructor(props) {
@@ -45,6 +15,9 @@ export default class MissionLocation extends React.Component {
         }
     }
 
+    //when user clicks on getting his location, the loaction is checked via the callback function
+    //if the location is inside the range, the user is given with the points.
+    //if the mission was started at home a different callback is called than if the mission was started from mission component.
     async advance() {
         this.setState({error: ''});
         this.setState({loading: true})
@@ -53,10 +26,9 @@ export default class MissionLocation extends React.Component {
             await this.props.setPoints(this.state.location.points);
             await this.props.creditPointsUser();
             await this.setState({loading: false});
-            if(this.props.isSpot!==undefined){
-                console.log('inside: '+this.props.isSpot)
+            if (this.props.isSpot !== undefined) {
                 await this.props.onValidationfromHome(this.state.location.name, this.props.isSpot)
-            }else{
+            } else {
                 await this.props.onValidation(this.state.location.name)
             }
         } else {

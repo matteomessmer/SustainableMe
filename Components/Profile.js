@@ -43,10 +43,10 @@ export default class Profile extends React.Component {
     }
 
     editPwd = async () => {
-        console.log("id: " + this.props.user.id)
-        console.log("Old Password: " + this.state.oldPassword)
-        console.log("New Password: " + this.state.newPassword)
-        console.log("Cnf Password: " + this.state.cnfPassword)
+        /* console.log("id: " + this.props.user.id)
+         console.log("Old Password: " + this.state.oldPassword)
+         console.log("New Password: " + this.state.newPassword)
+         console.log("Cnf Password: " + this.state.cnfPassword)*/
         if (this.state.newPassword === this.state.cnfPassword) {
             await this.props.editPassword(this.props.user.id, this.state.oldPassword, this.state.newPassword);
             this.setState({editPassword: false, oldPassword: '', newPassword: '', cnfPassword: ''})
@@ -81,13 +81,15 @@ export default class Profile extends React.Component {
                     <Text style={styles.subHeaderRammetto}>{this.state.name}</Text>
                     {this.props.newPoints ?
                         <View>
-                          <Text style={styles.subsubHeaderRammetto}>Points: {this.props.newPoints}</Text>
-                          <Text style={styles.subsubHeaderRammetto}>Level: {this.props.whatLevel(this.props.newPoints)}</Text>
+                            <Text style={styles.subsubHeaderRammetto}>Points: {this.props.newPoints}</Text>
+                            <Text
+                                style={styles.subsubHeaderRammetto}>Level: {this.props.whatLevel(this.props.newPoints)}</Text>
                         </View>
                         :
                         <View>
-                          <Text style={styles.subsubHeaderRammetto}>Points: {this.props.user.points}</Text>
-                          <Text style={styles.subsubHeaderRammetto}>Level: {this.props.whatLevel(this.props.user.points)}</Text>
+                            <Text style={styles.subsubHeaderRammetto}>Points: {this.props.user.points}</Text>
+                            <Text
+                                style={styles.subsubHeaderRammetto}>Level: {this.props.whatLevel(this.props.user.points)}</Text>
                         </View>
                     }
 

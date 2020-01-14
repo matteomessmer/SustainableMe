@@ -1,9 +1,8 @@
 import React from 'react';
-import {Text, View, ScrollView, Button, ActivityIndicator} from 'react-native';
+import { View, ActivityIndicator} from 'react-native';
 import {ListItem} from 'react-native-elements';
 import {styles} from '../styles.js';
 
-//TODO: maybe put the map-function outside the return function and assign it to a constant
 export default class MissionsRestaurantList extends React.Component {
 
     constructor(props) {
@@ -28,24 +27,27 @@ export default class MissionsRestaurantList extends React.Component {
                 </View>
             )
         }
+        const missionList =
+            this.state.restaurants.map((restaurant, i) => {
+                return (
+                    <ListItem
+                        key={i}
+                        leftAvatar={{source: {uri: restaurant.image}}}
+                        title={restaurant.name}
+                        titleStyle={styles.listTitle}
+                        subtitle={restaurant.points + ' points'}
+                        subTitleStyle={styles.subTitle}
+                        bottomDivider
+                        chevron
+                        onPress={() => this.props.onRestaurantClick(restaurant)}
+                    />
+                )
+
+            });
 
         return (
             <View>
-                {
-                    this.state.restaurants.map((restaurant, i) => (
-                        <ListItem
-                            key={i}
-                            leftAvatar={{source: {uri: restaurant.image}}}
-                            title={restaurant.name}
-                            titleStyle={styles.listTitle}
-                            subtitle={restaurant.points + ' points'}
-                            subTitleStyle={styles.subTitle}
-                            bottomDivider
-                            chevron
-                            onPress={() => this.props.onRestaurantClick(restaurant)}
-                        />
-                    ))
-                }
+                {missionList}
             </View>
         )
     }

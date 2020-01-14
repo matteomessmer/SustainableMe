@@ -3,7 +3,9 @@ import {Button, View, StyleSheet, Alert} from 'react-native';
 import {BarCodeScanner} from 'expo-barcode-scanner';
 import {styles} from '../styles.js';
 
-
+//this component is used to scan a QR code and determine if the QR code is correct or not.
+//if the code is correct, the user is redirected to the completed component and is accredited with the points.
+//otherwise the user can scan another time
 export default class QR_CODE extends React.Component {
     constructor(props) {
         super(props);
@@ -13,7 +15,7 @@ export default class QR_CODE extends React.Component {
         }
     }
 
-    handleBarCodeScanned =  ({type, data}) => {
+    handleBarCodeScanned = ({type, data}) => {
         this.setState({scanned: true});
 
         if (data === this.props.code) {
@@ -31,7 +33,6 @@ export default class QR_CODE extends React.Component {
         if (status === 'granted') {
             this.setState({hasPermission: true})
         }
-        ;
     };
 
     componentDidMount() {

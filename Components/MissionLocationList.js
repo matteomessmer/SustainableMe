@@ -1,9 +1,9 @@
 import React from 'react';
-import {Text, View, ScrollView, Button, ActivityIndicator} from 'react-native';
+import { View,ActivityIndicator} from 'react-native';
 import {ListItem} from 'react-native-elements';
 import {styles} from '../styles.js';
 
-//TODO: maybe put the map-function outside the return function and assign it to a constant
+//component to display the list of location-missions available.
 export default class MissionLocationList extends React.Component {
 
     constructor(props) {
@@ -14,8 +14,9 @@ export default class MissionLocationList extends React.Component {
         }
     }
 
-     async componentDidMount() {
-        const missions =  await this.props.getLocationMissions();
+    //the list of available missions is gathered.
+    async componentDidMount() {
+        const missions = await this.props.getLocationMissions();
         await this.setState({missions: missions, isLoading: false});
     }
 
@@ -27,22 +28,27 @@ export default class MissionLocationList extends React.Component {
                 </View>
             )
         }
+        ;
+        const theMissionList = this.state.missions.map((mission) => {
+                return (
+                    <ListItem
+                        key={mission.id}
+                        /*leftAvatar={{source: {uri: restaurant.image}}}*/
+                        title={mission.name}
+                        titleStyle={styles.listTitle}
+                        subtitle={"" + mission.points + ""}
+                        subTitleStyle={styles.subTitle}
+                        bottomDivider
+                        chevron
+                        onPress={() => this.props.onLocationClick(mission)}
+                    />
+                )
+            }
+        );
 
         return (
             <View>
-                {
-                    this.state.missions.map((mission) => (
-                        <ListItem
-                            key={mission.id}
-                            /*leftAvatar={{source: {uri: restaurant.image}}}*/
-                            title={mission.name}
-                            subtitle={""+ mission.points + ""}
-                            bottomDivider
-                            chevron
-                            onPress={() => this.props.onLocationClick(mission)}
-                        />
-                    ))
-                }
+                {theMissionList}
             </View>
         )
     }

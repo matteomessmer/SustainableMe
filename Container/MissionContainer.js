@@ -1,9 +1,5 @@
 import React from 'react';
 import {Container} from 'unstated'
-import {Alert} from 'react-native';
-import Constants from 'expo-constants';
-import * as Location from 'expo-location';
-import * as Permissions from 'expo-permissions';
 
 export default class MissionContainer extends Container {
     state = {}

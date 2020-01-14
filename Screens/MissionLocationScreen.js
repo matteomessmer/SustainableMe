@@ -6,9 +6,10 @@ import MissionLocationContainer from '../Container/MissionLocationContainer';
 import PointsContainer from '../Container/PointsContainer';
 import ProfileContainer from '../Container/ProfileContainer';
 import {NavigationActions, StackActions} from "react-navigation";
-import MissionEnvironment from "./MissionEnvironmentScreen";
 
-
+//screen to call the MissionLocation component. Callbacks to calculate location of users are passed
+//and furthermore 2 different callbacks for navigating to the missioncompleted component due to the fact,
+//to understand from which component the mission was started.
 const MissionLocationScreen = props => {
 
     const location = props.navigation.getParam('location');

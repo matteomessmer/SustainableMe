@@ -1,8 +1,13 @@
 import React from 'react';
 import {Text, View, Image, ScrollView, TouchableOpacity} from 'react-native';
-import {styles, Button} from '../styles.js';
+import {styles} from '../styles.js';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
+//Environment missions containing the title of the mission, a short description and
+//then a button to upload a proof photo.
+//When the user uploads a photo, he is able to see it. At this point, he can upload another picture
+//or he can save it if he likes it. Afterwards, if he is satisfied with the photo, he
+//can confirm and complete the mission
 export default class MissionEnvironment extends React.Component {
 
     constructor(props) {
@@ -14,11 +19,7 @@ export default class MissionEnvironment extends React.Component {
         this.props.clearPage();
     }
 
-    //Environment missions containing the title of the mission, a short description and
-    //then a button to upload a proof photo.
-    //When the user uploads a photo, he is able to see it. At this point, he can upload another picture
-    //or he can save it if he likes it. Afterwards, if he is satisfied with the photo, he
-    //can confirm and complete the mission
+
     render() {
         return (
             <ScrollView>
@@ -81,12 +82,11 @@ export default class MissionEnvironment extends React.Component {
                                 <TouchableOpacity
                                     style={styles.primaryButton}
                                     onPress={() => {
-                                      this.props.clearPage()
+                                        this.props.clearPage()
                                         this.props.onValid(this.props.points)
-                                        if(this.props.isSpot!==undefined){
-                                            console.log('by passing:'+this.props.isSpot);
+                                        if (this.props.isSpot !== undefined) {
                                             this.props.confirmfromHome(this.props.nameOfMission, this.props.isSpot)
-                                        }else{
+                                        } else {
                                             this.props.confirm(this.props.nameOfMission)
                                         }
 

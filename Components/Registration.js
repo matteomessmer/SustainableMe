@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, TextInput, Button, TouchableOpacity, Image } from 'react-native';
+import { Text, View, TextInput,TouchableOpacity} from 'react-native';
 import { styles} from '../styles.js';
 
 export default class Registration extends React.Component{

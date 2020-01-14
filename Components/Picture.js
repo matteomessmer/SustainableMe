@@ -1,7 +1,6 @@
 import React from 'react';
-import {View, Image, ScrollView, TouchableOpacity, Text} from 'react-native';
-import {styles, Button} from '../styles.js';
-import Ionicons from 'react-native-vector-icons/Ionicons';
+import {View, Image, TouchableOpacity, Text} from 'react-native';
+import {styles} from '../styles.js';
 import {Subscribe} from "unstated";
 import PictureContainer from "../Container/PictureContainer";
 

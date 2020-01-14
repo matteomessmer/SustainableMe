@@ -3,6 +3,9 @@ import {View, Text, Image, ActivityIndicator} from 'react-native';
 import {styles} from '../styles.js';
 import * as Font from 'expo-font';
 
+//this component is shown for 3 sec in the beginning of the application
+//it waits 3 second and then goes to the Login component.
+//furthermore it is there to load the special Google Fonts that were used in this application
 export default class WelcomeSplash extends React.Component {
     state = {
         fontLoaded: false,
@@ -70,7 +73,6 @@ export default class WelcomeSplash extends React.Component {
                         <Text style={styles.bigFont}>Südtirol</Text>
                         <ActivityIndicator style={styles.splashLoading} size="large" color="black"/>
                     </View>
-
 
 
                     : null

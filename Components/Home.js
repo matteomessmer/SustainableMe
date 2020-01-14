@@ -1,14 +1,12 @@
 import React from 'react';
-import {Text, View, ScrollView, Button, TouchableOpacity} from 'react-native';
+import {Text, View,TouchableOpacity} from 'react-native';
 import {styles} from '../styles.js';
 import MissionList from './MissionList';
 
+//Home component showing the spotlight mission. A list of such missions is shown and a button "See more", which
+//allows the user to see the complete list of missions available
 export default class Home extends React.Component {
     render() {
-
-//Home component showing the spotlight missions (the missions that are highlighted as
-//more important and relevant than others). A list of missions is shown and a button "See more"
-//allows the user to see the complete list of missions available
         return (
             <View style={styles.container_home}>
                 <View style={styles.header}>

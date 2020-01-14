@@ -2,6 +2,7 @@ import React from 'react';
 import {Text, View, TextInput, TouchableOpacity} from 'react-native';
 import {styles} from '../styles.js';
 
+//this component handles the actions that need to be taken when the user wants to reset his password.
 export default class ForgotPassword extends React.Component {
     constructor(props) {
         super(props);
@@ -9,14 +10,17 @@ export default class ForgotPassword extends React.Component {
             email: '',
         }
     }
+
+    //calls the callback function and sets the user to its email address he has entered.
     resetPassword = async () => {
         const reset = await this.props.resetPassword(this.state.email);
-		alert(reset.description);
-		if(!reset.error) {
-			this.props.redirect();
-		}
+        alert(reset.description);
+        if (!reset.error) {
+            this.props.redirect();
+        }
     };
-	
+
+    //check when user has entered text in the input-field.
     handleEmailChange = email => {
         this.setState({email: email})
     };
@@ -45,7 +49,9 @@ export default class ForgotPassword extends React.Component {
                     </View>
                 </View>
                 <View style={{flex: 1}}>
-					<TouchableOpacity onPress={() => {this.props.redirect()}}>
+                    <TouchableOpacity onPress={() => {
+                        this.props.redirect()
+                    }}>
                         <Text style={styles.whiteCenteredText}>LOGIN</Text>
                     </TouchableOpacity>
                 </View>

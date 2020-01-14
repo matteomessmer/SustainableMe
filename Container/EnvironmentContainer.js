@@ -5,23 +5,20 @@ import * as Permissions from 'expo-permissions';
 
 export default class EnvironmentContainer extends Container {
 
-  //State storing temporarly the picture uploaded by the user
+    //State storing temporarly the picture uploaded by the user
     state = {
         image: null,
     };
 
-//Ask permission to the user to access its gallery so that he can upload the photo
-//from his camera roll
+    //Ask permission to the user to access its gallery so that he can upload the photo
+    //from his camera roll
     uploadPhoto = async () => {
         const {status} = await Permissions.askAsync(Permissions.CAMERA_ROLL);
-
-        console.log('Permissions.CAMERA_ROLL', status);
-
         if (status === 'granted') {
             let image = await ImagePicker.launchImageLibraryAsync({
                 mediaTypes: 'Images',
             }).catch(error => console.log('Permissions.CAMERA_ROLL', {error}));
-            console.log('Permissions.CAMERA_ROLL', 'SUCCESS', image);
+            //console.log('Permissions.CAMERA_ROLL', 'SUCCESS', image);
             this.setState({image: image.uri});
         }
     };
@@ -31,16 +28,14 @@ export default class EnvironmentContainer extends Container {
         this.setState({image: null})
     }
 
-    //TODO: why post request with empty body? Why not having get?
     //Retrieve all the environment missions from the database
     getEnvironmentMissions = async () => {
         const response = await fetch('http://sustainableme.fablabnetwork.tk/API/getMissions.php', {
-            method: 'POST',
+            method: 'GET',
             headers: {
                 Accept: 'application/json',
                 'Content-Type': 'application/json',
-            },
-            body: null,
+            }
         }).catch((error) => {
             console.error(error);
             return null;
@@ -48,8 +43,6 @@ export default class EnvironmentContainer extends Container {
 
         const responseJson = await response.json();
         const result = await responseJson.missionsEnvironment;
-
-        console.log(result)
 
         if (responseJson.error) {
             alert(responseJson.description);

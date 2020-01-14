@@ -1,14 +1,14 @@
 import React from 'react';
-import {Text, View, ScrollView, Button, Image, TouchableOpacity} from 'react-native';
+import {Text, View, ScrollView, Image, TouchableOpacity} from 'react-native';
 import {styles} from '../styles.js';
-
-
-export default class MissionCompleted extends React.Component {
 
 //After the user completes a mission, the component is shown to let him know that he succeeded.
 //A "thank you" message is shown and the user sees his total number of points after the completion
 //of the mission. Moreover, he is able to see how many points are left till the next level.
 //Additionally, he can go to the other missions to complete another one.
+export default class MissionCompleted extends React.Component {
+
+
     render() {
         return (
             <ScrollView>

@@ -1,8 +1,9 @@
 import React from 'react';
-import {Text, View, TextInput, Image, Button, ScrollView, TouchableOpacity} from 'react-native';
+import {Text, View, Image} from 'react-native';
 import {styles} from "../styles";
 
-
+//this component is there to display the first three leaders,
+//they will appear in a different manner than the following ones.
 export default class FirstThree extends React.Component {
     render() {
         const icon = [require('../images/crown1.png'), require('../images/crown2.png'), require('../images/crown3.png')];

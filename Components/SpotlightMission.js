@@ -3,10 +3,11 @@ import {Text, TouchableOpacity} from 'react-native';
 import {styles} from '../styles.js';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
+//Component for the spotlight mission showing the name of the mission and the points.
+//Each mission leads to the specific screen of the mission depending on its type
 export default class SpotlightMission extends React.Component {
 
-  //Component for the spotlight mission showing the name of the mission and the points.
-  //Each mission leads to the specific screen of the mission depending on its type
+
     render() {
 
         return (

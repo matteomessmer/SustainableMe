@@ -8,16 +8,19 @@ import PointsContainer from "../Container/PointsContainer";
 import ProfileContainer from "../Container/ProfileContainer";
 import {NavigationActions, StackActions} from "react-navigation";
 
-//Screen to show the MissionEnvironment component
+//Screen to show the MissionEnvironment component.
+//callbacks are passed to the component to upload the picture to save it and to credit the user with
+//the points he has gathered by accomplishing this mission.
+//note there are 2 different callbacks for going to mission completed, this is due to the fact, that a mission
+//might be started from home or from mission component, in each case a different set of parameters need to be send.(done for clarity reasons)
 const MissionEnvironmentScreen = props => {
 
-//Get the navigation parameters for the info about the specific environment mission
+    //Get the navigation parameters for the info about the specific environment mission
     const nameOfMission = props.navigation.getParam('mission');
     const description = props.navigation.getParam('description');
     const points = props.navigation.getParam('points');
 
     const isSpot = props.navigation.getParam('spot');
-
 
 
     return (

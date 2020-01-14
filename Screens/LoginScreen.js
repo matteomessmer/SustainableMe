@@ -1,9 +1,9 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
 import Login from '../Components/Login';
 import {Subscribe} from 'unstated';
 import ProfileContainer from '../Container/ProfileContainer';
 
+//screen to call the Login component. callback functions for login and navigation options are passed as props.
 const LoginScreen = props => {
 	return (
 		<Subscribe to={[ProfileContainer]}>

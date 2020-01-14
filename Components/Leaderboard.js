@@ -1,8 +1,10 @@
 import React from 'react';
-import {Text, View, ScrollView, Button} from 'react-native';
+import {Text, View, ScrollView} from 'react-native';
 import {styles} from '../styles.js';
 import Ranking from './Ranking';
 
+//this component represents the leaderboard, for that it calls a ranking component and calculates
+//the list of all users saved by the system.
 export default class Leaderboard extends React.Component {
     constructor(props) {
         super(props);
@@ -14,7 +16,6 @@ export default class Leaderboard extends React.Component {
     async componentDidMount() {
         const theUserList = await this.props.requestUser();
         await this.setState({userlist: theUserList});
-        console.log(this.state.userlist)
     }
 
     render() {
@@ -22,7 +23,7 @@ export default class Leaderboard extends React.Component {
 
         return (
             <ScrollView>
-                <View style={styles.header}>
+                <View style={styles.headerleaderboard}>
                     <Text style={styles.subHeaderRammetto}>Leaderboard</Text>
                 </View>
                 {this.state.userlist ?
@@ -30,7 +31,7 @@ export default class Leaderboard extends React.Component {
                     <Ranking
                         users={this.state.userlist}
                     />
-                  : null
+                    : null
                 }
 
                 <View>
