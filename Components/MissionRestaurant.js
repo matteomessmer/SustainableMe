@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, View, ScrollView, TouchableOpacity, Image} from 'react-native';
+import {Text, View, ScrollView, TouchableOpacity, Image, Linking} from 'react-native';
 import {styles} from '../styles.js';
 
 export default class MissionRestaurant extends React.Component {
@@ -8,7 +8,28 @@ export default class MissionRestaurant extends React.Component {
         super(props);
         this.props.setPoints(this.props.mission.points);
     }
-
+	
+	openWebsite = () => {
+		Linking.canOpenURL(this.props.mission.url).then(supported => {
+			if (supported) {
+				Linking.openURL(this.props.mission.url);
+			} else {
+				console.log("Don't know how to open URI: " + this.props.url);
+			}
+		});
+	}
+	
+	openMaps = () => {
+		const url = 'https://www.google.com/maps/place/' + this.props.mission.address;
+		Linking.canOpenURL(url).then(supported => {
+			if (supported) {
+				Linking.openURL(url);
+			} else {
+				console.log("Don't know how to open URI: " + this.props.url);
+			}
+		});
+	}
+	
     render() {
         return (
             <ScrollView>
@@ -21,16 +42,29 @@ export default class MissionRestaurant extends React.Component {
                     <Text style={styles.subsubHeaderRammetto}> Points: {this.props.mission.points}</Text>
                 </View>
 
-                <Text style={styles.environsubTitle}>{this.props.mission.address + '\n'}</Text>
-                <Text style={styles.restLink}>{this.props.mission.url}</Text>
-
-                <Text>{' ' + this.props.mission.qr}</Text>
-
-
-                <View style={styles.descpRest}>
-                    <Text style={styles.descpRestText}>{this.props.mission.description}</Text>
+				<View style={styles.buttonDiv}>
+                    <TouchableOpacity
+                        style={styles.primaryButton}
+                        onPress={() => {
+							this.openMaps()
+                        }}
+                    >
+                        <Text style={styles.buttonText}>Maps</Text>
+                    </TouchableOpacity>
                 </View>
-
+				
+				<View style={styles.buttonDiv}>
+                    <TouchableOpacity
+                        style={styles.primaryButton}
+                        onPress={() => {
+							this.openWebsite()
+                        }}
+                    >
+                        <Text style={styles.buttonText}>Website</Text>
+                    </TouchableOpacity>
+                </View>
+				
+				
                 <View style={styles.buttonDiv}>
                     <TouchableOpacity
                         style={styles.primaryButton}
@@ -41,6 +75,10 @@ export default class MissionRestaurant extends React.Component {
                     >
                         <Text style={styles.buttonText}>Scan Code</Text>
                     </TouchableOpacity>
+                </View>
+
+                <View style={styles.descpRest}>
+                    <Text style={styles.descpRestText}>{this.props.mission.description}</Text>
                 </View>
             </ScrollView>
         )
