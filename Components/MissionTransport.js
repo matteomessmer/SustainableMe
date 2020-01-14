@@ -103,7 +103,11 @@ export default class MissionTransport extends React.Component {
                         <View style={styles.buttonDiv}>
                             <TouchableOpacity
                                 style={styles.primaryButton}
-                                onPress={() => this.props.onQR('SustainableMe',this.returnRoute())}
+                                onPress={() => {
+                                    this.props.onQR('SustainableMe',this.returnRoute())
+                                    this.reset()
+                                }
+                                }
                             >
                                 <Text style={styles.buttonText}>Scan Code</Text>
                             </TouchableOpacity>
