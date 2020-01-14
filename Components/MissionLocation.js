@@ -15,12 +15,11 @@ export default class MissionLocation extends React.Component {
         }
     }
 
-    //when user clicks on getting his location, the loaction is checked via the callback function
-    //if the location is inside the range, the user is given with the points.
-    //if the mission was started at home a different callback is called than if the mission was started from mission component.
+    /* When user clicks on getting his location, the location is checked via the callback function
+        - if the location is inside the range, the user is awarded the points.
+        - if the mission was started on the homepage, a different callback is called, so that the user returns to it after validation*/
     async advance() {
-        this.setState({error: ''});
-        this.setState({loading: true})
+        this.setState({error: '', loading: true})
         const success = await this.props.pickAndCheckPosition(this.state.location.lat, this.state.location.lon);
         if (success) {
             await this.props.setPoints(this.state.location.points);
@@ -32,8 +31,7 @@ export default class MissionLocation extends React.Component {
                 await this.props.onValidation(this.state.location.name)
             }
         } else {
-            this.setState({error: "Sorry, you're not close enough."})
-            this.setState({loading: false})
+            this.setState({error: "Sorry, you're not close enough.", loading: false})
         }
     }
 
@@ -49,7 +47,6 @@ export default class MissionLocation extends React.Component {
                     <Text style={styles.subHeaderRammetto}>{this.state.location.name}</Text>
                     <Text style={styles.subsubHeaderRammetto}>{this.state.location.points}</Text>
                 </View>
-
                 <View style={styles.buttonDivLoc}>
                     <TouchableOpacity
                         style={styles.primaryButton}

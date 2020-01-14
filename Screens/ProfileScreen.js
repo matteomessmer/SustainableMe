@@ -5,6 +5,9 @@ import ProfileContainer from '../Container/ProfileContainer';
 import PointsContainer from "../Container/PointsContainer";
 import UserContainer from "../Container/UserContainer";
 
+/*
+  Screen to display a users profile. Various methods are passed to display infos regarding the user as well as methods to alter these infos.
+*/
 const ProfileScreen = props => {
     return (
         <Subscribe to={[ProfileContainer, PointsContainer, UserContainer]}>

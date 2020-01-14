@@ -8,9 +8,11 @@ export default class ProfileContainer extends Container {
     state = {
         user: null,
     }
-
+    /*
+      This method registers a new user on the DB
+    */
     register = async (name, email, password) => {
-        //hash password
+        //password is hashed
         const hash = md5(password);
 
         //request login (expect json containing user)
@@ -27,14 +29,13 @@ export default class ProfileContainer extends Container {
             }),
         }).catch((error) => {
             alert(response);
-            console.error(error);
             return null;
         });
 
         const responseJson = await response.json();
         alert(response);
+
         //check for errors
-        //return user or null
         if (responseJson.error) {
             alert(responseJson.description);
             return false;
@@ -44,8 +45,12 @@ export default class ProfileContainer extends Container {
         }
     };
 
+    /*
+      This methods calls the DB to grant a login. If no error is found, the state is updated with the logged user.
+    */
     login = async (email, password) => {
-        //hash password
+
+        //password is hashed
         const hash = md5(password);
 
         //request login (expect json containing user)
@@ -67,7 +72,6 @@ export default class ProfileContainer extends Container {
         const responseJson = await response.json();
 
         //check for errors
-        //return user or null
         if (responseJson.error) {
             alert(responseJson.description);
             return null;
@@ -77,6 +81,9 @@ export default class ProfileContainer extends Container {
         }
     }
 
+    /*
+      Method to reset forgotten password
+    */
     resetPassword = async (email) => {
         const response = await fetch('http://sustainableme.fablabnetwork.tk/API/resetPassword.php', {
             method: 'POST',
@@ -97,8 +104,10 @@ export default class ProfileContainer extends Container {
         return responseJson;
     }
 
+    /*
+      Method to edit user info on the DB. Doesn't include the password (which requires additional DB-side logic)
+    */
     editUser = async (user) => {
-
         const response = await fetch('http://sustainableme.fablabnetwork.tk/API/modifyUser.php', {
             method: 'POST',
             headers: {
@@ -112,7 +121,7 @@ export default class ProfileContainer extends Container {
                 image: user.image,
             }),
         }).catch((error) => {
-            console.error(error);
+            //console.error(error);
             return null;
         });
 
@@ -126,8 +135,10 @@ export default class ProfileContainer extends Container {
         }
     }
 
+    /*Method to change on the DB the user's password*/
     editPassword = async (id, oldPassword, newPassword) => {
 
+        // Old and new passwords are hashed
         const oldHash = md5(oldPassword);
         const newHash = md5(newPassword);
 
@@ -143,13 +154,13 @@ export default class ProfileContainer extends Container {
                 password: newHash,
             }),
         }).catch((error) => {
-            console.error(error);
+            //console.error(error);
             return null;
         });
 
         const responseJson = await response.json();
 
-        console.log(responseJson)
+        //console.log(responseJson)
         if (responseJson.error) {
             alert(responseJson.description);
             return null;
@@ -158,7 +169,9 @@ export default class ProfileContainer extends Container {
         }
     }
 
-    /*methods to handle image pick and change*/
+    /*
+      Method to request permission to the user's camera roll
+    */
     getPermissionAsync = async () => {
         const {status} = await Permissions.askAsync(Permissions.CAMERA_ROLL);
         if (status !== 'granted') {
@@ -169,6 +182,10 @@ export default class ProfileContainer extends Container {
         }
     }
 
+    /*
+      Method to pick a user's image (editable)
+      Its local library is called and, if the image is still available, the user gets updated.
+    */
     _pickImage = async () => {
         let result = await ImagePicker.launchImageLibraryAsync({
             mediaTypes: ImagePicker.MediaTypeOptions.All,
@@ -188,6 +205,20 @@ export default class ProfileContainer extends Container {
         }
     }
 
+    /*
+      The current new user is updated on the DB as well.
+    */
+    editInfo = async () => {
+        const user = this.state.user;
+        await this.editUser(user);
+
+    };
+
+    /*
+      Overall method to change a user's image.
+      First, permission to handle the camera roll is requested. Then, the camera roll is accessed and the user updated accordingly.
+      Finally, the user is updated on the DB as well
+    */
     editImage = async () => {
         const permission = await this.getPermissionAsync();
         if (permission) {
@@ -196,12 +227,9 @@ export default class ProfileContainer extends Container {
         }
     }
 
-    editInfo = async () => {
-        const user = this.state.user;
-        await this.editUser(user);
-        /*this.setState({editName: false, editEmail: false});*/
-    };
-
+    /*
+      Method to delete the user (upon logout).
+    */
     resetUser = () => {
         this.setState({user: null})
     };

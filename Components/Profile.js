@@ -21,7 +21,7 @@ export default class Profile extends React.Component {
             cnfPassword: '',
         }
     }
-
+    /*Methods to handle the input of new name, email and passwords*/
     handleNameChange = name => {
         this.setState({name: name})
     }
@@ -42,6 +42,7 @@ export default class Profile extends React.Component {
         this.setState({cnfPassword: cnfPassword})
     }
 
+    /*Method to check that the password and its confirmation match; if so, it calls the DB to edit the password*/
     editPwd = async () => {
         /* console.log("id: " + this.props.user.id)
          console.log("Old Password: " + this.state.oldPassword)
@@ -55,6 +56,7 @@ export default class Profile extends React.Component {
         }
     };
 
+    /* Generic method to call the DB and update the user infos */
     editInfo = async () => {
         const user = {id: this.props.user.id, name: this.state.name, email: this.state.email, image: this.state.image}
         await this.props.editUser(user);
@@ -77,7 +79,7 @@ export default class Profile extends React.Component {
                     <TouchableOpacity onPress={() => this.props.editImage()}>
                         <Ionicons name={'md-create'} size={30} color={'#417110'}/>
                     </TouchableOpacity>
-
+                    
                     <Text style={styles.subHeaderRammetto}>{this.state.name}</Text>
                     {this.props.newPoints ?
                         <View>
@@ -92,9 +94,7 @@ export default class Profile extends React.Component {
                                 style={styles.subsubHeaderRammetto}>Level: {this.props.whatLevel(this.props.user.points)}</Text>
                         </View>
                     }
-
                 </View>
-
                 <View style={styles.profileContent}>
                     {this.state.editName === false ?
                         <View>
@@ -122,7 +122,6 @@ export default class Profile extends React.Component {
                             </TouchableOpacity>
                         </View>
                     }
-
                     {this.state.editEmail === false ?
                         <TouchableOpacity onPress={() => this.setState({editEmail: true})}>
                             <View style={styles.editableItems}>
@@ -146,7 +145,6 @@ export default class Profile extends React.Component {
                             </TouchableOpacity>
                         </View>
                     }
-
                     {this.state.editPassword === false ?
                         <TouchableOpacity onPress={() => this.setState({editPassword: true})}>
                             <View style={styles.editableItems}>
@@ -190,7 +188,6 @@ export default class Profile extends React.Component {
                         </View>
                     }
                 </View>
-
                 <View style={styles.buttonDiv}>
                     <TouchableOpacity
                         style={styles.primaryButton}
@@ -199,7 +196,6 @@ export default class Profile extends React.Component {
                         <Text style={styles.buttonText}>See Gallery</Text>
                     </TouchableOpacity>
                 </View>
-
                 <View style={styles.buttonDiv}>
                     <TouchableOpacity
                         style={styles.primaryButton}
@@ -215,6 +211,4 @@ export default class Profile extends React.Component {
             </ScrollView>
         )
     }
-
-
 }

@@ -21,6 +21,7 @@ const MissionLocationListScreen = props => {
 		</View>
 	)
 }
+
 MissionLocationListScreen.navigationOptions = {
     title: 'Locations',
     headerTintColor: '#ffffff',

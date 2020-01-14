@@ -27,13 +27,11 @@ export default class MissionLocationList extends React.Component {
                     <ActivityIndicator/>
                 </View>
             )
-        }
-        ;
+        };
         const theMissionList = this.state.missions.map((mission) => {
                 return (
                     <ListItem
                         key={mission.id}
-                        /*leftAvatar={{source: {uri: restaurant.image}}}*/
                         title={mission.name}
                         titleStyle={styles.listTitle}
                         subtitle={"" + mission.points + ""}
