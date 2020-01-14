@@ -37,7 +37,7 @@ export default class HomeScreen extends React.Component {
             <Subscribe to={[MissionContainer]}>
                 {missionContainer => (
                     <Home
-                        onMore={() => this.props.navigation.navigate('Mission')}
+                        onMore={() => this.props.navigation.navigate('Missions')}
                         onEnvironment={(nameOfMission, description, points,spot) => this.props.navigation.navigate('MissionEnvironment', {
                             mission: nameOfMission,
                             description: description,

@@ -26,7 +26,7 @@ export default class Home extends React.Component {
                     <View style={styles.buttonDiv}>
                         <TouchableOpacity
                             style={styles.primaryButton}
-                            onPress={() => props.onMore()}
+                            onPress={() => this.props.onMore()}
                         >
                             <Text style={styles.buttonText}>See more</Text>
                         </TouchableOpacity>
