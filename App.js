@@ -88,7 +88,7 @@ const ProfileNavigator=createStackNavigator(routesP, optionsProfile);
 
 const tabRoutes = {
     Home: AppNavigator,
-    Mission: MissionNavigator,
+    Missions: MissionNavigator,
     LeaderBoard: LeaderNavigator,
     Profile: ProfileNavigator,
 

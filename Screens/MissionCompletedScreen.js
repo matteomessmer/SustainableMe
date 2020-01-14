@@ -10,6 +10,28 @@ import {NavigationActions, StackActions} from 'react-navigation'
 const MissionCompletedScreen = props => {
 
     const nameOfMission = props.navigation.getParam('mission');
+    let resetAction = null;
+
+    const spot = props.navigation.getParam('spot');
+
+    console.log("the spot is:" +spot);
+    console.log(nameOfMission)
+    if (spot !== undefined) {
+        resetAction = StackActions.reset({
+            index: 0,
+            actions: [
+                NavigationActions.navigate({routeName: 'Home'})
+            ],
+        });
+    } else {
+        resetAction = StackActions.reset({
+            index: 0,
+            actions: [
+                NavigationActions.navigate({routeName: 'Mission'})
+            ],
+        });
+    }
+
 
     return (
         <Subscribe to={[ProfileContainer, UserContainer, PointsContainer]}>
@@ -17,18 +39,8 @@ const MissionCompletedScreen = props => {
 
                 <MissionCompleted
                     onOther={() => {
-                        props.navigation.dispatch(StackActions.reset({
-                                index: 0,
-                                actions: [
-                                    NavigationActions.navigate({
-                                        routeName: 'Mission', // Navigate to this screen
-                                        action: NavigationActions.navigate({
-                                            routeName: 'Home', // Call home stack
-                                        }),
-                                    }),
-                                ],
-                                key: null
-                            }))
+                        props.navigation.dispatch(resetAction)
+                        props.navigation.navigate('Missions')
                     }
                     }
                     mission={nameOfMission}

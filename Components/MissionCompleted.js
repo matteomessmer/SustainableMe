@@ -38,7 +38,10 @@ export default class MissionCompleted extends React.Component {
                 <View style={styles.buttonDiv}>
                     <TouchableOpacity
                         style={styles.primaryButton}
-                        onPress={() => this.props.onOther()}
+                        onPress={() => {
+                            this.props.onOther()
+
+                        }}
                     >
                         <Text style={styles.buttonText}>See other missions</Text>
                     </TouchableOpacity>

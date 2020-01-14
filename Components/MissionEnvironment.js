@@ -83,7 +83,13 @@ export default class MissionEnvironment extends React.Component {
                                     onPress={() => {
                                       this.props.clearPage()
                                         this.props.onValid(this.props.points)
-                                        this.props.confirm(this.props.nameOfMission)
+                                        if(this.props.isSpot!==undefined){
+                                            console.log('by passing:'+this.props.isSpot);
+                                            this.props.confirmfromHome(this.props.nameOfMission, this.props.isSpot)
+                                        }else{
+                                            this.props.confirm(this.props.nameOfMission)
+                                        }
+
                                     }}
                                 >
                                     <Text style={styles.buttonText}>Confirm</Text>

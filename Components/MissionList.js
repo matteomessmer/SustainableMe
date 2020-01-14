@@ -37,6 +37,7 @@ export default class MissionList extends React.Component {
                 onLocation={this.props.onLocation}
                 onRestaurant={this.props.onRestaurant}
                 picture={type=>this.props.computePicture(type)}
+                spot={this.props.isSpot}
             />
         );
         const spotlightMission = spot.map(this.addKeys);

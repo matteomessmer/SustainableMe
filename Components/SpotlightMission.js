@@ -14,13 +14,13 @@ export default class SpotlightMission extends React.Component {
                 style={styles.missionButton}
                 onPress={() => {
                     if (this.props.type == 'environment')
-                        this.props.onEnvironment(this.props.name, this.props.description, this.props.points);
+                        this.props.onEnvironment(this.props.name, this.props.description, this.props.points, this.props.spot);
 
                     if (this.props.type == "location")
-                        this.props.onLocation(this.props.mission)
+                        this.props.onLocation(this.props.mission, this.props.spot)
 
                     if (this.props.type == 'restaurant')
-                        this.props.onRestaurant(this.props.mission, this.props.description)
+                        this.props.onRestaurant(this.props.mission, this.props.description, this.props.spot)
                 }
                 }
             >

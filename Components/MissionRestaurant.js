@@ -24,7 +24,8 @@ export default class MissionRestaurant extends React.Component {
                 <Text style={styles.environsubTitle}>{this.props.mission.address + '\n'}</Text>
                 <Text style={styles.restLink}>{this.props.mission.url}</Text>
 
-                <Text>{/*this.props.mission.qr*/}</Text>
+                <Text>{' ' + this.props.mission.qr}</Text>
+
 
                 <View style={styles.descpRest}>
                     <Text style={styles.descpRestText}>{this.props.mission.description}</Text>
@@ -33,7 +34,10 @@ export default class MissionRestaurant extends React.Component {
                 <View style={styles.buttonDiv}>
                     <TouchableOpacity
                         style={styles.primaryButton}
-                        onPress={() => this.props.onQR(this.props.mission.qr, this.props.mission.name)}
+                        onPress={() => {
+
+                            this.props.onQR(this.props.mission.qr, this.props.mission.name, this.props.isSpot)
+                        }}
                     >
                         <Text style={styles.buttonText}>Scan Code</Text>
                     </TouchableOpacity>

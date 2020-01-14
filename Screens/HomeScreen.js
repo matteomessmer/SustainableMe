@@ -37,16 +37,18 @@ export default class HomeScreen extends React.Component {
                 {missionContainer => (
                     <Home
                         onMore={() => this.props.navigation.navigate('Mission')}
-                        onEnvironment={(nameOfMission, description, points) => this.props.navigation.navigate('MissionEnvironment', {
+                        onEnvironment={(nameOfMission, description, points,spot) => this.props.navigation.navigate('MissionEnvironment', {
                             mission: nameOfMission,
                             description: description,
-                            points: points
+                            points: points,
+                            spot: spot
                         })}
                         onTransport={() => this.props.navigation.navigate('MissionTransport')}
-                        onLocation={(location) => this.props.navigation.navigate('MissionLocation', {location: location})}
-                        onRestaurant={(restaurant) => this.props.navigation.navigate('MissionRestaurant', {restaurant: restaurant})}
+                        onLocation={(location,spot) => this.props.navigation.navigate('MissionLocation', {location: location, spot: spot})}
+                        onRestaurant={(restaurant, spot) => this.props.navigation.navigate('MissionRestaurant', {restaurant: restaurant, spot: spot})}
                         computeList={missionContainer.getSpotlightMissions}
                         computePicture={missionContainer.computePicture}
+                        spotlight={true}
                     />
                 )}
 

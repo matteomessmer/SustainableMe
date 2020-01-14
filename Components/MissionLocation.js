@@ -52,8 +52,13 @@ export default class MissionLocation extends React.Component {
         if (success) {
             await this.props.setPoints(this.state.location.points);
             await this.props.creditPointsUser();
-            await this.setState({loading: false})
-            await this.props.onValidation(this.state.location.name);
+            await this.setState({loading: false});
+            if(this.props.isSpot!==undefined){
+                console.log('inside: '+this.props.isSpot)
+                await this.props.onValidationfromHome(this.state.location.name, this.props.isSpot)
+            }else{
+                await this.props.onValidation(this.state.location.name)
+            }
         } else {
             this.setState({error: "Sorry, you're not close enough."})
             this.setState({loading: false})

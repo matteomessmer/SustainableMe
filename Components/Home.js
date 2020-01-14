@@ -22,6 +22,7 @@ export default class Home extends React.Component {
                         onTransport={this.props.onTransport}
                         onLocation={this.props.onLocation}
                         onRestaurant={this.props.onRestaurant}
+                        isSpot={this.props.spotlight}
                     />
 
                     <View style={styles.buttonDiv}>
