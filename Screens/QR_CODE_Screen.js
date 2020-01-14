@@ -18,7 +18,6 @@ const QR_CODE_Screen = props => {
             {(pointscontainer, profilecontainer) => (
                 <QR_CODE
                     onCreditPoints={() => pointscontainer.creditPointsUser(pointscontainer.state.points, profilecontainer.state.user.id)}
-                    onValidation={(name) => props.navigation.navigate('MissionCompleted', {mission: name})}
                     code={code}
                     name={name}
                     onClear={() => {

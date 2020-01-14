@@ -16,16 +16,17 @@ export default class Picture extends React.Component {
 //"delete" to delete the picture from the gallery
     render() {
 
-        return(
+        return (
             <View>
-                <Image
-                    source={{uri: this.props.pic}}
-                    style={{width: 150, height: 150}}
-                />
-
+                <View style={styles.pictureGallery}>
+                    <Image
+                        source={{uri: this.props.pic}}
+                        style={{width: 300, height: 250}}
+                    />
+                </View>
                 <View style={styles.buttonDiv}>
                     <Subscribe to={[PictureContainer]}>
-                        {picturecontainer =>(
+                        {picturecontainer => (
                             <TouchableOpacity
                                 style={styles.primaryButton}
                                 onPress={() => picturecontainer.delete(this.props.pic)}

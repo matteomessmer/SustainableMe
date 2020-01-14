@@ -17,9 +17,8 @@ export default class QR_CODE extends React.Component {
         this.setState({scanned: true});
 
         if (data === this.props.code) {
-            //Alert.alert('Congratulations your code is valid! Thank you for using ...');
+            Alert.alert('Congratulations your code is valid! Thank you for using ...');
             this.props.onCreditPoints();
-            //this.props.onValidation(this.props.name);
             this.props.onClear(this.props.name);
         } else {
             Alert.alert('Your code is not valid! Please try again');
