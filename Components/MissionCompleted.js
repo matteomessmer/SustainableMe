@@ -24,8 +24,7 @@ export default class MissionCompleted extends React.Component {
                 </View>
 
                 <View>
-                    <Text style={styles.inputFieldText}>Now you have a total
-                        of{'\n'} {this.props.totalPoints ?
+                    <Text style={styles.inputFieldText}>{'\n'} {this.props.totalPoints ?
                             <Text> You have a total of {this.props.totalPoints}</Text>
                             :
                             null
