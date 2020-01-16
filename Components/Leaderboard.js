@@ -13,13 +13,14 @@ export default class Leaderboard extends React.Component {
         }
     }
 
-    async componentDidMount() {
+    async getUsers() {
         const theUserList = await this.props.requestUser();
         await this.setState({userlist: theUserList});
     }
-
+	
+	
     render() {
-
+		this.getUsers();
 
         return (
             <ScrollView>

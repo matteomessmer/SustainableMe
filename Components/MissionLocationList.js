@@ -1,5 +1,5 @@
 import React from 'react';
-import { View,ActivityIndicator} from 'react-native';
+import { View, ScrollView,ActivityIndicator} from 'react-native';
 import {ListItem} from 'react-native-elements';
 import {styles} from '../styles.js';
 
@@ -45,9 +45,9 @@ export default class MissionLocationList extends React.Component {
         );
 
         return (
-            <View>
+            <ScrollView>
                 {theMissionList}
-            </View>
+            </ScrollView>
         )
     }
 }

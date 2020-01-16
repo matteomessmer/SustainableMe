@@ -13,8 +13,9 @@ export default class Registration extends React.Component{
     }
 
     register = async () => {
-		await this.props.register(this.state.name, this.state.email, this.state.password)
-		this.props.login()
+		if(await this.props.register(this.state.name, this.state.email, this.state.password)) {
+			this.props.login()
+		}
     }
     
 	handleEmailChange = email => {
