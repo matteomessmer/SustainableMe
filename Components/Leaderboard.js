@@ -18,11 +18,12 @@ export default class Leaderboard extends React.Component {
    async componentDidMount() {
 
         this.getUsers();
-        await this.setState({loading: false});
+
     }
     async getUsers(){
         const theUserList = await this.props.requestUser();
         await this.setState({userlist: theUserList});
+        await this.setState({loading: false});
     }
 
 
@@ -52,6 +53,7 @@ export default class Leaderboard extends React.Component {
                     <TouchableOpacity
                         style={styles.primaryButton}
                         onPress={() => {
+                            this.setState({loading:true})
                             this.getUsers();
 
                         }}
