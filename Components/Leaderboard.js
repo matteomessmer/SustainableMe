@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, View, ScrollView} from 'react-native';
+import {Text, View, ScrollView, ActivityIndicator} from 'react-native';
 import {styles} from '../styles.js';
 import Ranking from './Ranking';
 
@@ -10,23 +10,31 @@ export default class Leaderboard extends React.Component {
         super(props);
         this.state = {
             userlist: null,
+            loading: true
         }
     }
 
     async getUsers() {
         const theUserList = await this.props.requestUser();
         await this.setState({userlist: theUserList});
+        await this.setState({loading: false});
     }
 	
 	
     render() {
 		this.getUsers();
+		
 
         return (
             <ScrollView>
                 <View style={styles.headerleaderboard}>
                     <Text style={styles.subHeaderRammetto}>Leaderboard</Text>
                 </View>
+                {this.state.loading?
+                    <View style={{flex: 1, padding: 20}}>
+                        <ActivityIndicator/>
+                    </View>:null
+                }
                 {this.state.userlist ?
 
                     <Ranking

@@ -6,15 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07dc5ad6-6e32-4ac7-ba0d-2aa44b12c1a6" name="Default Changelist" comment="Merge branch 'master' of https://github.com/matteo-messmer/SustainableMe&#10;&#10;# Conflicts:&#10;#&#9;App.js">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Components/MissionLocation.js" beforeDir="false" afterPath="$PROJECT_DIR$/Components/MissionLocation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Container/EnvironmentContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/Container/EnvironmentContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Container/MissionContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/Container/MissionContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Container/MissionLocationContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/Container/MissionLocationContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Container/PictureContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/Container/PictureContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Container/PointsContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/Container/PointsContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Container/TransportationContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/Container/TransportationContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Container/UserContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/Container/UserContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/Leaderboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/Components/Leaderboard.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,11 +19,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Container/MissionLocationContainer.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="110">
-              <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+              <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Components/Leaderboard.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -40,34 +44,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Container/ProfileContainer.js">
+        <entry file="file://$PROJECT_DIR$/Components/MissionsEnvironmentList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3850">
-              <caret line="175" column="77" selection-start-line="175" selection-start-column="77" selection-end-line="175" selection-end-column="77" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Container/UserContainer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1208">
-              <caret line="202" selection-start-line="202" selection-end-line="202" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Components/MissionLocation.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="109">
+              <caret line="24" column="8" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="30" selection-end-column="9" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -135,7 +115,6 @@
         <option value="$PROJECT_DIR$/Screens/ForgotPasswordScreen.js" />
         <option value="$PROJECT_DIR$/Components/Gallery.js" />
         <option value="$PROJECT_DIR$/styles.js" />
-        <option value="$PROJECT_DIR$/Components/Leaderboard.js" />
         <option value="$PROJECT_DIR$/Screens/LeaderboardScreen.js" />
         <option value="$PROJECT_DIR$/Components/Login.js" />
         <option value="$PROJECT_DIR$/Screens/LoginScreen.js" />
@@ -175,6 +154,7 @@
         <option value="$PROJECT_DIR$/Container/PointsContainer.js" />
         <option value="$PROJECT_DIR$/Container/UserContainer.js" />
         <option value="$PROJECT_DIR$/Container/MissionLocationContainer.js" />
+        <option value="$PROJECT_DIR$/Components/Leaderboard.js" />
       </list>
     </option>
   </component>
@@ -266,12 +246,12 @@
       <workItem from="1578753846249" duration="9762000" />
       <workItem from="1578993619296" duration="21986000" />
       <workItem from="1579022054949" duration="373000" />
-      <workItem from="1579167283306" duration="1051000" />
+      <workItem from="1579167283306" duration="1564000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154371000" />
+    <option name="totallyTimeSpent" value="154884000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -433,13 +413,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Components/Leaderboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Screens/LoginScreen.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -490,16 +463,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Screens/MissionLocationScreen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Components/MissionLocationList.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-75">
@@ -514,16 +477,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="59" selection-start-line="6" selection-start-column="59" selection-end-line="6" selection-end-column="59" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Components/MissionsEnvironmentList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="51" column="9" lean-forward="true" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -811,10 +764,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Screens/MissionLocationScreen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Container/MissionLocationContainer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
-          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+          <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Components/MissionsEnvironmentList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="24" column="8" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="30" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Components/Leaderboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
