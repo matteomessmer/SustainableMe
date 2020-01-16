@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, View, ScrollView, ActivityIndicator} from 'react-native';
+import {Text, View, ScrollView, ActivityIndicator, TouchableOpacity} from 'react-native';
 import {styles} from '../styles.js';
 import Ranking from './Ranking';
 
@@ -14,16 +14,21 @@ export default class Leaderboard extends React.Component {
         }
     }
 
-    async getUsers() {
-        const theUserList = await this.props.requestUser();
-        await this.setState({userlist: theUserList});
+    //gets the list of users and waits till function returns
+   async componentDidMount() {
+
+        this.getUsers();
         await this.setState({loading: false});
     }
-	
-	
+    async getUsers(){
+        const theUserList = await this.props.requestUser();
+        await this.setState({userlist: theUserList});
+    }
+
+
     render() {
-		this.getUsers();
-		
+		//this.getUsers();
+
 
         return (
             <ScrollView>
@@ -43,8 +48,16 @@ export default class Leaderboard extends React.Component {
                     : null
                 }
 
-                <View>
+                <View style={styles.buttonDiv}>
+                    <TouchableOpacity
+                        style={styles.primaryButton}
+                        onPress={() => {
+                            this.getUsers();
 
+                        }}
+                    >
+                        <Text style={styles.buttonText}>Reload</Text>
+                    </TouchableOpacity>
                 </View>
 
             </ScrollView>
