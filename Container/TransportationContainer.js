@@ -2,15 +2,20 @@ import React from 'react';
 import {Container} from 'unstated'
 import {Alert} from 'react-native';
 
+//This container is used to calculate the route of the transport mission
+//for that it uses the Google API where the parameters are set to mode=transit, so that
+//it shows routes with public transportation.
 export default class TransportationContainer extends Container {
 
+    //calls the Google API and returns a list of routes that were found for this orgin and
+    //destination by means of public transport.
     calculateRoute = async (origin, destination) => {
         const response = await fetch('https://maps.googleapis.com/maps/api/directions/json?origin=' + origin + '&destination=' + destination + '&departure_time=&mode=transit&key=AIzaSyDnOaaU_CIxZxa45NcrN0G2Nzl7xVTKFdA');
         const theRoute = await response.json();
 
 
         if (theRoute.status === 'NOT_FOUND') {
-            Alert.alert('No Route has been found for your places. Please use ue; ae; oe; for Umlauts or do not mix Italian with German :) and try again!')
+            Alert.alert('No Route has been found for your places.Please do not mix Italian with German :) and try again!')
             return null;
         } else if (theRoute.status === 'ZERO_RESULTS') {
             Alert.alert('Unfortunately no results could be found for your trip :(')

@@ -1,9 +1,13 @@
 import React from 'react';
 import {Container} from 'unstated'
 
+//this container is there to access the missions which are stored on the db.
+//the functions are used to retrieve the missions that are currently in spotlight, i.e., missions
+//the user should conduct firstly.
 export default class MissionContainer extends Container {
     state = {}
 
+    //gets the mission of the db and selects some as spotlightmissions.
     getSpotlightMissions = async () => {
 
         //request missions (expect json containing missions)
@@ -37,6 +41,8 @@ export default class MissionContainer extends Container {
 
     }
 
+    //this function is used also for home component /spotlight missions to understand
+    //which type of mission it is and display the correct picture.
     computePicture = (type) => {
 
         if (type == 'environment')

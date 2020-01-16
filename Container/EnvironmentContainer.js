@@ -3,6 +3,7 @@ import {Container} from 'unstated';
 import * as ImagePicker from 'expo-image-picker';
 import * as Permissions from 'expo-permissions';
 
+//this container is used to give functions regarding the environment mission.
 export default class EnvironmentContainer extends Container {
 
     //State storing temporarly the picture uploaded by the user

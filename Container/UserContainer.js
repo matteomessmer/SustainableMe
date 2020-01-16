@@ -1,12 +1,13 @@
 import React from 'react';
 import {Container} from 'unstated'
 
-
+//this container provides functions to acces the list of user and to calculate the current level of a user.
 export default class UserContainer extends Container {
     state = {
         userlist: null,
     };
 
+    //gets the list of users in the db
     getUsers = async () => {
 
         const response = await fetch('http://sustainableme.fablabnetwork.tk/API/getUsers.php', {
@@ -33,6 +34,8 @@ export default class UserContainer extends Container {
         }
 
     };
+
+    //defines what level correspond to which range of points.
     whatLevel = points => {
         let level = null;
 
@@ -105,6 +108,7 @@ export default class UserContainer extends Container {
 
     };
 
+    //takes the points of an user and calculates the level he is currently in
     calculateLevels = () => {
 
         if (this.state.userlist !== null) {
@@ -127,6 +131,7 @@ export default class UserContainer extends Container {
     }
 
 
+    //compute the points left a user needs to reach the next level
     computePointsLeft = (points) => {
         let pointsLeft = 0;
 
@@ -196,7 +201,6 @@ export default class UserContainer extends Container {
 		pointsLeft = -1;
 	  }
 
-      console.log(pointsLeft);
       return pointsLeft;
     }
 }

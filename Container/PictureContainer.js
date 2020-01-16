@@ -3,6 +3,8 @@ import {PersistContainer} from 'unstated-persist'
 import {Alert} from 'react-native';
 import {AsyncStorage} from 'react-native';
 
+//this container is used to give functions that are relating to the gallery component
+//this container is also persistant so that a picture can be stored among several uses of the app.
 export default class PictureContainer extends PersistContainer {
 
     //State storing the list of pictures (which is the gallery of the user)

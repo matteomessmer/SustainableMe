@@ -63,7 +63,7 @@ export default class MissionLocation extends React.Component {
                         :
                         null
                     }
-                    <Text style={styles.locInstructs}>(Note: we apply a tolerance of about 5 km)</Text>
+                    <Text style={styles.locInstructs}>(Note: we apply a tolerance of about 1 km)</Text>
                 </View>
             </View>
         )
