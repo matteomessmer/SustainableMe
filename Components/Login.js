@@ -7,8 +7,8 @@ export default class Login extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            email: 'cmistro@unibz.it',
-            password: 'Chiara1234',
+            email: '',
+            password: '',
         }
     }
     //takes the callback function passed as props and sets the parameters to the values the user has

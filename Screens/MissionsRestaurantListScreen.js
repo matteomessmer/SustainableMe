@@ -4,6 +4,8 @@ import MissionsRestaurantList from '../Components/MissionsRestaurantList';
 import {Subscribe} from "unstated";
 import RestaurantContainer from "../Container/RestaurantContainer";
 
+//screen to call the mission component which passes navigation callbacks to the component.
+//these callbacks will be then used to get a list of restaurants and to navigate to the mission screen when the user click on a restaurant
 const MissionsRestaurantListScreen = props => {
 	return (
 		<View>

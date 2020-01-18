@@ -3,6 +3,8 @@ import Registration from '../Components/Registration';
 import {Subscribe} from 'unstated';
 import ProfileContainer from '../Container/ProfileContainer';
 
+//screen to call the registration component. It passes a navigation callback, which is called when the user registrated or clicks on "already have an account".
+//It also passes the callback that registers the user.
 const RegistrationScreen = props => {
 	return (
 		<Subscribe to={[ProfileContainer]}>

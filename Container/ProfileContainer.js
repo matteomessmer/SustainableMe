@@ -15,7 +15,7 @@ export default class ProfileContainer extends Container {
         //password is hashed
         const hash = md5(password);
 
-        //request login (expect json containing user)
+        //request register (expect json with the result of the operation)
         const response = await fetch('http://sustainableme.fablabnetwork.tk/API/register.php', {
             method: 'POST',
             headers: {
