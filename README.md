@@ -17,10 +17,6 @@ SustainableMe is an application that helps tourists and locals in South Tyrol to
 - Nested Stack and Tab NavigationActions
 - Persistence (through Unstated library)
 
-# TO DO :
-
-
-
 
 # API ENDPOINTS
 - To get the list of rewards (GET): http://sustainableme.fablabnetwork.tk/API/getRewards.php
