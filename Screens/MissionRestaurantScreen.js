@@ -22,10 +22,11 @@ const MissionRestaurantScreen = props => {
                         setPoints={(points) => pointsContainer.setPoints(points)}
 						onWebsite={(url) => restaurantContainer.openWebsite(url)}
 						onMaps={(address) => restaurantContainer.openMaps(address)}
-                        onQR={(code, nameMission) => props.navigation.navigate('QR_CODE', {
+                        onQR={(code, nameMission, isSpot, points) => props.navigation.navigate('QR_CODE', {
                             code: code,
                             name: nameMission,
-                            spot: isSpot
+                            spot: isSpot,
+							points: points
                         })}
                     />
                 )}
@@ -38,6 +39,10 @@ MissionRestaurantScreen.navigationOptions = {
     headerTintColor: '#ffffff',
     headerStyle: {
         backgroundColor: '#417110'
+    },
+    headerTitleStyle: {
+        fontFamily: 'Rammetto-One',
+        fontWeight: "200"
     }
 };
 

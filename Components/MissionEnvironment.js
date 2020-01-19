@@ -85,7 +85,7 @@ export default class MissionEnvironment extends React.Component {
                                         this.props.clearPage()
                                         this.props.onValid(this.props.points)
                                         if (this.props.isSpot !== undefined) {
-                                            this.props.confirmfromHome(this.props.nameOfMission, this.props.isSpot)
+                                            this.props.confirmfromHome(this.props.nameOfMission, this.props.isSpot, this.props.points)
                                         } else {
                                             this.props.confirm(this.props.nameOfMission)
                                         }

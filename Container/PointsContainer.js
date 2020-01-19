@@ -1,11 +1,10 @@
 import React from 'react';
 import {Container} from 'unstated'
 
-//this container is used to give points to the user after accomplishing a mission.
+//this container is used to calculate points.
 export default class PointsContainer extends Container {
     state = {
         points: 0,
-        totalPoints: null,
     };
 
     //sets the points
@@ -34,39 +33,5 @@ export default class PointsContainer extends Container {
 
         await this.setState({points: pointsToGive});
         return this.state.points
-    };
-
-
-    //this will update the points for this user in the DB.
-    creditPointsUser = async (points, id) => {
-        const response = await fetch('http://sustainableme.fablabnetwork.tk/API/addPoints.php', {
-            method: 'POST',
-            headers: {
-                Accept: 'application/json',
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                points: points,
-                id: id,
-
-
-            }),
-        }).catch((error) => {
-            console.error(error);
-            return null;
-        });
-
-        const responseJson = await response.json();
-        if (responseJson.error) {
-            alert(responseJson.description);
-            return null;
-        } else {
-            await this.setState({totalPoints: responseJson.points})
-        }
-    };
-
-    //after accomplishing the mission, the totalpoints are reset for a further mission
-    resetPoints = () => {
-        this.setState({totalPoints: null})
     };
 }

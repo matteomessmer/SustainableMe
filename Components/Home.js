@@ -9,9 +9,6 @@ export default class Home extends React.Component {
     render() {
         return (
             <View style={styles.container_home}>
-                <View style={styles.header}>
-                    <Text style={styles.subHeaderRammetto}>Spotlight missions</Text>
-                </View>
                 <View>
                     <MissionList
                         computeList={this.props.computeList}

@@ -33,22 +33,6 @@ export default class Leaderboard extends React.Component {
 
         return (
             <ScrollView>
-                <View style={styles.headerleaderboard}>
-                    <Text style={styles.subHeaderRammetto}>Leaderboard</Text>
-                </View>
-                {this.state.loading?
-                    <View style={{flex: 1, padding: 20}}>
-                        <ActivityIndicator/>
-                    </View>:null
-                }
-                {this.state.userlist ?
-
-                    <Ranking
-                        users={this.state.userlist}
-                    />
-                    : null
-                }
-
                 <View style={styles.buttonDiv}>
                     <TouchableOpacity
                         style={styles.primaryButton}
@@ -61,6 +45,19 @@ export default class Leaderboard extends React.Component {
                         <Text style={styles.buttonText}>Reload</Text>
                     </TouchableOpacity>
                 </View>
+				
+                {this.state.loading?
+                    <View style={{flex: 1, padding: 20}}>
+                        <ActivityIndicator/>
+                    </View>:null
+                }
+                {this.state.userlist ?
+
+                    <Ranking
+                        users={this.state.userlist}
+                    />
+                    : null
+                }
 
             </ScrollView>
         )

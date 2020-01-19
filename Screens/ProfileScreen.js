@@ -10,15 +10,13 @@ import UserContainer from "../Container/UserContainer";
 */
 const ProfileScreen = props => {
     return (
-        <Subscribe to={[ProfileContainer, PointsContainer, UserContainer]}>
-            {(profileContainer,pointscontainer, usercontainer) => (
+        <Subscribe to={[ProfileContainer, UserContainer]}>
+            {(profileContainer, usercontainer) => (
                 <Profile
                     user={profileContainer.state.user}
-                    newPoints={pointscontainer.state.totalPoints}
                     editPassword={(id, oldPassword, newPassword) => profileContainer.editPassword(id, oldPassword, newPassword)}
                     editUser={(user) => profileContainer.editUser(user)}
                     resetUser={()=>profileContainer.resetUser()}
-                    resetPoints={()=>pointscontainer.resetPoints()}
                     logout={() => props.navigation.navigate('Login')}
                     onGallery={()=>props.navigation.navigate('Gallery')}
                     editImage={()=>profileContainer.editImage()}
@@ -35,7 +33,11 @@ ProfileScreen.navigationOptions = {
     headerTintColor: '#ffffff',
     headerStyle: {
         backgroundColor: '#417110'
-    }
+    },
+	headerTitleStyle: {
+		fontFamily: 'Rammetto-One',
+		fontWeight: "200"
+	},
 };
 
 export default ProfileScreen;

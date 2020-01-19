@@ -61,7 +61,7 @@ export default class MissionRestaurant extends React.Component {
                         style={styles.primaryButton}
                         onPress={() => {
 
-                            this.props.onQR(this.props.mission.qr, this.props.mission.name, this.props.isSpot)
+                            this.props.onQR(this.props.mission.qr, this.props.mission.name, this.props.isSpot, this.props.mission.points)
                         }}
                     >
                         <Text style={styles.buttonText}>Scan Code</Text>

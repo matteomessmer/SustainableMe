@@ -67,7 +67,6 @@ export default class MissionTransport extends React.Component {
                             <Ionicons name={'ios-bicycle'} size={80} color={'white'}/>
                         </View>
                     </View>
-                    <Text style={styles.subHeaderRammetto}>TRANSPORT MISSION</Text>
                 </View>
                 <Text style={styles.inputFieldText}>From:</Text>
                 <TextInput

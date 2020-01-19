@@ -14,7 +14,7 @@ const MissionTransportScreen = props => {
                 {(transportcontainer, pointscontainer) => (
                     <MissionTransport
                         fermate={(origin, destination) => transportcontainer.calculateRoute(origin, destination)}
-                        onQR={(code, name) => props.navigation.navigate('QR_CODE', {code: code, name: name})}
+                        onQR={(code, name) => props.navigation.navigate('QR_CODE', {code: code, name: name, points: pointscontainer.state.points})}
                         onCalculate={kilometer => pointscontainer.addPointsfromDistance(kilometer)}
                     />
                 )}
@@ -24,9 +24,14 @@ const MissionTransportScreen = props => {
     )
 };
 MissionTransportScreen.navigationOptions = {
+	title: "Transport Mission",
     headerTintColor: '#ffffff',
     headerStyle: {
         backgroundColor: '#417110'
+    },
+    headerTitleStyle: {
+        fontFamily: 'Rammetto-One',
+        fontWeight: "200"
     }
 };
 
