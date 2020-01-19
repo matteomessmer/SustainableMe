@@ -26,10 +26,10 @@ export default class TransportationContainer extends Container {
             const convertedRoutes = theRoute.routes.map(apiRoute => {
                 const innerRoute = apiRoute.legs.map(route => {
                     return {
-                        arrival: route.arrival_time.text,
-                        departure: route.departure_time.text,
-                        distance: route.distance.text,
-                        duration: route.duration.text,
+                        arrival: route.arrival_time? route.arrival_time.text:'',
+                        departure: route.departure_time? route.departure_time.text:'',
+                        distance: route.distance? route.distance.text:'',
+                        duration: route.duration? route.duration.text: '',
                         routes: route.steps.map(steps => {
                             if (steps.travel_mode === 'TRANSIT') {
                                 return {

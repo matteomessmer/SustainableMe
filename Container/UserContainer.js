@@ -40,7 +40,7 @@ export default class UserContainer extends Container {
     //defines what level correspond to which range of points.
     whatLevel = points => {
 		for(let i = 0; i < this.state.levels.length; i++) {
-			if(this.state.levels[i]>points) {
+			if(this.state.levels[i]>=points) {
 				return i + 1;
 			}
 		}
