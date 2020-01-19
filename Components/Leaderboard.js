@@ -17,7 +17,7 @@ export default class Leaderboard extends React.Component {
     //gets the list of users and waits till function returns
    async componentDidMount() {
 
-        this.getUsers();
+        await this.getUsers();
 
     }
     async getUsers(){
@@ -28,8 +28,6 @@ export default class Leaderboard extends React.Component {
 
 
     render() {
-		//this.getUsers();
-
 
         return (
             <ScrollView>
