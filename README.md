@@ -12,14 +12,10 @@ SustainableMe is an application that helps tourists and locals in South Tyrol to
 
 # Notable functionalities
 - Communication with a MySQL Database that contains tables for missions and users, with some PHP scripting to handle exchange of information.
-- Communication with Expo APIs to gather a device's position, access to its camera roll, its memory, etc...
+- Communication with Expo APIs to gather a device's position, access to its camera roll, its memory, the default browser, etc...
 - Communication with GMaps APIs to gather traffic directions (using public transportation) and location coordinates
 - Nested Stack and Tab NavigationActions
 - Persistence (through Unstated library)
-
-# TO DO :
-
-
 
 
 # API ENDPOINTS
