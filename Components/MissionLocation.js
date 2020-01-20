@@ -45,7 +45,7 @@ export default class MissionLocation extends React.Component {
                         </View>
                     </View>
                     <Text style={styles.subHeaderRammetto}>{this.state.location.name}</Text>
-                    <Text style={styles.subsubHeaderRammetto}>{this.state.location.points}</Text>
+                    <Text style={styles.subsubHeaderRammetto}>Points: {this.state.location.points}</Text>
                 </View>
                 <View style={styles.buttonDivLoc}>
                     <TouchableOpacity

@@ -29,7 +29,6 @@ export default class MissionEnvironment extends React.Component {
                             <Ionicons name={'md-globe'} size={80} color={'white'}/>
                         </View>
                     </View>
-                    <Text style={styles.subHeaderRammetto}>ENVIRONMENT MISSION</Text>
                 </View>
                 <View style={styles.titleheader}>
                     <Text style={styles.environsubTitle}>

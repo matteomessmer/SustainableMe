@@ -60,6 +60,7 @@ const MissionCompletedScreen = props => {
 
 //Navigation options for the header
 MissionCompletedScreen.navigationOptions = {
+	title: "Mission Completed",
     headerTintColor: '#ffffff',
     headerStyle: {
         backgroundColor: '#417110'

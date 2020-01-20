@@ -82,6 +82,10 @@ MissionEnvironmentScreen.navigationOptions = {
     headerTintColor: '#ffffff',
     headerStyle: {
         backgroundColor: '#417110'
+    },
+    headerTitleStyle: {
+        fontFamily: 'Rammetto-One',
+        fontWeight: "200"
     }
 };
 
