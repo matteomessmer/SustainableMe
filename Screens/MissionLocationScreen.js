@@ -26,6 +26,7 @@ const MissionLocationScreen = props => {
                         pickAndCheckPosition={(lat, lon) => missionlocationcontainer.pickAndCheckPosition(lat, lon)}
                         setPoints={(points) => pointscontainer.setPoints(points)}
                         creditPointsUser={() => profilecontainer.creditPointsUser(pointscontainer.state.points)}
+						openMaps={(lat, lon) => missionlocationcontainer.openMaps(lat,lon)}
                         onValidation={(nameOfMission, points) => {
                             props.navigation.dispatch(StackActions.reset({
                                 index: 0,
