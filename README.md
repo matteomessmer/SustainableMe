@@ -12,10 +12,17 @@ Project 3 for the course Engineering of Mobile Systems
 SustainableMe is an application that helps tourists and locals in South Tyrol to behave in a more environmental-friendly way, by applying a gamification approach to common activities. The app allows to complete 4 types of missions: transport mission (using public transportation instead of private transportation), location missions (visit less-crowded, less-renowned locations), restaurant missions (visit local restaurant) and environmental missions (a range of missions to help the environment, such as picking up garbage or support local communities).
 
 # Notes for testing
+<<<<<<< HEAD
 - If you don's see a Confirmation email (used for registration and password reset purposes) check your spam folder. This is probably due to the fact that the email server we use is not certified.
 - To test the location mission, your device needs to be phisically within 1.000 metres of the location. For this purpose, we created the "Go to UniBZ" location mission.
 - A warning abouth the method "ComponentWillReceiveProps" is issued at application start. This is due to the use of the method in the "Unstated" library. An issue has already been raised to the library's owner; the warning hower doesn't affect the app's functionalities.
 - For testing, please use the QR codes in the folder "QR Codes" of the repository. For each restaurant there is a different QR code (see the names associated). For the transport mission, there is one single QR code valid for any type of route (Transport Missions.png).
+=======
+- If you don't get a Confirmation email (used for registration and password reset purposes) check your spam folder. This is probably due to the fact that the email server we use is not certified.
+- To test the location mission, your device needs to be physically within 1.000 metres of the location. For this purpose, we have created the "Go to UniBZ" location mission.
+- A warning about the method "ComponentWillReceiveProps" is issued at application start. This is due to incorrect use of some methods of the"Unstated" library. An issue has already been raised to the library's owner; the warning however doesn't affect the app's functionalities.
+- For testing, please use the QR codes in the folder of the repository. For each restaurant there is a different QR code please see the names associated. For the transport mission there is one single QR code valid for any type of route (Transport Missions.png). 
+>>>>>>> d6a53538a204ca0f1acbe386e8d6c9aef19c7641
 
 
 # Notable functionalities
