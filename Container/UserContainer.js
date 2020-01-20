@@ -5,8 +5,37 @@ import {Container} from 'unstated'
 export default class UserContainer extends Container {
     state = {
         userlist: null,
-		//points associated to the level, index + 1 is the level
-		levels: [200,400,600,800,1000,1400,2200,2800,3400,4000,4800,5600,6400,7200,8000,9000,10000,11500,13000,14500,16000,17500,19000,21000,23000,25000,27000,30000],
+		//points associated to the level, index + 1 is the level, points are the exclusive max bound (i.e. lvl 1 from 0 to 999 points)
+		levels: [1000,
+					2000,
+					3100,
+					4300,
+					5600,
+					7000,
+					8500,
+					10100,
+					11800,
+					13600,
+					15500,
+					17500,
+					19600,
+					21800,
+					24100,
+					26500,
+					29000,
+					31600,
+					34300,
+					37100,
+					40000,
+					43000,
+					46100,
+					49300,
+					52600,
+					56000,
+					59500,
+					63100,
+					66800,
+					70600]
     };
 
     //gets the list of users in the db
@@ -40,7 +69,7 @@ export default class UserContainer extends Container {
     //defines what level correspond to which range of points.
     whatLevel = points => {
 		for(let i = 0; i < this.state.levels.length; i++) {
-			if(this.state.levels[i]>=points) {
+			if(points < this.state.levels[i]) {
 				return i + 1;
 			}
 		}

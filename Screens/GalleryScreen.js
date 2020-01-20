@@ -21,9 +21,14 @@ const GalleryScreen = props => {
 
 };
 GalleryScreen.navigationOptions = {
+	title: "Gallery",
     headerTintColor: '#ffffff',
     headerStyle: {
         backgroundColor: '#417110'
+    },
+    headerTitleStyle: {
+        fontFamily: 'Rammetto-One',
+        fontWeight: "200"
     }
 };
 export default GalleryScreen;
