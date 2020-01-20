@@ -53,7 +53,7 @@ export default class MissionTransport extends React.Component {
     };
     //used to return the route the user has selected so that it can be displayed on the completed component.
     returnRoute = () => {
-        const route = 'From ' + this.state.from + ' to ' + this.state.to + ' ';
+        const route = 'From ' + this.state.from + 'to ' + this.state.to + ' ';
         return route;
     }
 

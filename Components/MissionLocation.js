@@ -60,7 +60,7 @@ export default class MissionLocation extends React.Component {
 							this.openMaps()
                         }}
                     >
-                        <Text style={styles.buttonText}>Maps</Text>
+                        <Text style={styles.buttonText}>See on Map</Text>
                     </TouchableOpacity>
 
 

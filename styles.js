@@ -25,7 +25,8 @@ export const styles = StyleSheet.create({
     },
     container_home:{
         padding: 15,
-        justifyContent:'center'
+        justifyContent:'center',
+        marginTop:20,
     },
     spotLight:{
        marginTop: 15,

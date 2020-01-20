@@ -15,7 +15,7 @@ export default class MissionCompleted extends React.Component {
 					<Text style={styles.subHeaderRammetto}>Thank you!</Text>
 					
                     <Text style={styles.inputFieldText}>You have just completed the{'\n'}
-                        {this.props.missionName}{'\n'}</Text>
+                        {this.props.missionName}mission{'\n'}</Text>
                     <Image
                         source={require('../images/completed.png')}
                         style={{height: 200, width: 200}}
