@@ -8,15 +8,14 @@ import {styles} from '../styles.js';
 //Additionally, he can go to the other missions to complete another one.
 export default class MissionCompleted extends React.Component {
 
-
     render() {
         return (
             <ScrollView>
                 <View style={styles.logoComponent}>
-                    <Text style={styles.subHeaderRammetto}>Thank you!</Text>
+					<Text style={styles.subHeaderRammetto}>Thank you!</Text>
+					
                     <Text style={styles.inputFieldText}>You have just completed the{'\n'}
-                        {this.props.mission}{'\n'}
-                        mission!</Text>
+                        {this.props.missionName}mission{'\n'}</Text>
                     <Image
                         source={require('../images/completed.png')}
                         style={{height: 200, width: 200}}
@@ -24,18 +23,14 @@ export default class MissionCompleted extends React.Component {
                 </View>
 
                 <View>
-                    <Text style={styles.inputFieldText}>{'\n'} {this.props.totalPoints ?
-                            <Text>You have a total of {this.props.totalPoints} points</Text>
-                            :
-                            null
-                        }{'\n'}{'\n'}
-						{ this.props.pointsLeft(this.props.totalPoints)>=0?
-							 <Text> You need {this.props.pointsLeft(this.props.totalPoints)} points{'\n'}
-							to reach next level </Text> 
-						:
-						null
-						}
-						</Text>
+					{ this.props.pointsLeft(this.props.userPoints)>0?
+						 <View>
+							<Text style={styles.inputFieldText}>You are now at level {this.props.level(this.props.userPoints)} with {this.props.userPoints} points</Text>
+							<Text style={styles.inputFieldText}>You need {this.props.pointsLeft(this.props.userPoints)} points to reach level {this.props.level(this.props.userPoints) + 1}</Text> 
+						</View>
+					:
+					null
+					}
                 </View>
 
 

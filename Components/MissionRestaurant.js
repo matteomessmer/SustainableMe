@@ -1,7 +1,9 @@
 import React from 'react';
-import {Text, View, ScrollView, TouchableOpacity, Image, Linking} from 'react-native';
+import {Text, View, ScrollView, TouchableOpacity, Image} from 'react-native';
 import {styles} from '../styles.js';
 
+//component for the restaurant mission. the user is rewarded with points if he goes to certain restaurants.
+//a user is furthermore able to see information about the restaurant, its website, its address in the map app.
 export default class MissionRestaurant extends React.Component {
 
     constructor(props) {
@@ -9,25 +11,14 @@ export default class MissionRestaurant extends React.Component {
         this.props.setPoints(this.props.mission.points);
     }
 	
+	//open the website in the browser
 	openWebsite = () => {
-		Linking.canOpenURL(this.props.mission.url).then(supported => {
-			if (supported) {
-				Linking.openURL(this.props.mission.url);
-			} else {
-				console.log("Don't know how to open URI: " + this.props.url);
-			}
-		});
+		this.props.onWebsite(this.props.mission.url);
 	}
 	
+	//open the map and show where the restaurant is
 	openMaps = () => {
-		const url = 'https://www.google.com/maps/place/' + this.props.mission.address;
-		Linking.canOpenURL(url).then(supported => {
-			if (supported) {
-				Linking.openURL(url);
-			} else {
-                console.log("Don't know how to open URI: " + this.props.url);
-			}
-		});
+		this.props.onMaps(this.props.mission.address);
 	}
 	
     render() {
@@ -70,7 +61,7 @@ export default class MissionRestaurant extends React.Component {
                         style={styles.primaryButton}
                         onPress={() => {
 
-                            this.props.onQR(this.props.mission.qr, this.props.mission.name, this.props.isSpot)
+                            this.props.onQR(this.props.mission.qr, this.props.mission.name, this.props.isSpot, this.props.mission.points)
                         }}
                     >
                         <Text style={styles.buttonText}>Scan Code</Text>

@@ -22,10 +22,16 @@ const LeaderBoardScreen = props => {
     )
 };
 LeaderBoardScreen.navigationOptions = {
+    title: 'Leaderboard',
     headerTintColor: '#ffffff',
     headerStyle: {
         backgroundColor: '#417110'
+    },
+    headerTitleStyle: {
+        fontFamily: 'Rammetto-One',
+        fontWeight: "200"
     }
 };
+
 
 export default LeaderBoardScreen;

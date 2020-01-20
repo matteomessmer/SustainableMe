@@ -12,6 +12,7 @@ const QR_CODE_Screen = props => {
     const code = props.navigation.getParam('code');
     const name = props.navigation.getParam('name')
     const isSpot = props.navigation.getParam('spot');
+    const points = props.navigation.getParam('points');
 
 
     return (
@@ -20,7 +21,7 @@ const QR_CODE_Screen = props => {
         <Subscribe to={[PointsContainer, ProfileContainer]}>
             {(pointscontainer, profilecontainer) => (
                 <QR_CODE
-                    onCreditPoints={() => pointscontainer.creditPointsUser(pointscontainer.state.points, profilecontainer.state.user.id)}
+                    onCreditPoints={() => profilecontainer.creditPointsUser(pointscontainer.state.points)}
                     code={code}
                     name={name}
                     onClear={() => {
@@ -31,7 +32,8 @@ const QR_CODE_Screen = props => {
                                     routeName: 'MissionCompleted',// Navigate to this screen
                                     params: {
                                         mission: name,
-                                        spot: isSpot
+                                        spot: isSpot,
+										points: points
                                     },
                                 }),
                             ],
@@ -49,6 +51,10 @@ QR_CODE_Screen.navigationOptions = {
     headerTintColor: '#ffffff',
     headerStyle: {
         backgroundColor: '#417110'
+    },
+    headerTitleStyle: {
+        fontFamily: 'Rammetto-One',
+        fontWeight: "200"
     }
 };
 

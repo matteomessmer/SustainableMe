@@ -25,14 +25,15 @@ const MissionLocationScreen = props => {
                         isSpot={isSpot}
                         pickAndCheckPosition={(lat, lon) => missionlocationcontainer.pickAndCheckPosition(lat, lon)}
                         setPoints={(points) => pointscontainer.setPoints(points)}
-                        creditPointsUser={() => pointscontainer.creditPointsUser(pointscontainer.state.points, profilecontainer.state.user.id)}
-                        onValidation={(nameOfMission) => {
+                        creditPointsUser={() => profilecontainer.creditPointsUser(pointscontainer.state.points)}
+						openMaps={(lat, lon) => missionlocationcontainer.openMaps(lat,lon)}
+                        onValidation={(nameOfMission, points) => {
                             props.navigation.dispatch(StackActions.reset({
                                 index: 0,
                                 actions: [
                                     NavigationActions.navigate({
                                         routeName: 'MissionCompleted',// Navigate to this screen
-                                        params: {mission: nameOfMission},
+                                        params: {mission: nameOfMission, points: points},
                                     }),
                                 ],
                                 key: null
@@ -69,6 +70,10 @@ MissionLocationScreen.navigationOptions = {
     headerTintColor: '#ffffff',
     headerStyle: {
         backgroundColor: '#417110'
+    },
+    headerTitleStyle: {
+        fontFamily: 'Rammetto-One',
+        fontWeight: "200"
     }
 };
 

@@ -81,20 +81,14 @@ export default class Profile extends React.Component {
                     </TouchableOpacity>
                     
                     <Text style={styles.subHeaderRammetto}>{this.state.name}</Text>
-                    {this.props.newPoints ?
-                        <View>
-                            <Text style={styles.subsubHeaderRammetto}>Points: {this.props.newPoints}</Text>
-                            <Text
-                                style={styles.subsubHeaderRammetto}>Level: {this.props.whatLevel(this.props.newPoints)}</Text>
-                        </View>
-                        :
-                        <View>
-                            <Text style={styles.subsubHeaderRammetto}>Points: {this.props.user.points}</Text>
-                            <Text
-                                style={styles.subsubHeaderRammetto}>Level: {this.props.whatLevel(this.props.user.points)}</Text>
-                        </View>
-                    }
-                </View>
+					
+					<View>
+						<Text style={styles.subsubHeaderRammetto}>Points: {this.props.user.points}</Text>
+						<Text
+							style={styles.subsubHeaderRammetto}>Level: {this.props.whatLevel(this.props.user.points)}</Text>
+					</View>
+                
+				</View>
                 <View style={styles.profileContent}>
                     {this.state.editName === false ?
                         <View>
@@ -201,7 +195,6 @@ export default class Profile extends React.Component {
                         style={styles.primaryButton}
                         onPress={() => {
                             this.props.resetUser()
-                            this.props.resetPoints()
                             this.props.logout()
                         }}
                     >

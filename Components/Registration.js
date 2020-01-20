@@ -2,6 +2,8 @@ import React from 'react';
 import { Text, View, TextInput,TouchableOpacity} from 'react-native';
 import { styles} from '../styles.js';
 
+//Component for the registration of users.
+//it displays a form which the user has to fill in order to register
 export default class Registration extends React.Component{
     constructor(props) {
         super(props);
@@ -11,21 +13,26 @@ export default class Registration extends React.Component{
             password: '',
         }
     }
-
+	
+	//calls the backend function that registers the user, if the operation is succesfull it goes to the login screen
+	//before logging in the user has to verify its email address
     register = async () => {
 		if(await this.props.register(this.state.name, this.state.email, this.state.password)) {
 			this.props.login()
 		}
     }
     
+	//handle the email input field changes
 	handleEmailChange = email => {
         this.setState({email: email})
     }
 	
+	//handle the password input field changes
     handlePasswordChange = password => {
         this.setState({password: password})
     }
 	
+	//handle the name input field changes
     handleNameChange = name => {
         this.setState({name: name})
     }

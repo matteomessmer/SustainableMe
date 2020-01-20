@@ -5,6 +5,37 @@ import {Container} from 'unstated'
 export default class UserContainer extends Container {
     state = {
         userlist: null,
+		//points associated to the level, index + 1 is the level, points are the exclusive max bound (i.e. lvl 1 from 0 to 999 points)
+		levels: [1000,
+					2000,
+					3100,
+					4300,
+					5600,
+					7000,
+					8500,
+					10100,
+					11800,
+					13600,
+					15500,
+					17500,
+					19600,
+					21800,
+					24100,
+					26500,
+					29000,
+					31600,
+					34300,
+					37100,
+					40000,
+					43000,
+					46100,
+					49300,
+					52600,
+					56000,
+					59500,
+					63100,
+					66800,
+					70600]
     };
 
     //gets the list of users in the db
@@ -37,75 +68,12 @@ export default class UserContainer extends Container {
 
     //defines what level correspond to which range of points.
     whatLevel = points => {
-        let level = null;
-
-        if (points < 100) {
-            level = 1;
-        } else if (points < 200) {
-            level = 2;
-        } else if (points < 300) {
-            level = 3;
-        } else if (points < 400) {
-            level = 4;
-        } else if (points < 500) {
-            level = 5;
-        } else if (points < 700) {
-            level = 6;
-        } else if (points < 900) {
-            level = 7;
-        } else if (points < 1100) {
-            level = 8;
-        } else if (points < 1500) {
-            level = 9;
-        } else if (points < 2000) {
-            level = 10;
-        } else if (points < 2500) {
-            level = 11;
-        } else if (points < 3000) {
-            level = 12;
-        } else if (points < 4000) {
-            level = 13;
-        } else if (points < 5000) {
-            level = 14;
-        } else if (points < 50000) {
-            level = 15;
-        }
-        if (points < 100){
-            level=1;
-        }else if(points <200){
-            level=2;
-        }else if(points <300){
-            level=3;
-        }else if(points <400){
-            level=4;
-        }else if(points <500){
-            level=5;
-        }else if(points <700){
-            level=6;
-        }else if(points <900){
-            level=7;
-        }else if(points <1100){
-            level=8;
-        }else if(points <1500){
-            level=9;
-        }else if(points <2000){
-            level=10;
-        }else if(points <2500){
-            level=11;
-        }else if(points <3000){
-            level=12;
-        }else if(points <4000){
-            level=13;
-        }else if(points <5000){
-            level=14;
-        } else if(points <50000) {
-            level=15;
-        } else {
-			level=16;
+		for(let i = 0; i < this.state.levels.length; i++) {
+			if(points < this.state.levels[i]) {
+				return i + 1;
+			}
 		}
-
-        return level;
-
+		return this.state.levels.length + 1;
     };
 
     //takes the points of an user and calculates the level he is currently in
@@ -133,74 +101,11 @@ export default class UserContainer extends Container {
 
     //compute the points left a user needs to reach the next level
     computePointsLeft = (points) => {
-        let pointsLeft = 0;
-
-        if (points < 100) {
-            pointsLeft = 100 - points;
-        } else if (points < 200) {
-            pointsLeft = 200 - points;
-        } else if (points < 300) {
-            pointsLeft = 300 - points;
-        } else if (points < 400) {
-            pointsLeft = 400 - points;
-        } else if (points < 500) {
-            pointsLeft = 500 - points;
-        } else if (points < 700) {
-            pointsLeft = 700 - points;
-        } else if (points < 900) {
-            pointsLeft = 900 - points;
-        } else if (points < 1100) {
-            pointsLeft = 1100 - points;
-        } else if (points < 1500) {
-            pointsLeft = 1500 - points;
-        } else if (points < 2000) {
-            pointsLeft = 2000 - points;
-        } else if (points < 2500) {
-            pointsLeft = 2500 - points;
-        } else if (points < 3000) {
-            pointsLeft = 3000 - points;
-        } else if (points < 4000) {
-            pointsLeft = 4000 - points;
-        } else if (points < 5000) {
-            pointsLeft = 5000 - points;
-        } else {
-            pointsLeft = 50000 - points;
-        }
-        return pointsLeft;
-      if (points < 100){
-          pointsLeft=100-points;
-      }else if(points <200){
-          pointsLeft=200-points;
-      }else if(points <300){
-        pointsLeft=300-points;
-      }else if(points <400){
-          pointsLeft=400-points;
-      }else if(points <500){
-          pointsLeft=500-points;
-      }else if(points <700){
-        pointsLeft=700-points;
-      }else if(points <900){
-          pointsLeft=900-points;
-      }else if(points <1100){
-          pointsLeft=1100-points;
-      }else if(points <1500){
-          pointsLeft=1500-points;
-      }else if(points <2000){
-        pointsLeft=2000-points;
-      }else if(points <2500){
-          pointsLeft=2500-points;
-      }else if(points <3000){
-          pointsLeft=3000-points;
-      }else if(points <4000){
-          pointsLeft=4000-points;
-      }else if(points <5000){
-          pointsLeft=5000-points;
-      } else if(points <50000) {
-        pointsLeft=50000-points;
-      } else {
-		pointsLeft = -1;
-	  }
-
-      return pointsLeft;
+		const level = this.whatLevel(points) - 1;
+		if(level >= this.state.levels.length) {
+			return -1;
+		} else {
+			return this.state.levels[level] - points;
+		}
     }
 }

@@ -29,7 +29,6 @@ export default class MissionEnvironment extends React.Component {
                             <Ionicons name={'md-globe'} size={80} color={'white'}/>
                         </View>
                     </View>
-                    <Text style={styles.subHeaderRammetto}>ENVIRONMENT MISSION</Text>
                 </View>
                 <View style={styles.titleheader}>
                     <Text style={styles.environsubTitle}>
@@ -85,7 +84,7 @@ export default class MissionEnvironment extends React.Component {
                                         this.props.clearPage()
                                         this.props.onValid(this.props.points)
                                         if (this.props.isSpot !== undefined) {
-                                            this.props.confirmfromHome(this.props.nameOfMission, this.props.isSpot)
+                                            this.props.confirmfromHome(this.props.nameOfMission, this.props.isSpot, this.props.points)
                                         } else {
                                             this.props.confirm(this.props.nameOfMission)
                                         }

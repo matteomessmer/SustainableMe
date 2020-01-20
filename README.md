@@ -8,6 +8,7 @@ SustainableMe is an application that helps tourists and locals in South Tyrol to
 - If you don's see a Confirmation email (used for registration and password reset purposes) check your spam folder. This is probably due to the fact that the email server we use is not certified.
 - To test the location mission, your device needs to be phisically within 1.000 metres of the location. For this purpose, we created the "Go to UniBZ" location mission.
 - A warning abouth the method "ComponentWillReceiveProps" is issued at application start. This is due to the use of the method in the "Unstated" library. An issue has already been raised to the library's owner; the warning hower doesn't affect the app's functionalities.
+- For testing, please use the QR codes in the folder of the repository. For each restaurant there is a different QR code please see the names associated. For the transport mission there is one single QR code valid for any type of route (Transport Missions.png). 
 
 
 # Notable functionalities
@@ -19,7 +20,6 @@ SustainableMe is an application that helps tourists and locals in South Tyrol to
 
 
 # API ENDPOINTS
-- To get the list of rewards (GET): http://sustainableme.fablabnetwork.tk/API/getRewards.php
 - To get the list of Missions (GET): http://sustainableme.fablabnetwork.tk/API/getMissions.php
 - To get the list of Users (GET): http://sustainableme.fablabnetwork.tk/API/getUsers.php
 - To add Points to an User (POST): http://sustainableme.fablabnetwork.tk/API/addPoints.php

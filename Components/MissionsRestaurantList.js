@@ -3,6 +3,7 @@ import { ScrollView, View, ActivityIndicator} from 'react-native';
 import {ListItem} from 'react-native-elements';
 import {styles} from '../styles.js';
 
+//component to display the list of restaurant-missions available.
 export default class MissionsRestaurantList extends React.Component {
 
     constructor(props) {
@@ -12,13 +13,13 @@ export default class MissionsRestaurantList extends React.Component {
             isLoading: true,
         }
     }
-
-    async componentDidMount() {
+	
+	//the list of available missions is gathered.
+	async componentDidMount() {
         const restaurants = await this.props.getRestaurants();
         await this.setState({restaurants: restaurants, isLoading: false});
     }
-
-
+	
     render() {
         if (this.state.isLoading) {
             return (

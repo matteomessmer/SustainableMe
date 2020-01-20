@@ -13,6 +13,7 @@ import {NavigationActions, StackActions} from 'react-navigation'
 const MissionCompletedScreen = props => {
 
     const nameOfMission = props.navigation.getParam('mission');
+    const points = props.navigation.getParam('points');
     let resetAction = null;
     const spot = props.navigation.getParam('spot');
 
@@ -43,11 +44,12 @@ const MissionCompletedScreen = props => {
                     onOther={() => {
                         props.navigation.dispatch(resetAction)
                         props.navigation.navigate('Missions')
-                    }
-                    }
-                    mission={nameOfMission}
-                    totalPoints={pointscontainer.state.totalPoints}
-                    pointsLeft={total => userContainer.computePointsLeft(total)}
+                    }}
+                    missionName={nameOfMission}
+					missionPoints={points}
+                    userPoints={profileContainer.state.user.points}
+                    pointsLeft={points => userContainer.computePointsLeft(points)}
+                    level={points => userContainer.whatLevel(points)}
                 />
             )
             }
@@ -58,9 +60,14 @@ const MissionCompletedScreen = props => {
 
 //Navigation options for the header
 MissionCompletedScreen.navigationOptions = {
+	title: "Mission Completed",
     headerTintColor: '#ffffff',
     headerStyle: {
         backgroundColor: '#417110'
+    },
+    headerTitleStyle: {
+        fontFamily: 'Rammetto-One',
+        fontWeight: "200"
     }
 };
 

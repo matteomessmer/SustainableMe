@@ -17,7 +17,7 @@ export default class Leaderboard extends React.Component {
     //gets the list of users and waits till function returns
    async componentDidMount() {
 
-        this.getUsers();
+        await this.getUsers();
 
     }
     async getUsers(){
@@ -28,27 +28,9 @@ export default class Leaderboard extends React.Component {
 
 
     render() {
-		//this.getUsers();
-
 
         return (
             <ScrollView>
-                <View style={styles.headerleaderboard}>
-                    <Text style={styles.subHeaderRammetto}>Leaderboard</Text>
-                </View>
-                {this.state.loading?
-                    <View style={{flex: 1, padding: 20}}>
-                        <ActivityIndicator/>
-                    </View>:null
-                }
-                {this.state.userlist ?
-
-                    <Ranking
-                        users={this.state.userlist}
-                    />
-                    : null
-                }
-
                 <View style={styles.buttonDiv}>
                     <TouchableOpacity
                         style={styles.primaryButton}
@@ -61,6 +43,19 @@ export default class Leaderboard extends React.Component {
                         <Text style={styles.buttonText}>Reload</Text>
                     </TouchableOpacity>
                 </View>
+				
+                {this.state.loading?
+                    <View style={{flex: 1, padding: 20}}>
+                        <ActivityIndicator/>
+                    </View>:null
+                }
+                {this.state.userlist ?
+
+                    <Ranking
+                        users={this.state.userlist}
+                    />
+                    : null
+                }
 
             </ScrollView>
         )

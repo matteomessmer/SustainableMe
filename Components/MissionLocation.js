@@ -14,6 +14,11 @@ export default class MissionLocation extends React.Component {
             loading: false,
         }
     }
+	
+	//open the map and show the location 
+	openMaps = () => {
+		this.props.openMaps(this.state.location.lat, this.state.location.lon);
+	}
 
     /* When user clicks on getting his location, the location is checked via the callback function
         - if the location is inside the range, the user is awarded the points.
@@ -28,7 +33,7 @@ export default class MissionLocation extends React.Component {
             if (this.props.isSpot !== undefined) {
                 await this.props.onValidationfromHome(this.state.location.name, this.props.isSpot)
             } else {
-                await this.props.onValidation(this.state.location.name)
+                await this.props.onValidation(this.state.location.name, this.state.location.points)
             }
         } else {
             this.setState({error: "Sorry, you're not close enough.", loading: false})
@@ -45,9 +50,20 @@ export default class MissionLocation extends React.Component {
                         </View>
                     </View>
                     <Text style={styles.subHeaderRammetto}>{this.state.location.name}</Text>
-                    <Text style={styles.subsubHeaderRammetto}>{this.state.location.points}</Text>
+                    <Text style={styles.subsubHeaderRammetto}>Points: {this.state.location.points}</Text>
                 </View>
                 <View style={styles.buttonDivLoc}>
+				
+                    <TouchableOpacity
+                        style={styles.primaryButton}
+                        onPress={() => {
+							this.openMaps()
+                        }}
+                    >
+                        <Text style={styles.buttonText}>See on Map</Text>
+                    </TouchableOpacity>
+
+
                     <TouchableOpacity
                         style={styles.primaryButton}
                         onPress={() => this.advance()}

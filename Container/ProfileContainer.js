@@ -7,6 +7,7 @@ import * as Permissions from 'expo-permissions';
 export default class ProfileContainer extends Container {
     state = {
         user: null,
+		level: null,
     }
     /*
       This method registers a new user on the DB
@@ -15,7 +16,7 @@ export default class ProfileContainer extends Container {
         //password is hashed
         const hash = md5(password);
 
-        //request login (expect json containing user)
+        //request register (expect json with the result of the operation)
         const response = await fetch('http://sustainableme.fablabnetwork.tk/API/register.php', {
             method: 'POST',
             headers: {
@@ -103,6 +104,37 @@ export default class ProfileContainer extends Container {
 
         return responseJson;
     }
+	
+	
+    //this will update the points for this user in the DB.
+    creditPointsUser = async (points) => {
+        const response = await fetch('http://sustainableme.fablabnetwork.tk/API/addPoints.php', {
+            method: 'POST',
+            headers: {
+                Accept: 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                points: points,
+                id: this.state.user.id,
+
+
+            }),
+        }).catch((error) => {
+            console.error(error);
+            return null;
+        });
+
+        const responseJson = await response.json();
+        if (responseJson.error) {
+            alert(responseJson.description);
+        } else {
+			let user = this.state.user;
+			user.points= responseJson.points;
+            await this.setState({user: user});
+        }
+    };
+
 
     /*
       Method to edit user info on the DB. Doesn't include the password (which requires additional DB-side logic)

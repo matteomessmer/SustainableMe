@@ -14,12 +14,16 @@ export default class HomeScreen extends React.Component {
     //Navigation options for the header of the screen
     static navigationOptions = ({navigation}) => {
         const nav = navigation;
-        return {
-            headerTitle: 'SustainableMe',
+		return {
+            headerTitle: 'Spotlight Missions',
             headerTintColor: '#ffffff',
             headerStyle: {
                 backgroundColor: '#417110'
             },
+			headerTitleStyle: {
+				fontFamily: 'Rammetto-One',
+				fontWeight: "200"
+			},
             headerRight:
                 <TouchableOpacity
                     style={styles.profileButton}

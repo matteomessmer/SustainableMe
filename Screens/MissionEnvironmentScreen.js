@@ -25,28 +25,28 @@ const MissionEnvironmentScreen = props => {
 
     return (
         <View>
-            <Subscribe to={[EnvironmentContainer, PictureContainer, PointsContainer, ProfileContainer]}>
-                {(environmentcontainer, picturecontainer, pointscontainer, profilecontainer) => (
+            <Subscribe to={[EnvironmentContainer, PictureContainer, ProfileContainer]}>
+                {(environmentcontainer, picturecontainer, profilecontainer) => (
                     <MissionEnvironment
                         uploadPhoto={environmentcontainer.uploadPhoto}
                         image={environmentcontainer.state.image}
                         nameOfMission={nameOfMission}
                         isSpot={isSpot}
                         description={description}
-                        confirm={(nameOfMission) => {
+                        confirm={(nameOfMission, points) => {
                             props.navigation.dispatch(StackActions.reset({
                                 index: 0,
                                 actions: [
                                     NavigationActions.navigate({
                                         routeName: 'MissionCompleted',// Navigate to this screen
-                                        params: {mission: nameOfMission},
+                                        params: {mission: nameOfMission, points: points},
                                     }),
                                 ],
                                 key: null
                             }))
                         }
                         }
-                        confirmfromHome={(nameOfMission, isSpot) => {
+                        confirmfromHome={(nameOfMission, isSpot, points) => {
                             props.navigation.dispatch(StackActions.reset({
                                 index: 0,
                                 actions: [
@@ -54,7 +54,8 @@ const MissionEnvironmentScreen = props => {
                                         routeName: 'MissionCompleted',// Navigate to this screen
                                         params: {
                                             mission: nameOfMission,
-                                            spot: isSpot
+                                            spot: isSpot,
+											points: points
                                         },
                                     }),
                                 ],
@@ -64,7 +65,7 @@ const MissionEnvironmentScreen = props => {
                         }
                         clearPage={environmentcontainer.clearPage}
                         onSave={picture => picturecontainer.savePicture(picture)}
-                        onValid={points => pointscontainer.creditPointsUser(points, profilecontainer.state.user.id)}
+                        onValid={points => profilecontainer.creditPointsUser(points)}
                         points={points}
 
 
@@ -81,6 +82,10 @@ MissionEnvironmentScreen.navigationOptions = {
     headerTintColor: '#ffffff',
     headerStyle: {
         backgroundColor: '#417110'
+    },
+    headerTitleStyle: {
+        fontFamily: 'Rammetto-One',
+        fontWeight: "200"
     }
 };
 

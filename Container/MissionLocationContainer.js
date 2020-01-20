@@ -1,5 +1,6 @@
 import React from 'react';
-import {Container} from 'unstated'
+import {Container} from 'unstated';
+import {Linking} from 'react-native';
 import * as Location from 'expo-location';
 import * as Permissions from 'expo-permissions';
 
@@ -63,5 +64,17 @@ export default class MissionLocationContainer extends Container {
             return false;
         }
     }
+	
+	//open the map and show the position of the location
+	openMaps = (lat, lon) => {
+		const url = 'https://www.google.com/maps/@' + lat + ',' + lon + ',16z';
+		Linking.canOpenURL(url).then(supported => {
+			if (supported) {
+				Linking.openURL(url);
+			} else {
+                console.log("Don't know how to open URI: " + url);
+			}
+		});
+	}
 
 }
