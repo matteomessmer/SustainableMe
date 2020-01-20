@@ -19,7 +19,6 @@ SustainableMe is an application that helps tourists and locals in South Tyrol to
 
 
 # API ENDPOINTS
-- To get the list of rewards (GET): http://sustainableme.fablabnetwork.tk/API/getRewards.php
 - To get the list of Missions (GET): http://sustainableme.fablabnetwork.tk/API/getMissions.php
 - To get the list of Users (GET): http://sustainableme.fablabnetwork.tk/API/getUsers.php
 - To add Points to an User (POST): http://sustainableme.fablabnetwork.tk/API/addPoints.php
