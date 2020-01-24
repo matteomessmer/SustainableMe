@@ -140,6 +140,9 @@ const AppContainer = createAppContainer(InitialNavigator);
 
 export default class App extends React.Component {
     render() {
+		//disable the warning
+		console.disableYellowBox = true; 
+
         return (
             <Provider>
                 <AppContainer
