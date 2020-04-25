@@ -17,7 +17,7 @@ export default class ProfileContainer extends Container {
         const hash = md5(password);
 
         //request register (expect json with the result of the operation)
-        const response = await fetch('http://sustainableme.fablabnetwork.tk/API/register.php', {
+        const response = await fetch('http://sustainableme.fablabnetwork.ml/API/register.php', {
             method: 'POST',
             headers: {
                 Accept: 'application/json',
@@ -55,7 +55,7 @@ export default class ProfileContainer extends Container {
         const hash = md5(password);
 
         //request login (expect json containing user)
-        const response = await fetch('http://sustainableme.fablabnetwork.tk/API/login.php', {
+        const response = await fetch('http://sustainableme.fablabnetwork.ml/API/login.php', {
             method: 'POST',
             headers: {
                 Accept: 'application/json',
@@ -86,7 +86,7 @@ export default class ProfileContainer extends Container {
       Method to reset forgotten password
     */
     resetPassword = async (email) => {
-        const response = await fetch('http://sustainableme.fablabnetwork.tk/API/resetPassword.php', {
+        const response = await fetch('http://sustainableme.fablabnetwork.ml/API/resetPassword.php', {
             method: 'POST',
             headers: {
                 Accept: 'application/json',
@@ -108,7 +108,7 @@ export default class ProfileContainer extends Container {
 	
     //this will update the points for this user in the DB.
     creditPointsUser = async (points) => {
-        const response = await fetch('http://sustainableme.fablabnetwork.tk/API/addPoints.php', {
+        const response = await fetch('http://sustainableme.fablabnetwork.ml/API/addPoints.php', {
             method: 'POST',
             headers: {
                 Accept: 'application/json',
@@ -140,7 +140,7 @@ export default class ProfileContainer extends Container {
       Method to edit user info on the DB. Doesn't include the password (which requires additional DB-side logic)
     */
     editUser = async (user) => {
-        const response = await fetch('http://sustainableme.fablabnetwork.tk/API/modifyUser.php', {
+        const response = await fetch('http://sustainableme.fablabnetwork.ml/API/modifyUser.php', {
             method: 'POST',
             headers: {
                 Accept: 'application/json',
@@ -174,7 +174,7 @@ export default class ProfileContainer extends Container {
         const oldHash = md5(oldPassword);
         const newHash = md5(newPassword);
 
-        const response = await fetch('http://sustainableme.fablabnetwork.tk/API/modifyUser.php', {
+        const response = await fetch('http://sustainableme.fablabnetwork.ml/API/modifyUser.php', {
             method: 'POST',
             headers: {
                 Accept: 'application/json',

@@ -12,7 +12,7 @@ export default class MissionLocationContainer extends Container {
     getLocationMissions = async () => {
 
         //request missions (expect json containing missions)
-        const response = await fetch('http://sustainableme.fablabnetwork.tk/API/getMissions.php', {
+        const response = await fetch('http://sustainableme.fablabnetwork.ml/API/getMissions.php', {
             method: 'POST',
             headers: {
                 Accept: 'application/json',

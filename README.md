@@ -24,15 +24,15 @@ SustainableMe is an application that helps tourists and locals in South Tyrol to
 - Persistence (through Unstated library)
 
 # API Endpoints
-- To get the list of Missions (GET): http://sustainableme.fablabnetwork.tk/API/getMissions.php
-- To get the list of Users (GET): http://sustainableme.fablabnetwork.tk/API/getUsers.php
-- To add Points to an User (POST): http://sustainableme.fablabnetwork.tk/API/addPoints.php
-- To login (POST): http://sustainableme.fablabnetwork.tk/API/login.php
-- To register (POST): http://sustainableme.fablabnetwork.tk/API/register.php
-- To modify an user (POST): http://sustainableme.fablabnetwork.tk/API/modifyUser.php
-- To reset the password (POST): http://sustainableme.fablabnetwork.tk/API/resetPassword.php
-- To set the new password (POST): http://sustainableme.fablabnetwork.tk/API/setNewPassword.php
+- To get the list of Missions (GET): http://sustainableme.fablabnetwork.ml/API/getMissions.php
+- To get the list of Users (GET): http://sustainableme.fablabnetwork.ml/API/getUsers.php
+- To add Points to an User (POST): http://sustainableme.fablabnetwork.ml/API/addPoints.php
+- To login (POST): http://sustainableme.fablabnetwork.ml/API/login.php
+- To register (POST): http://sustainableme.fablabnetwork.ml/API/register.php
+- To modify an user (POST): http://sustainableme.fablabnetwork.ml/API/modifyUser.php
+- To reset the password (POST): http://sustainableme.fablabnetwork.ml/API/resetPassword.php
+- To set the new password (POST): http://sustainableme.fablabnetwork.ml/API/setNewPassword.php
 
 # Website
-- The email verification page: http://sustainableme.fablabnetwork.tk/API/verifyEmail.php
-- To set the new password: http://sustainableme.fablabnetwork.tk/API/newPassword.html
+- The email verification page: http://sustainableme.fablabnetwork.ml/API/verifyEmail.php
+- To set the new password: http://sustainableme.fablabnetwork.ml/API/newPassword.html

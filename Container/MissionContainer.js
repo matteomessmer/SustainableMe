@@ -11,7 +11,7 @@ export default class MissionContainer extends Container {
     getSpotlightMissions = async () => {
 
         //request missions (expect json containing missions)
-        const response = await fetch('http://sustainableme.fablabnetwork.tk/API/getMissions.php', {
+        const response = await fetch('http://sustainableme.fablabnetwork.ml/API/getMissions.php', {
             method: 'POST',
             headers: {
                 Accept: 'application/json',

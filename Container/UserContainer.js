@@ -41,7 +41,7 @@ export default class UserContainer extends Container {
     //gets the list of users in the db
     getUsers = async () => {
 
-        const response = await fetch('http://sustainableme.fablabnetwork.tk/API/getUsers.php', {
+        const response = await fetch('http://sustainableme.fablabnetwork.ml/API/getUsers.php', {
             method: 'GET',
             headers: {
                 Accept: 'application/json',

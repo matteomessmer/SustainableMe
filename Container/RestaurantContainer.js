@@ -8,7 +8,7 @@ export default class RestaurantContainer extends Container {
 	
 	//return a list of restaurants from the database
 	getRestaurants = async () => {
-        const response = await fetch('http://sustainableme.fablabnetwork.tk/API/getMissions.php', {
+        const response = await fetch('http://sustainableme.fablabnetwork.ml/API/getMissions.php', {
             method: 'GET',
             headers: {
                 Accept: 'application/json',

@@ -31,7 +31,7 @@ export default class EnvironmentContainer extends Container {
 
     //Retrieve all the environment missions from the database
     getEnvironmentMissions = async () => {
-        const response = await fetch('http://sustainableme.fablabnetwork.tk/API/getMissions.php', {
+        const response = await fetch('http://sustainableme.fablabnetwork.ml/API/getMissions.php', {
             method: 'GET',
             headers: {
                 Accept: 'application/json',
